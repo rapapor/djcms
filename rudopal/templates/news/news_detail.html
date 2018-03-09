@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block content %}
+<h1>{% render_model news "title_pl" %}</h1>
+<p>{% render_model news "content_pl" %}</p>
+<p><img width="200px" src="{{ news.image.url }}"></p>
+<p>Published: {% render_model news "pub_date" %}</p>
+{% endblock content %}
