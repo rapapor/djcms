@@ -25,6 +25,3 @@ class NewsDetailView(DetailView):
         	context = super(NewsDetailView, self).get_context_data(**kwargs)
         	context['now'] = timezone.now()
         	return context
-
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
