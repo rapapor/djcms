@@ -190,7 +190,12 @@ CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('sidebar_right.html', 'Sidebar Right'),
+    ('about.html', 'o nas'),
+    ('product_list.html', 'Lista produktow'),
+    ('kontakt.html','kontakt'),
+    ('start.html', 'start'),
+    ('single_product.html', 'widok produktu')
 )
 
 CMS_PERMISSION = True

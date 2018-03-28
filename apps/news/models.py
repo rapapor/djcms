@@ -23,6 +23,10 @@ class News(models.Model):
 	def get_absolute_url(self):
 		return reverse('news:news_detail', kwargs={'slug': self.slug, })
 
+	def getlistArticle(self):		
+		return News.objects.all()[:5]
+
+
 
 	
 

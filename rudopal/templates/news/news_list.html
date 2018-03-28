@@ -2,14 +2,46 @@
 {% load cms_tags %}
 
 {% block content %}
-	<h1>News</h1>
-<ul>
-{% for news in object_list %}
-    <li>{{ news.pub_date|date }} - {{ news.title_pl }}</li>    
-    <li>{{news.tip_pl}}</li>
-    <li><a href="{{news.slug}}">wiecej...</a></li>
-{% empty %}
-    <li>No articles yet.</li>    
-{% endfor %}
-</ul>
+
+<!-- Section Blog Grid 2 Columns-->
+<section class="section-50 section-sm-100">
+    <div class="shell">
+        <div class="range range-sm-center">
+            <div class="col-sm-10 col-md-8 col-lg-12">
+            <h3 class="text-center">Aktualności</h3>
+                <div class="range">                
+                {% for news in object_list %}
+                    <div class="cell-lg-6 offset-top-30">
+                        <!-- Post Boxed-->
+                        <div class="reveal-block">
+                              <div class="post post-boxed">
+                                <!-- Post media-->
+                                <header class="post-media"><img style="width:570px;height:321px;" width="570" height="321" src="{{ news.image.url }}" alt="" class="img-responsive"></header>
+                                <!-- Post content-->
+                                <section class="post-content text-left">
+                                  	<div class="post-tags group-xs"><a href="{{news.slug}}" class="label-custom label-lg-custom label-primary">{{ news.title_pl }}</a>
+                                  	</div>
+                                  	<div class="post-body">
+                                    <!-- Post Title-->
+                                    	<div class="post-title">
+                                      		<h5><a href="{{news.slug}}" class="link link-default link-white-sm">{{news.tip_pl}}</a></h5>
+                                    	</div>
+                                    	<div class="post-meta">
+                                      		<ul class="list-inline list-inline-sm p">                                        		
+                                        			<li><span class="text-middle icon-xxs mdi mdi-clock"></span>
+                                          			<time datetime="2016-01-01" class="text-middle text-primary-lighter">{{ news.pub_date|date }}</time>
+                                        		</li>
+                                      		</ul>
+                                    	</div>
+                                	</div>
+                                </section>
+                            </div>
+                        </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 {% endblock content %}

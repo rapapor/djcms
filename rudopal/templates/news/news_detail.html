@@ -1,8 +1,130 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 {% block content %}
-<h1>{% render_model news "title_pl" %}</h1>
-<p>{% render_placeholder news.content_pl %}</p>
-<p><img width="200px" src="{{ news.image.url }}"></p>
-<p>Published: {% render_model news "pub_date" %}</p>
+
+<section class="section-50 section-sm-100">
+          <div class="shell">
+            <div class="range range-xs-center">
+              <div class="cell-md-9">
+                <!-- Blog Default Single-->
+                <section>
+                  <article class="post post-classic">
+                    <!-- Post media--><img style="width: 870px; height:412px; " src="{{ news.image.url }}" alt="" width="870" height="412" class="img-responsive"/>
+                    <!-- Post content-->
+                    <section class="post-content text-left offset-top-25">
+                      <h5 class="text-uppercase">{% render_model news "title_pl" %}</h5>
+                      <ul class="list-inline list-inline-md offset-top-5">
+                        <li>
+                          <div class="unit unit-horizontal unit-spacing-xxs">
+                            <div class="unit-left"><span class="text-base">Data publikacji:</span></div>
+                            <div class="unit-body">
+                              <time>{% render_model news "pub_date" %}</time>
+                            </div>
+                          </div>
+                        </li> 
+                      </ul>
+                      <hr class="offset-top-15">
+                      <div class="offset-top-20">
+                        <p class="text-base">{% render_placeholder news.content_pl %}</p>
+                      </div>                      
+                      <div class="offset-top-10">
+                                        <!-- Blockquote default-->
+                                        <blockquote class="quote-default quote-default-left">
+                                          <div class="quote-body">
+                                            <div class="unit unit-xs-horizontal unit-xs-top unit-spacing-sm">
+                                              <div class="unit-left">
+                                                <svg x="0px" y="0px" width="37px" height="27px" viewbox="0 0 37 27">
+                                                  <path d="M16.916,18.73c0,2.351-0.833,4.319-2.499,5.901C12.754,26.208,10.786,27,8.516,27  c-2.268,0-4.255-0.792-5.96-2.369c-1.703-1.582-2.552-3.477-2.552-5.679c0-2.208,1.022-4.891,3.064-8.054L9.879-0.018h6.585  l-4.202,11.471C15.365,12.847,16.916,15.275,16.916,18.73z M36.99,18.73c0,2.351-0.833,4.319-2.499,5.901  C32.828,26.208,30.86,27,28.588,27c-2.269,0-4.256-0.792-5.959-2.369c-1.702-1.582-2.555-3.477-2.555-5.679  c0-2.208,1.025-4.891,3.066-8.054l6.813-10.916h6.581l-4.197,11.471C35.437,12.847,36.99,15.275,36.99,18.73z"></path>
+                                                </svg>
+                                              </div>
+                                              <div class="unit-body">
+                                                <p class="h5 text-light">
+                                                  <q>Dish up a bowl of vegetable-based soup for a meal that's both tasty and good for you. Then get more of our recipes from our chefs!</q>
+                                                </p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="quote-footer">
+                                            <cite></cite>
+                                          </div>
+                                        </blockquote>
+                      </div>                      
+                    </section>
+                    <footer class="offset-top-50 text-sm-left clearfix">
+                      <div class="big text-bold text-base pull-sm-left">Udostępnij:</div>
+                      <ul class="list-inline pull-sm-right offset-top-0 text-sm-right">
+                        <li><a href="#" class="link-darkest icon icon-xxs-mod-1 fa fa-facebook"></a></li>
+                        <li><a href="#" class="link-darkest icon icon-xxs-mod-1 fa fa-twitter"></a></li>
+                        <li><a href="#" class="link-darkest icon icon-xxs-mod-1 fa fa-google-plus"></a></li>
+                        <li><a href="#" class="link-darkest icon icon-xxs-mod-1 fa fa-pinterest"></a></li>
+                      </ul>
+                    </footer>
+                  </article>
+                  <hr class="offset-top-50">
+                  <h5 class="offset-top-60 offset-sm-top-90 text-uppercase text-left">Related Posts</h5>
+                  <div class="range range-sm-justify">
+                    <div class="cell-sm-6">
+                                      <!-- Post Classic-->
+                                      <article class="post post-classic post-widget">
+                                        <!-- Post media--><img src="images/post-08-398x269.jpg" alt="" width="398" height="269" class="img-responsive"/>
+                                        <!-- Post content-->
+                                        <section class="post-content text-left offset-top-25">
+                                          <h6><a href="blog-post.html" class="link-default">Homemade Holiday Vegan Wellington</a></h6>
+                                          <ul class="list-inline list-inline-sm offset-top-5">
+                                            <li>
+                                              <div class="unit unit-horizontal unit-spacing-xxs">
+                                                <div class="unit-left"><span class="text-base">Date:</span></div>
+                                                <div class="unit-body">
+                                                  <time datetime="2016-01-01">January 22, 2016</time>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="unit unit-horizontal unit-spacing-xxs">
+                                                <div class="unit-left"><span class="text-base">Comments:</span></div>
+                                                <div class="unit-body"><span>2</span></div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="unit unit-horizontal unit-spacing-xxs">
+                                                <div class="unit-left"><span class="text-base">Posted by:</span></div>
+                                                <div class="unit-body"><span>John Doe</span></div>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </section>
+                                      </article>
+                    </div>                    
+                  </div>
+                </section>
+              </div>
+              <div class="cell-md-3 offset-top-60 offset-md-top-0">
+                <div class="inset-lg-left-15">
+                  <!-- Section Blog Modern-->
+                  <aside class="text-left">               
+                    <div class="range offset-top-55">                      
+                      <div class="cell-xs-6 cell-md-12 offset-top-50 offset-xs-top-0 offset-md-top-50">
+                        <!-- Archive-->
+                        <div class="h6 text-uppercase">Ostatnio dodane</div>
+                        {% for news in object.getlistArticle %}
+                        <div class="offset-top-30">                        	
+                          <div class="unit unit-horizontal unit-spacing-xs">
+                            <div class="unit-left"><img src="{{news.image.url}}" alt="" width="70" height="70" class="img-rounded"/>
+                            </div>
+                            <div class="unit-body"><a href="../{{news.slug}}" class="link-default"> {{ news.title_pl }}</a>
+                              <div>
+                                <time datetime="2016">{{ news.pub_date|date }}</time>
+                              </div>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 {% endblock content %}

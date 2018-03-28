@@ -1,33 +1,11 @@
  
- {% load cms_tags menu_tags sekizai_tags %}
+ {% load cms_tags menu_tags sekizai_tags staticfiles %}
 <!doctype html>
-<html>
+<html lang="en" class="wide wow-animation smoothscroll">
     <head>
-        <title>{% block title %}This is my new project home page{% endblock title %}</title>
+        
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <style type="text/css">
-            .nav {
-                padding-left: 0;
-            }
-            .nav li {
-                display: inline;
-                list-style-type: none;
-                padding-right: 20px;
-            }
-            .container {
-                width: 940px;
-                margin: 0 auto
-            }
-            .content {
-                float: left;
-                width: 80%;
-            }
-            .sidebar {
-                float: left;
-                width: 20%;
-            }
-        </style>
-        <!-- Latest compiled and minified CSS -->
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
         <!-- Optional theme -->
@@ -40,22 +18,39 @@
             crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         {% render_block "css" %}
-    </head>
-    <body>
+    
         {% cms_toolbar %}
-        <nav class="navbar navbar-default" style="background:transparent;background-image:none;border-color:transparent;box-shadow:none;">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Rudopal-logo</a>
-    </div>
+        
+    <!-- Site Title-->
+    <title>{% block title %}This is my new project home page{% endblock title %}</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="{% static "images/favicon.ico" type="image/x-icon " %}">
+    <link href="https//code.simplesvg.com/1/1.0.0-beta5/simple-svg.min.js">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Changa+One:400,400i%7CGrand+Hotel%7CLato:300,400,400italic,700">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+        <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+  </head>
+  <body>
 
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbarStyle">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img width="120" src="{% static "images/Rudopal_logo_biale.png" %}"></a>
+        </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
@@ -64,10 +59,134 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-        <div class="container"> 
+    <!-- Page-->
+    <div class="page text-center">    
+      <!-- Page Content-->
+      <header><section class="bg-gray-darker">
+          <div class="swiper-variant-1">
+            <div data-slide-effect="fade" data-min-height="600px" class="swiper-container swiper-slider">
+              <div class="swiper-wrapper">
+                <div data-slide-bg="{% static "images/baner_1.jpg"%}" class="swiper-slide">
+                  <div class="swiper-slide-caption text-uppercase text-center">
+                    <div class="shell">
+                      <div class="range range-sm-middle">
+                        <div class="cell-sm-6 cell-md-5 cell-lg-4">
+                          <div data-caption-animate="fadeInUpSmall" data-caption-delay="100" class="label-swiper label-swiper-var-2">
+                            <h4 class="text-italic">hot stuff</h4>
+                          </div>
+                          <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="small text-white">Pumpkin</h1>
+                          <h3 data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-0">vegan soup!</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-slide-bg="{% static "images/baner_2.jpg"%}" class="swiper-slide">
+                  <div class="swiper-slide-caption slide-caption-2 text-center">
+                    <div class="shell">
+                      <div class="range range-sm-middle">
+                        <div class="cell-sm-6 cell-md-5 cell-lg-4">
+                          <h5 data-caption-animate="fadeInUpSmall" data-caption-delay="100" class="text-italic font-secondary text-white">From Our Chef</h5>
+                          <h2 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="text-uppercase text-white offset-top-0">Meet the</h2>
+                          <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-0">legend</h1>
+                          <h4 data-caption-animate="fadeInUpSmall" data-caption-delay="1000" class="text-burnt-sienna offset-top-10">goat cheese salad</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-slide-bg="{% static "images/baner_3.jpg"%}" class="swiper-slide">
+                  <div class="swiper-slide-caption text-uppercase text-center">
+                    <div class="shell">
+                      <div class="range range-sm-middle">
+                        <div class="cell-sm-6 cell-md-5 cell-lg-4">
+                          <div data-caption-animate="fadeInUpSmall" data-caption-delay="100" class="label-swiper label-swiper-var-2">
+                            <h4 class="text-italic">New menu</h4>
+                          </div>
+                          <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="small text-white">Guacamole</h1>
+                          <h3 data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-0">& ingredients !</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-slide-bg="{% static "images/baner_4.jpg"%}" class="swiper-slide">
+                  <div class="swiper-slide-caption slide-caption-2 text-center">
+                    <div class="shell">
+                      <div class="range range-sm-middle">
+                        <div class="cell-sm-6 cell-md-5 cell-lg-4">
+                          <h5 data-caption-animate="fadeInUpSmall" data-caption-delay="100" class="text-italic font-secondary text-white">From Our Chef</h5>
+                          <h2 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="text-uppercase text-white offset-top-0">Meet the</h2>
+                          <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-0">legend</h1>
+                          <h4 data-caption-animate="fadeInUpSmall" data-caption-delay="1000" class="text-burnt-sienna offset-top-10">goat cheese salad</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Swiper Navigation-->
+              <div class="swiper-pagination-wrap">
+                <div class="shell">
+                  <div class="range">
+                    <div class="cell-sm-6 cell-md-5 cell-lg-4">
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        </header>
+      <main class="page-content" id="page-cont">
+      {% block content %}
+      
+
+
+      {% endblock content %}     
                 
-            {% block content %}{% endblock content %}
-        </div>
-        {% render_block "js" %}
-    </body>
+      </main>
+      <!-- Page Footer-->
+      <footer class="page-foot text-center footer-light">
+        <section class="section-top-45 section-bottom-45">
+          <div class="shell">
+            <ul class="list list-inline list-footer-nav">
+              <li><a href="menu-single.html" class="text-uppercase">START</a></li>
+              <li><a href="menu-single.html" class="text-uppercase">PRODUKTY</a></li>
+              <li><a href="menu-single.html" class="text-uppercase">MAPA DYSTRYBUCJI</a></li>
+              <li><a href="menu-single.html" class="text-uppercase">AKTUALNOŚCI</a></li>
+              <li><a href="menu-single.html" class="text-uppercase">KONTAKT</a></li>              
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="shell">
+            <hr>
+          </div>
+          <div class="shell section-20">
+            <div class="range range-xs-center">
+              <div class="cell-md-5">
+                <p class="copyright">
+                  Rudopal
+                  &nbsp;&#169;&nbsp;<span id="copyright-year"></span>&nbsp;<br class="veil-sm"><a href="privacy.html">Wszystkie prawa zastrzeżone</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div id="form-output-global" class="snackbars"></div>    
+    <!-- Java script-->
+    <script src="{% static "js/core.min.js" %}"></script>
+    <script src="{% static "js/script.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+    {% render_block "js" %}
+  </body>
 </html>
+        
+        
+  

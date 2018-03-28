@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load cms_tags %}
+{% block content %} 
+
+<section class="bg-image-6">
+          <!-- RD Parallax-->
+            <div class="shell-wide">
+                <div class="range range-xs-center">
+                    <div class="cell-sm-5 cell-lg-5 cell-md-preffix-1">
+                        <p>tekst</p>
+                    </div>
+                    <div class="cell-sm-5 cell-lg-5">
+                        <div class=" view-animate fadeInUpBigger delay-04" >
+                            <p>Call To action</p>
+                        </div>
+                    </div>                  
+                </div>                  
+            </div>
+        </section>
+        <section>          
+            <div class="shell-wide">
+                <div class="range range-xs-center">
+                    <div class="cell-sm-7 cell-lg-5 cell-md-preffix-1" id="rud-new-img">
+                        <div class=" view-animate fadeInUpBigger delay-04" >
+                            <img src="{% static "images/my/mission.jpg" %}" style="max-width: 100%; padding-top:20px; padding-bottom: 20px;">
+                        </div>
+                    </div> 
+                    <div class="cell-sm-10 cell-lg-6 " id="rud-pad-mission-content">
+                        <div class="post post-modern post-modern-timeline post-modern-timeline-left" id="rud-mission-article">                                        
+                            <div class="post-content text-left">
+                                <!-- Post Title-->
+                                <div class="post-title">
+                                    <div class="h6 offset-top-25"><a href="blog-post.html" class="link-default" style="color:#fff">NASZA MISJA</a></div>
+                                </div>
+                                <!-- Post Body-->
+                                <div class="post-body offset-top-20 rud-front-text-10" style="color:#fff">
+                                    <p><b style="text-transform: uppercase;">identyfikacja potrzeb</b>Partnera biznesowego jest dla nas fundamentalną wartością<br>
+                                    <b style="text-transform: uppercase;">dynamiczny, ciągły rozwój</b>poprzez nowe technologie, inwestycje i innowacyjne rozwiązania jest naszym kluczem do osiągania przewagi konkurencyjnej<br>
+                                    <b style="text-transform: uppercase;">zadowolenie ze swojej pracy</b>zaangażowanie, wiedza i chęć rozwijania kompetencji naszego Zespołu jest największym kapitałem firmy<br>
+                                    <b style="text-transform: uppercase;">zapewnienie najwyższej jakości i bezpieczeństwa</b>zdrowotnego naszych produktów jest determinantem do osiągniecia sukcesu i znaczeniu marki na rynku.</p>
+
+                                </div>                                          
+                            </div>
+                        </div>
+                    </div>                                      
+                </div>                  
+            </div>
+        </section>
+        <section class="bg-image-6">
+          <!-- RD Parallax-->
+            <div class="shell-wide">
+                <div class="range range-xs-center">
+                    <div class="cell-sm-10 cell-lg-5 cell-md-preffix-1" id="rud-text-new">
+                        <article class="post post-modern post-modern-timeline post-modern-timeline-left" id="rud-news-article">                                        
+                            <div class="post-content text-left">
+                                <div class="post-meta pull-sm-right"><span class="text-middle icon-xxs mdi mdi-clock text-primary-lighter"></span>
+                                    <time datetime="2016-01-01" class="text-italic text-middle">2 days ago</time>
+                                </div>
+                                <ul class="list-inline offset-top-14 offset-sm-top-0">
+                                    <li>                                              
+                                        <div class="icon icon-sm text-gray-light fa-quote-left" style="color:#fff"></div>
+                                    </li>
+                                </ul>
+                                <!-- Post Title-->
+                                <div class="post-title">
+                                    <div class="h6 offset-top-25"><a href="blog-post.html" class="link-default" style="color:#fff">Aktualności</a></div>
+                                </div>
+                                <!-- Post Body-->
+                                <div class="post-body offset-top-20" style="color:#fff">
+                                    <p>If there’s one thing that signifies winter comfort to us, it’s when we start churning out soups and meals via slowcooker.  A few minutes prep time in the morning and you have the most tender and delicious dinner by evening.</p>
+                                    <p>FIRMA RUDOPAL</p>
+
+                                </div>                                          
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cell-sm-6 cell-lg-5" id="rud-new-img">
+                        <div class=" view-animate fadeInUpBigger delay-04" >
+                            <img src="{% static "images/my/news.png" %}" style="max-width: 100%; padding-top:20px; padding-bottom: 20px;">
+                        </div>
+                    </div>                  
+                </div>                  
+            </div>
+        </section>
+        <!--section gallery-->
+        <section>
+            <h3 class="text-center">Nasze Bestsellery</h3>        
+            <div data-photo-swipe-gallery="gallery" class="reveal-flex gallery-wrap">           
+                <a data-photo-swipe-item="" data-size="1200x800" href="images/gallery/gallery-01-1200x800_original.jpg" data-author="" class="thumbnail-gallery">
+                    <img src="{% static "images/gallery/gallery-01-322x307.jpg" %}" alt="" width="322" height="307"/>
+                </a>
+                <a data-photo-swipe-item="" data-size="1200x797" href="images/gallery/gallery-02-1200x797_original.jpg" class="thumbnail-gallery">
+                    <img src="{% static "images/gallery/gallery-02-322x307.jpg" %}" alt="" width="322" height="307"/>
+                </a>
+                <a data-photo-swipe-item="" data-size="1200x800" href="images/gallery/gallery-03-1200x800_original.jpg" class="thumbnail-gallery">
+                    <img src="{% static "images/gallery/gallery-03-322x307.jpg" %}" alt="" width="322" height="307"/>
+                </a>
+                <a data-photo-swipe-item="" data-size="1200x800" href="images/gallery/gallery-04-1200x800_original.jpg" class="thumbnail-gallery">
+                    <img src="{% static "images/gallery/gallery-04-322x307.jpg" %}" alt="" width="322" height="307"/>
+                </a>                
+            </div>
+        </section>
+        <section class="section-50 section-sm-top-90 section-sm-bottom-100 bg-image-6">
+          <div class="shell-wide isotope-wrap">
+            <h3 class="text-center">Produkty</h3>
+            <div class="range range-sm-center">
+              <div class="cell-xs-12">
+                <div class="cell-box">
+                  <ul class="isotope-filters-responsive">
+                    <li>
+                      <p>Kategoria produktów:</p>
+                    </li>
+                    <li class="block-top-level">
+                      <!-- Isotope Filters-->
+                      <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-primary-lighter btn-shape-circle">Filter<span class="caret"></span></button>
+                      <div id="isotope-1" class="isotope-filters isotope-filters-buttons isotope-filters-buttons-primary-lighter">
+                        <ul class="inline-list">
+                          <li><a data-isotope-group="gallery" href="#" class="btn btn-burnt-sienna text-bottom btn-min-width">DLA GASTRONOMII</a></li>
+                          <li><a data-isotope-group="gallery" href="#" class="btn btn-burnt-sienna text-bottom btn-min-width">DLA BIZNESU</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cell-xs-12 offset-top-40">
+                <!-- Isotope Content-->
+                <div data-isotope-layout="fitRows" data-isotope-group="gallery" class="row isotope isotope-menu isotope-menu-offsets">
+                  <div data-filter="Breakfast" class="col-xs-12 col-sm-6 isotope-item">
+                    <div class="thumbnail-menu-modern thumbnail-menu-modern-horizontal">
+                      <div class="unit unit-lg-horizontal unit-spacing-sm unit-middle">
+                        <div class="unit-left">
+                          <figure><img src="{% static "images/menu/menu-1-310x260.png" %}" alt="" width="310" height="260" class="img-responsive"/>
+                          </figure>
+                        </div>
+                        <div class="unit-body">
+                          <div class="caption text-center">
+                            <h5>Organic Oatmeal</h5>
+                            <p class="text-italic">This oatmeal makes a delicious, chewy, wholesome hot cereal that will give you lasting energy throughout the morning.</p>
+                            <p class="price">12.50</p><a href="shop-single.html" class="btn btn-burnt-sienna text-bottom btn-min-width">Order Online</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-filter="Breakfast" class="col-xs-12 col-sm-6 isotope-item">
+                    <div class="thumbnail-menu-modern thumbnail-menu-modern-horizontal">
+                      <div class="unit unit-lg-horizontal unit-spacing-sm unit-middle">
+                        <div class="unit-left">
+                          <figure><img src="{% static "images/menu/menu-2-310x260.png" %}" alt="" width="310" height="260" class="img-responsive"/>
+                          </figure>
+                        </div>
+                        <div class="unit-body">
+                          <div class="caption text-center">
+                            <h5>Grilled Panini</h5>
+                            <p class="text-italic">Fresh toppings and perfectly melted cheese makes every bite of our Grilled Panini simply mouthwatering.</p>
+                            <p class="price">13.90</p><a href="shop-single.html" class="btn btn-burnt-sienna text-bottom btn-min-width">Order Online</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                                                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+{% endblock content %} 
