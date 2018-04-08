@@ -8,7 +8,7 @@ from .menu import NewsSubMenu
 class NewsApp(CMSApp):
 	name = _('News')
 	app_name = 'news'
-	menus = [NewsSubMenu,]
+	#menus = [NewsSubMenu,]
 
 	def get_urls(self, page=None, language=None, **kwargs):
 		return ["apps.news.urls"]

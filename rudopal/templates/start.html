@@ -5,14 +5,26 @@
 
 <section class="bg-image-6">
           <!-- RD Parallax-->
-            <div class="shell-wide">
+            <div class="shell-wide text-left">
                 <div class="range range-xs-center">
-                    <div class="cell-sm-5 cell-lg-5 cell-md-preffix-1">
-                        <p>tekst</p>
+                    <div class="cell-sm-5 cell-lg-5 cell-md-preffix-1 offset-top-25 offset-bottom-25">
+                        <h5 class="font-default" style="border-bottom: 2px solid;width: 50%;">KIM JESTEŚMY</h5>
+                        <p style="color:#000;">{% placeholder "tekst_kim_jestesmy" %}</p>
+                        <p style="color:#000;border-bottom: 2px solid; width: 30%;"></p>
                     </div>
-                    <div class="cell-sm-5 cell-lg-5">
+                    <div class="cell-sm-5 cell-lg-5 offset-top-50">
                         <div class=" view-animate fadeInUpBigger delay-04" >
-                            <p>Call To action</p>
+                            <div class="view-animate zoomInSmall delay-06">
+                              <a href="#" class="deals-block deals-block-variant-1 deals-block-variant-1-adjust"><img src="{% static "images/mapa_tlo_1.jpg" %}" alt="" width="707" height="547" class="img-responsive"/>
+                                <div class="caption" style="padding-bottom:15px;">
+                                  <div class="title-wrap">
+                                    <h4 class="text-italic" style="color:#fff;">Nasi Dystrybutorzy</h4>
+                                    <p class="big">Sprawdź gdzie aktualnie zamówisz nasze produkty w Polsce
+                                    </p>
+                                  </div>                              
+                                </div>
+                              </a>
+                            </div>
                         </div>
                     </div>                  
                 </div>                  
@@ -34,12 +46,11 @@
                                     <div class="h6 offset-top-25"><a href="blog-post.html" class="link-default" style="color:#fff">NASZA MISJA</a></div>
                                 </div>
                                 <!-- Post Body-->
-                                <div class="post-body offset-top-20 rud-front-text-10" style="color:#fff">
+                                <div class="post-body offset-top-20 rud-front-text-10" id="mission-content" style="color:#fff">
                                     <p><b style="text-transform: uppercase;">identyfikacja potrzeb</b>Partnera biznesowego jest dla nas fundamentalną wartością<br>
                                     <b style="text-transform: uppercase;">dynamiczny, ciągły rozwój</b>poprzez nowe technologie, inwestycje i innowacyjne rozwiązania jest naszym kluczem do osiągania przewagi konkurencyjnej<br>
                                     <b style="text-transform: uppercase;">zadowolenie ze swojej pracy</b>zaangażowanie, wiedza i chęć rozwijania kompetencji naszego Zespołu jest największym kapitałem firmy<br>
                                     <b style="text-transform: uppercase;">zapewnienie najwyższej jakości i bezpieczeństwa</b>zdrowotnego naszych produktów jest determinantem do osiągniecia sukcesu i znaczeniu marki na rynku.</p>
-
                                 </div>                                          
                             </div>
                         </div>
@@ -85,25 +96,25 @@
         </section>
         <!--section gallery-->
         <section>
-            <h3 class="text-center">Nasze Bestsellery</h3>        
+            <h5 class="text-center releway rel-700 offset-top-25">Nasze Bestsellery</h5>        
             <div data-photo-swipe-gallery="gallery" class="reveal-flex gallery-wrap">           
-                <a data-photo-swipe-item="" data-size="1200x800" href="images/gallery/gallery-01-1200x800_original.jpg" data-author="" class="thumbnail-gallery">
+                <a  data-size="1200x800" href="pojedynczy-produkt/" data-author="" class="thumbnail-gallery">
                     <img src="{% static "images/gallery/gallery-01-322x307.jpg" %}" alt="" width="322" height="307"/>
                 </a>
-                <a data-photo-swipe-item="" data-size="1200x797" href="images/gallery/gallery-02-1200x797_original.jpg" class="thumbnail-gallery">
+                <a  data-size="1200x797" href="pojedynczy-produkt/" class="thumbnail-gallery">
                     <img src="{% static "images/gallery/gallery-02-322x307.jpg" %}" alt="" width="322" height="307"/>
                 </a>
-                <a data-photo-swipe-item="" data-size="1200x800" href="images/gallery/gallery-03-1200x800_original.jpg" class="thumbnail-gallery">
+                <a  data-size="1200x800" href="pojedynczy-produkt/" class="thumbnail-gallery">
                     <img src="{% static "images/gallery/gallery-03-322x307.jpg" %}" alt="" width="322" height="307"/>
                 </a>
-                <a data-photo-swipe-item="" data-size="1200x800" href="images/gallery/gallery-04-1200x800_original.jpg" class="thumbnail-gallery">
+                <a  data-size="1200x800" href="pojedynczy-produkt/" class="thumbnail-gallery">
                     <img src="{% static "images/gallery/gallery-04-322x307.jpg" %}" alt="" width="322" height="307"/>
                 </a>                
             </div>
         </section>
-        <section class="section-50 section-sm-top-90 section-sm-bottom-100 bg-image-6">
+        <section class="section-50 section-sm-top-50 section-sm-bottom-100 bg-image-6">
           <div class="shell-wide isotope-wrap">
-            <h3 class="text-center">Produkty</h3>
+            <h4 class=" releway rel-700 offset-top-25">Produkty</h4>
             <div class="range range-sm-center">
               <div class="cell-xs-12">
                 <div class="cell-box">
@@ -116,8 +127,8 @@
                       <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-primary-lighter btn-shape-circle">Filter<span class="caret"></span></button>
                       <div id="isotope-1" class="isotope-filters isotope-filters-buttons isotope-filters-buttons-primary-lighter">
                         <ul class="inline-list">
-                          <li><a data-isotope-group="gallery" href="#" class="btn btn-burnt-sienna text-bottom btn-min-width">DLA GASTRONOMII</a></li>
-                          <li><a data-isotope-group="gallery" href="#" class="btn btn-burnt-sienna text-bottom btn-min-width">DLA BIZNESU</a></li>
+                          <li><a data-isotope-group="gallery" href="#" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width">DLA GASTRONOMII</a></li>
+                          <li><a data-isotope-group="gallery" href="#" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width">DLA BIZNESU</a></li>
                         </ul>
                       </div>
                     </li>
@@ -131,14 +142,14 @@
                     <div class="thumbnail-menu-modern thumbnail-menu-modern-horizontal">
                       <div class="unit unit-lg-horizontal unit-spacing-sm unit-middle">
                         <div class="unit-left">
-                          <figure><img src="{% static "images/menu/menu-1-310x260.png" %}" alt="" width="310" height="260" class="img-responsive"/>
+                          <figure><img src="{% static "images/menu/dla_gastronomi_grzanki_1.png" %}" alt="" width="310" height="260" class="img-responsive"/>
                           </figure>
                         </div>
                         <div class="unit-body">
-                          <div class="caption text-center">
-                            <h5>Organic Oatmeal</h5>
+                          <div class="caption text-left">
+                            <h5>Grzanki czosnkowe</h5>
                             <p class="text-italic">This oatmeal makes a delicious, chewy, wholesome hot cereal that will give you lasting energy throughout the morning.</p>
-                            <p class="price">12.50</p><a href="shop-single.html" class="btn btn-burnt-sienna text-bottom btn-min-width">Order Online</a>
+                            <a href="pojedynczy-produkt/" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width" style="font-size: 10px; margin-top:10px;">więcej</a>
                           </div>
                         </div>
                       </div>
@@ -148,14 +159,14 @@
                     <div class="thumbnail-menu-modern thumbnail-menu-modern-horizontal">
                       <div class="unit unit-lg-horizontal unit-spacing-sm unit-middle">
                         <div class="unit-left">
-                          <figure><img src="{% static "images/menu/menu-2-310x260.png" %}" alt="" width="310" height="260" class="img-responsive"/>
+                          <figure><img src="{% static "images/menu/dla_biznessu_1.png" %}" alt="" width="310" height="260" class="img-responsive"/>
                           </figure>
                         </div>
                         <div class="unit-body">
-                          <div class="caption text-center">
-                            <h5>Grilled Panini</h5>
+                          <div class="caption text-left">
+                            <h5>Crema di Peperoni</h5>
                             <p class="text-italic">Fresh toppings and perfectly melted cheese makes every bite of our Grilled Panini simply mouthwatering.</p>
-                            <p class="price">13.90</p><a href="shop-single.html" class="btn btn-burnt-sienna text-bottom btn-min-width">Order Online</a>
+                            <a href="pojedynczy-produkt" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width" style="font-size: 10px; margin-top:10px;">więcej</a>
                           </div>
                         </div>
                       </div>

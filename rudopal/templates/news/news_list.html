@@ -3,6 +3,64 @@
 
 {% block content %}
 
+ <section>
+  <div class="shell">
+    <div class="range">
+    {% for news in object_list %}
+      <div class="cell-md-4">        
+          <div class="offset-top-30 offset-bottom-25">
+          <!-- Post Modern-->
+            <article class="post post-modern">
+            <!-- Post media-->
+            {% if news.image %}
+            <header class="post-media"><img width="570" height="321" src="{{ news.image.url }}" alt="" class="img-responsive img-cover">
+            </header>
+            {% endif%}
+            <!-- Post content-->
+            <section class="post-content text-left">
+            <div class="post-meta pull-sm-right"><span class="text-middle icon-xxs mdi mdi-clock text-primary-lighter"></span>
+              <time datetime="2016-01-01" class="text-italic text-middle">{{ news.pub_date|date }}</time>
+            </div>
+                <ul class="list-inline offset-top-14 offset-sm-top-0">
+                  <li>
+                    <div class="post-tags group-xs"><a href="{{news.slug}}" class="label-custom label-sm-custom label-rounded-custom label-primary text-normal">Czytaj więcej</a>
+                    </div>
+                  </li>                                  
+                  </ul>
+                  <!-- Post Title-->
+                  <div class="post-title">
+                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ news.title_pl }}</a></h6>
+                  </div>
+                  <!-- Post Body-->
+                  <div class="post-body offset-top-20">
+                    <p>{{news.tip_pl}}</p>
+                  </div>
+              </section>
+            </article>
+        </div>        
+      </div> 
+      {% endfor %}                     
+    </div>                    
+  </div>
+</section>               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %}
 <!-- Section Blog Grid 2 Columns-->
 <section class="section-50 section-sm-100">
     <div class="shell">
@@ -44,4 +102,5 @@
             </div>
           </div>
         </section>
+        {% endcomment %}
 {% endblock content %}

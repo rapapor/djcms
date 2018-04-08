@@ -195,7 +195,10 @@ CMS_TEMPLATES = (
     ('product_list.html', 'Lista produktow'),
     ('kontakt.html','kontakt'),
     ('start.html', 'start'),
-    ('single_product.html', 'widok produktu')
+    ('single_product.html', 'widok produktu'),
+    ('technology.html', 'rozwoj technologiczny'),
+    ('distribution-map.html', 'dystrybutorzy'),
+    ('quality.html', 'polityka jakosci')
 )
 
 CMS_PERMISSION = True

@@ -9,7 +9,10 @@
                 <!-- Blog Default Single-->
                 <section>
                   <article class="post post-classic">
-                    <!-- Post media--><img style="width: 870px; height:412px; " src="{{ news.image.url }}" alt="" width="870" height="412" class="img-responsive"/>
+                    <!-- Post media-->
+                    {% if news.image %}
+                    <img style="width: 870px; height:412px; " src="{{ news.image.url }}" alt="" width="870" height="412" class="img-responsive"/>
+                    {% endif%}
                     <!-- Post content-->
                     <section class="post-content text-left offset-top-25">
                       <h5 class="text-uppercase">{% render_model news "title_pl" %}</h5>
@@ -60,42 +63,7 @@
                       </ul>
                     </footer>
                   </article>
-                  <hr class="offset-top-50">
-                  <h5 class="offset-top-60 offset-sm-top-90 text-uppercase text-left">Related Posts</h5>
-                  <div class="range range-sm-justify">
-                    <div class="cell-sm-6">
-                                      <!-- Post Classic-->
-                                      <article class="post post-classic post-widget">
-                                        <!-- Post media--><img src="images/post-08-398x269.jpg" alt="" width="398" height="269" class="img-responsive"/>
-                                        <!-- Post content-->
-                                        <section class="post-content text-left offset-top-25">
-                                          <h6><a href="blog-post.html" class="link-default">Homemade Holiday Vegan Wellington</a></h6>
-                                          <ul class="list-inline list-inline-sm offset-top-5">
-                                            <li>
-                                              <div class="unit unit-horizontal unit-spacing-xxs">
-                                                <div class="unit-left"><span class="text-base">Date:</span></div>
-                                                <div class="unit-body">
-                                                  <time datetime="2016-01-01">January 22, 2016</time>
-                                                </div>
-                                              </div>
-                                            </li>
-                                            <li>
-                                              <div class="unit unit-horizontal unit-spacing-xxs">
-                                                <div class="unit-left"><span class="text-base">Comments:</span></div>
-                                                <div class="unit-body"><span>2</span></div>
-                                              </div>
-                                            </li>
-                                            <li>
-                                              <div class="unit unit-horizontal unit-spacing-xxs">
-                                                <div class="unit-left"><span class="text-base">Posted by:</span></div>
-                                                <div class="unit-body"><span>John Doe</span></div>
-                                              </div>
-                                            </li>
-                                          </ul>
-                                        </section>
-                                      </article>
-                    </div>                    
-                  </div>
+                  <hr class="offset-top-50">                  
                 </section>
               </div>
               <div class="cell-md-3 offset-top-60 offset-md-top-0">
@@ -109,7 +77,10 @@
                         {% for news in object.getlistArticle %}
                         <div class="offset-top-30">                        	
                           <div class="unit unit-horizontal unit-spacing-xs">
-                            <div class="unit-left"><img src="{{news.image.url}}" alt="" width="70" height="70" class="img-rounded"/>
+                            <div class="unit-left">
+                            {% if news.image %}
+                            <img src="{{news.image.url}}" alt="" width="70" height="70" class="img-rounded"/>
+                            {% endif %}
                             </div>
                             <div class="unit-body"><a href="../{{news.slug}}" class="link-default"> {{ news.title_pl }}</a>
                               <div>
