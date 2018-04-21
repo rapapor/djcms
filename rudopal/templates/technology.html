@@ -1,0 +1,34 @@
+
+{% extends "base.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load cms_tags %}
+{% block content %}        
+    <section class="text-left section-50 section-sm-100 bg-gray-lighter">
+        <div class="shell">
+          <div class="range range-xs-center">
+            <div class="cell-md-8">
+              <div class="inset-lg-left-45 inset-lg-right-45">
+                <div data-type="accordion" class="responsive-tabs responsive-tabs-modern">
+                  <ul class="resp-tabs-list">
+                    <li>{% placeholder "NPD tytul" %}</li>
+                    <li>{% placeholder "Produkcja dedykowana tytul" %}</li>
+                    <li>{% placeholder "Zaplecze produkcyjne tytul" %}</li>                                      
+                  </ul>
+                  <div class="resp-tabs-container text-left">
+                    <div>
+                      {% placeholder "NPD Tekst" %}                      
+                    </div>
+                    <div>                      
+                        {% placeholder "Produkcja dedykowana Tekst" %}                      
+                    </div>
+                    <div>                      
+                        {% placeholder "Zaplecze produkcyjne Tekst" %}                      
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+{% endblock content %}      
