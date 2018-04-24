@@ -152,7 +152,8 @@ INSTALLED_APPS = (
     'mptt',
     'aldryn_bootstrap3',
     'rudopal',    
-    'apps.news.apps.NewsConfig'    
+    'apps.news.apps.NewsConfig',
+    'apps.product.apps.ProductConfig'    
 )
 
 LANGUAGES = (

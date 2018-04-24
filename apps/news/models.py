@@ -13,7 +13,7 @@ class News(models.Model):
 	#content_en = models.TextField(verbose_name='Tresc EN')
 	tip_pl = models.CharField(max_length=200, verbose_name='tekst zachety PL')
 	tip_en = models.CharField(max_length=200, verbose_name='tekst zachety EN')
-	image = models.ImageField(upload_to='media/', blank=True, null=True)
+	image = models.ImageField(upload_to='media/aktualnosci/', blank=True, null=True)
 	slug = models.SlugField(max_length=50, default='')
 
 	content_pl = PlaceholderField(slotname="content_pl", related_name="news_content_pl")

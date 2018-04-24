@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load cms_tags %}
+{% block content %}
+        <!-- Gallery grid-->
+        <section class="section-50 section-sm-80">
+          <div class="shell isotope-wrap">
+            <div class="range range-sm-center">
+              <div class="cell-xs-12">
+                <div class="cell-box">
+                  <ul class="isotope-filters-responsive">
+                    <li>
+                      <p>Wybierz typ produktu:</p>
+                    </li>
+                    <li class="block-top-level">
+                      <!-- Isotope Filters-->
+                      <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-primary-lighter btn-shape-circle">Filtruj<span class="caret"></span></button>
+                      <div id="isotope-1" class="isotope-filters isotope-filters-horizontal">
+                        <ul class="inline-list">
+                          <li><a data-isotope-filter="*" data-isotope-group="gallery" href="#" class="active">WSZYSTKO</a></li>
+                          <li><a data-isotope-filter="gastro" data-isotope-group="gallery" href="#">DLA GASTRONOMII</a></li>
+                          <li><a data-isotope-filter="biz" data-isotope-group="gallery" href="#">DLA BIZNESU</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cell-xs-12 offset-top-40">
+                <!-- Isotope Content-->
+                <div data-isotope-layout="fitRows" data-isotope-group="gallery" data-photo-swipe-gallery="gallery" class="row isotope">
+                {% for product in object_list %}
+                  <div data-filter="{{product.category}}" class="col-xs-12 col-sm-6 col-md-4 isotope-item"><a href="{{product.slug}}"  data-size="1200x800" class="thumbnail thumbnail-variant-1">
+                      <figure><img src="/media/{{ product.product_mini_file }}" alt="" width="370" height="278" class="img-responsive"/>
+                      </figure>
+                      <div class="caption">
+                        <h5>{{ product.name_pl }}</h5>
+                        <hr class="hr divider-xs bg-white"/>
+                        <p>{{ product.desc_mini_pl }}</p>
+                        <svg x="0px" y="0px" width="35px" height="35px" viewbox="0 0 127.725 127.65">
+                          <g>
+                            <defs>
+                              <rect y="0" width="127.725" height="127.65" class="SVGID_1"></rect>
+                            </defs>
+                            <clippath class="SVGID_2_">
+                              <use xlink:href=".SVGID_1_" overflow="visible"></use>
+                            </clippath>
+                            <path clip-path="url(.SVGID_2_)" d="M58.613,117.275h-0.004c-15.646-0.001-30.359-6.09-41.43-17.141    C-5.702,77.289-5.73,40.088,17.115,17.208C28.193,6.112,42.93,0,58.61,0c15.645,0,30.358,6.089,41.43,17.142    c22.881,22.845,22.91,60.045,0.065,82.927C89.027,111.165,74.29,117.275,58.613,117.275 M58.61,5.235    c-14.28,0-27.701,5.565-37.79,15.672C0.014,41.744,0.041,75.623,20.879,96.427c10.082,10.067,23.482,15.612,37.731,15.612h0.003    c14.278,0,27.697-5.564,37.788-15.669c20.805-20.838,20.778-54.717-0.059-75.522C86.258,10.781,72.858,5.235,58.61,5.235"></path>
+                            <path clip-path="url(.SVGID_2_)" d="M125.108,127.65c-0.669,0-1.339-0.255-1.85-0.766l-26.855-26.812    c-1.023-1.022-1.024-2.678-0.002-3.702c1.02-1.024,2.678-1.025,3.701-0.003l26.856,26.812c1.022,1.022,1.023,2.68,0.001,3.702    C126.449,127.394,125.779,127.65,125.108,127.65"></path>
+                            <path clip-path="url(.SVGID_2_)" d="M58.636,96.435c-1.444,0-2.616-1.171-2.617-2.615l-0.054-70.361    c-0.002-1.445,1.17-2.618,2.615-2.618h0.002c1.445,0,2.617,1.17,2.618,2.614l0.054,70.361c0.001,1.445-1.17,2.618-2.616,2.619    H58.636z"></path>
+                            <path clip-path="url(.SVGID_2_)" d="M23.428,61.283c-1.444,0-2.616-1.17-2.617-2.615    c-0.002-1.447,1.169-2.618,2.615-2.619l70.36-0.056h0.002c1.446,0,2.617,1.171,2.618,2.615c0.001,1.446-1.169,2.618-2.616,2.62    l-70.36,0.055H23.428z"></path>
+                          </g>
+                        </svg>
+                      </div></a>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <!-- RD Parallax-->
+          <div data-on="false" data-md-on="true" class="rd-parallax rd-parallax-light">
+            <div data-speed="0.2" data-type="media" data-url="{% static "images/gallery/paralax_tlo_2.jpg" %}" class="rd-parallax-layer"></div>
+            <div data-speed="0.05" data-type="html" class="rd-parallax-layer" style="background: #000; opacity: 0.6;">
+              <div class="shell section-50 section-sm-top-80 section-sm-bottom-100">
+                <div class="range range-xs-center">
+                  <div class="cell-sm-10 cell-md-8">
+                    <div class="cell-sm-8 cell-md-8"><img src="{% static "images/paralax_rudopal_logo.jpg" %}" alt="" width="144" height="129"/>
+                  </div>
+                    <h6>Produkujemy tradycyjne potrawy dla grupy gastronomicznej,<br> a także wspieramy rozwój biznesów, nowymi innowacyjnymi produktami.</h6>
+
+                    <p>Rozwijaj z nami swój biznes i skontaktuj się z nami</p>
+                    <p>Rudopal</p>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-50 section-sm-50" style="background: #a03b45;">
+        <div class="offset-top-40"> 
+        <div class="range">
+        <div class="cell-md-4 cell-lg-4 text-sm-left" style="padding-left: 50px;">
+        <h5 style="color:#fff">FORMULARZ KONTAKTOWY</h5>
+        <p style="color:#fff">We are glad to offer our visitors high-quality vegan lunches and breakfasts, but we also believe our whole business couldn’t be successful without our partners.</p>
+        <hr align="left" width="30%">
+
+        </div>           
+          <div class="cell-md-8 cell-lg-8">                
+                  <div class="form-bg-transparent">
+                    <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php" class=" form-subscribe form-inline-flex-xs">
+                      <div class="form-group">
+                        <input placeholder="podaj Twój e-mail..." type="email" name="email" data-constraints="@Required @Email" class="form-control" style="background: #fff;" />
+                      </div>
+                      <button id="special-send-set-btn" style="" type="submit" class="btn btn-burnt-sienna btn-shape-default">Wyślij</button>
+                    </form>
+                  </div>
+                  </div>
+                </div>
+        </div>
+        </section>
+
+
+{% endblock content %}

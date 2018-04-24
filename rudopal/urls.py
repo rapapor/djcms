@@ -19,7 +19,7 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', include(admin.site.urls)),  # NOQA
-    #url(r'^news/', include('apps.news.urls', namespace='news')),     #zakomentowane aby podpiac do djangocms
+    #url(r'^product/', include('apps.product.urls', namespace='product')),     #zakomentowane aby podpiac do djangocms
     url(r'^', include('cms.urls')),
 )
 

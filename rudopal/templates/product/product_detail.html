@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% block content %}
+
+<section class="section-50 section-sm-100">
+          <div class="shell">
+            <div class="range range-xs-center">
+              <div class="cell-sm-6 text-lg-left">
+                <!-- Slick Carousel-->
+                <div data-arrows="false" data-loop="false" data-dots="false" data-swipe="false" data-items="3" data-child="#child-carousel" data-for="#child-carousel" class="slick-slider carousel-parent">
+                {% if product.product_file_1 %}
+                  <div class="item"><img src="/media/{{ product.product_file_1 }}" alt="" width="542" height="530" class="img-responsive reveal-inline-block"/>
+                  </div>
+                  {% endif %}
+                  {% if product.product_file_2 %}
+                  <div class="item"><img src="/media/{{ product.product_file_2 }}" alt="" width="542" height="530" class="img-responsive reveal-inline-block"/>
+                  </div>
+                  {% endif %}
+                  {% if product.product_file_3 %}
+                  <div class="item"><img src="/media/{{ product.product_file_3 }}" alt="" width="542" height="530" class="img-responsive reveal-inline-block"/>
+                  </div>
+                  {% endif %}
+                </div>
+                <div id="child-carousel" data-for=".carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="3" data-xs-items="3" data-sm-items="3" data-md-items="3" data-lg-items="3" data-xl-items="3" data-slide-to-scroll="1" class="slick-slider align-center">
+                {% if product.product_file_1 %}
+                  <div class="item">
+                    <div><img src="/media/{{ product.product_file_1 }}" alt="" width="64" height="63"/>
+                    </div>
+                  </div>
+                  {% endif %}
+                  {% if product.product_file_2 %}
+                  <div class="item">
+                    <div><img src="/media/{{ product.product_file_2 }}" alt="" width="64" height="63"/>
+                    </div>
+                  </div>
+                  {% endif %}
+                  {% if product.product_file_3 %}
+                  <div class="item">
+                    <div><img src="/media/{{ product.product_file_3 }}" alt="" width="64" height="63"/>
+                    </div>
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="cell-sm-6 cell-lg-5 text-sm-left offset-top-60 offset-sm-top-0">
+                <div class="reveal-xs-flex range-xs-middle range-xs-center range-sm-left">
+                  <h4 class="font-default">{% render_model product "name_pl" %}</h4>
+                  <h5 style="padding-left:10px;">{% render_model product "desc_mini_pl" %}</h5>
+                  <div class="inset-xs-left-50 offset-top-0">
+                  {% if product.category = "biz" %}
+                    <div class="team-member-position team-member-position-burnt-sienna"><span class="big text-italic text-middle">Dla&nbsp;biznesu</span></div>
+                  {% else %}
+                  <div class="team-member-position team-member-position-burnt-sienna"><span class="big text-italic text-middle">Dla&nbsp;gastronomii</span></div>
+                  {% endif %}
+                  </div>
+                </div>                
+                <div class="offset-top-15">
+                  <div class="group-sm"><a href="#" class="link-zoom"><img src="{% static "images/shop-single-01-57x21.png" %}" alt="" width="57" height="21"/></a>
+                  <!--<a href="#" class="link-zoom"><img src="{% static "images/shop-single-02-52x21.png" %}" alt="" width="52" height="21"/></a><a href="#" class="link-zoom"><img src="{% static "images/shop-single-03-54x21.png" %}" alt="" width="54" height="21"/></a>--></div>
+                </div>
+                <hr class="offset-top-30 veil reveal-sm-block">
+                <div class="offset-top-30">
+                  <div class="responsive-tabs responsive-tabs-shop responsive-tabs-horizontal">
+                    <p>{% render_model product "desc_pl" %}</p>
+                  </div>
+                </div>
+                <div class="offset-top-45">
+                  <div class="group-sm">
+                    <div class="stepper-type-1">                      
+                    </div><a href="/produkty" ><span> < Powrót</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="text-left">
+          <div class="responsive-tabs responsive-tabs-horizontal responsive-tabs-horizontal-background">
+            <ul class="resp-tabs-list shell">
+              <li>Produkty dla gastronomii</li>
+              <li>Sposób przygotowania</li>
+              <li>Dane Logistyczne</li>
+            </ul>
+            <div class="resp-tabs-container">
+              <div>
+                <p class="text-base">{% render_placeholder product.content_pl %}</p>                
+              </div>
+              <div>
+                <p class="text-base">Here you can read some details about a nifty little lifecycle of your order's journey from the time you place your order to your new treasures arriving at your doorstep. At first, you choose the product you like. Then you put into your shopping cart and pass the checkout process in a few clicks. Our store offers several payment and delivery methods, so after placing your order, you'll have an opportunity to choose which one is the most convenient for you.</p>
+              </div>
+              <div>
+                <p class="text-base">Here you can read some details about a nifty little lifecycle of your order's journey from the time you place your order to your new treasures arriving at your doorstep. At first, you choose the product you like. Then you put into your shopping cart and pass the checkout process in a few clicks. Our store offers several payment and delivery methods, so after placing your order, you'll have an opportunity to choose which one is the most convenient for you.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+{% endblock content %}
