@@ -1,8 +1,8 @@
 from .settings import *
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"] #wpisać nazwe domeny
+ALLOWED_HOSTS = ["*"] #wpisac nazwe domeny
 
 
 
