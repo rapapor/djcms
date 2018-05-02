@@ -15,7 +15,7 @@
                     <div class="cell-sm-5 cell-lg-5 offset-top-50">
                         <div class=" view-animate fadeInUpBigger delay-04" >
                             <div class="view-animate zoomInSmall delay-06">
-                              <a href="#" class="deals-block deals-block-variant-1 deals-block-variant-1-adjust"><img src="{% static "images/mapa_tlo_1.jpg" %}" alt="" width="707" height="547" class="img-responsive"/>
+                              <a href="/mapa-dystrybucji" class="deals-block deals-block-variant-1 deals-block-variant-1-adjust"><img src="{% static "images/mapa_tlo_1.jpg" %}" alt="" width="707" height="547" class="img-responsive"/>
                                 <div class="caption" style="padding-bottom:15px;">
                                   <div class="title-wrap">
                                     <h4 class="text-italic" style="color:#fff;">Nasi Dystrybutorzy</h4>
@@ -47,10 +47,7 @@
                                 </div>
                                 <!-- Post Body-->
                                 <div class="post-body offset-top-20 rud-front-text-10" id="mission-content" style="color:#fff">
-                                    <p><b style="text-transform: uppercase;">identyfikacja potrzeb</b>Partnera biznesowego jest dla nas fundamentalną wartością<br>
-                                    <b style="text-transform: uppercase;">dynamiczny, ciągły rozwój</b>poprzez nowe technologie, inwestycje i innowacyjne rozwiązania jest naszym kluczem do osiągania przewagi konkurencyjnej<br>
-                                    <b style="text-transform: uppercase;">zadowolenie ze swojej pracy</b>zaangażowanie, wiedza i chęć rozwijania kompetencji naszego Zespołu jest największym kapitałem firmy<br>
-                                    <b style="text-transform: uppercase;">zapewnienie najwyższej jakości i bezpieczeństwa</b>zdrowotnego naszych produktów jest determinantem do osiągniecia sukcesu i znaczeniu marki na rynku.</p>
+                                    {% placeholder "tekst_nasza_misja" %}
                                 </div>                                          
                             </div>
                         </div>
@@ -67,12 +64,7 @@
                             <div class="post-content text-left">
                                 <div class="post-meta pull-sm-right"><span class="text-middle icon-xxs mdi mdi-clock text-primary-lighter"></span>
                                     <time datetime="2016-01-01" class="text-italic text-middle">2 days ago</time>
-                                </div>
-                                <ul class="list-inline offset-top-14 offset-sm-top-0">
-                                    <li>                                              
-                                        <div class="icon icon-sm text-gray-light fa-quote-left" style="color:#fff"></div>
-                                    </li>
-                                </ul>
+                                </div>                                
                                 <!-- Post Title-->
                                 <div class="post-title">
                                     <div class="h6 offset-top-25"><a href="blog-post.html" class="link-default" style="color:#fff">Aktualności</a></div>
@@ -94,8 +86,9 @@
                 </div>                  
             </div>
         </section>
+        {% placeholder "BestSellery" %}
         <!--section gallery-->
-        <section>
+        <!--<section>
             <h5 class="text-center releway rel-700 offset-top-25">Nasze Bestsellery</h5>        
             <div data-photo-swipe-gallery="gallery" class="reveal-flex gallery-wrap">           
                 <a  data-size="1200x800" href="pojedynczy-produkt/" data-author="" class="thumbnail-gallery">
@@ -111,7 +104,7 @@
                     <img src="{% static "images/gallery/gallery-04-322x307.jpg" %}" alt="" width="322" height="307"/>
                 </a>                
             </div>
-        </section>
+        </section>-->
         <section class="section-50 section-sm-top-50 section-sm-bottom-100 bg-image-6">
           <div class="shell-wide isotope-wrap">
             <h4 class=" releway rel-700 offset-top-25">Produkty</h4>
@@ -127,8 +120,7 @@
                       <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-primary-lighter btn-shape-circle">Filter<span class="caret"></span></button>
                       <div id="isotope-1" class="isotope-filters isotope-filters-buttons isotope-filters-buttons-primary-lighter">
                         <ul class="inline-list">
-                          <li><a data-isotope-group="gallery" href="#" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width">DLA GASTRONOMII</a></li>
-                          <li><a data-isotope-group="gallery" href="#" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width">DLA BIZNESU</a></li>
+                          <li><a data-isotope-group="gallery" href="/produkty" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width">DLA GASTRONOMII I BIZNESU</a></li>                          
                         </ul>
                       </div>
                     </li>

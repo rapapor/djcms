@@ -219,10 +219,11 @@ class Product(models.Model):
 		return reverse('news:news_detail', kwargs={'slug': self.slug, })
 
 	def getlistArticle(self):		
-		return News.objects.all()
+		return Product.objects.all()
 
-	def getBestSeller(self):
-		return News.objects.all(best_seller=True)[:5]
+	@classmethod
+	def getBestSeller(cls):
+		return Product.objects.filter(best_seller=True)[:4]
 
 	def thumbnail(self):
   		return mark_safe(

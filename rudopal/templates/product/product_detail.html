@@ -67,7 +67,7 @@
                 <div class="offset-top-45">
                   <div class="group-sm">
                     <div class="stepper-type-1">                      
-                    </div><a href="/produkty" ><span> < Powrót</span></a>
+                    </div><a href="/produkty" ><span> &#x3c; Powrót</span></a>
                   </div>
                 </div>
               </div>
@@ -77,7 +77,11 @@
         <section class="text-left">
           <div class="responsive-tabs responsive-tabs-horizontal responsive-tabs-horizontal-background">
             <ul class="resp-tabs-list shell">
-              <li>Produkty dla gastronomii</li>
+              {% if product.category = "biz" %}
+                <li>Produkty dla biznesu</li>
+               {% else %}
+                <li>Produkty dla gastronomii</li>
+              {% endif %}
               <li>Sposób przygotowania</li>
               <li>Dane Logistyczne</li>
             </ul>

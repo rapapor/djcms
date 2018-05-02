@@ -690,7 +690,7 @@ a.text-danger:focus {
 }
 
 .bg-primary {
-  background-color: #a59a00;
+  background-color: #cb3b49;
 }
 
 a.bg-primary:hover,
@@ -9976,11 +9976,11 @@ h1 .label-custom, h2 .label-custom, h3 .label-custom, h4 .label-custom, h5 .labe
 }
 
 .label-primary {
-  background-color: #fccb56;
+  background-color: #cb3b49;
 }
 
 .label-primary[href]:hover, .label-primary[href]:focus {
-  background-color: #fbbc24;
+  background-color: #dd626c;
 }
 
 .label-price {
@@ -10656,7 +10656,7 @@ span.contact-info {
 }
 
 .page .text-primary-lighter {
-  color: #fccb56;
+  color: #cb3b49;
 }
 
 .page a.text-primary-lighter:hover,
@@ -10932,11 +10932,11 @@ span.contact-info {
 }
 
 .team-member-position-burnt-sienna span {
-  background-color: #a03b45;
+  background-color: #cb3b49;
 }
 
 .team-member-position-burnt-sienna:before {
-  border-color: transparent #a03b45 transparent transparent;
+  border-color: transparent #cb3b49 transparent transparent;
 }
 
 .section-with-angle {
@@ -11335,9 +11335,9 @@ fieldset[disabled] .btn-primary-lighter {
 
 .btn-burnt-sienna:focus, .btn-burnt-sienna.focus, .btn-burnt-sienna:hover, .btn-burnt-sienna:active, .btn-burnt-sienna.active,
 .open > .btn-burnt-sienna.dropdown-toggle {
-  color: #fff;
-  background-color: #a03b45;
-  border-color: #a03b45;
+  
+  background-color: #dd626c;
+  border-color: #dd626c;
 }
 
 .btn-burnt-sienna:active, .btn-burnt-sienna.active,
@@ -33327,9 +33327,9 @@ html:not(.lt-ie10) .not-animated {
   }
   .isotope-filters-buttons.isotope-filters-buttons-primary-lighter .inline-list a:hover,
   .isotope-filters-buttons.isotope-filters-buttons-primary-lighter .inline-list a.active {
-    color: #2b2c2f;
-    background-color: #a03b45;
-    border-color: #a03b45;
+    
+    background-color: #dd626c;
+    border-color: #dd626c;
   }
 }
 
@@ -37679,7 +37679,7 @@ html.boxed .rd-navbar--is-clone {
 
 .ui-to-top:hover {
   color: #fff;
-  background: #fccb56;
+  background: #dd626c;
   text-decoration: none;
 }
 
@@ -41867,7 +41867,7 @@ span.search {
 ul.nav li a:active,
 ul.nav li a:hover,
 ul.nav li a:focus{
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #cb3b49;
   color: #fff;
 }    
 
