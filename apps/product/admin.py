@@ -4,7 +4,7 @@ from cms.admin.placeholderadmin import PlaceholderAdminMixin
 # Register your models here.
 
 
-class LogisticDataAdmin(admin.ModelAdmin):
+class LogisticDataAdmin(PlaceholderAdminMixin, admin.ModelAdmin):
 	list_display = ['product_name_pl','Logistic_data']
 
 admin.site.register(LogisticData, LogisticDataAdmin)

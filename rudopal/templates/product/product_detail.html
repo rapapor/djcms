@@ -90,10 +90,29 @@
                 <p class="text-base">{% render_placeholder product.content_pl %}</p>                
               </div>
               <div>
-                <p class="text-base">Here you can read some details about a nifty little lifecycle of your order's journey from the time you place your order to your new treasures arriving at your doorstep. At first, you choose the product you like. Then you put into your shopping cart and pass the checkout process in a few clicks. Our store offers several payment and delivery methods, so after placing your order, you'll have an opportunity to choose which one is the most convenient for you.</p>
+                {% render_placeholder product.spprzyg_pl %}
               </div>
               <div>
-                <p class="text-base">Here you can read some details about a nifty little lifecycle of your order's journey from the time you place your order to your new treasures arriving at your doorstep. At first, you choose the product you like. Then you put into your shopping cart and pass the checkout process in a few clicks. Our store offers several payment and delivery methods, so after placing your order, you'll have an opportunity to choose which one is the most convenient for you.</p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Nazwa</th>
+                      <th>Forma</th>
+                      <th>Opakowanie</th>
+                      <th>Paletyzacja</th>
+                    </tr>
+                  </thead>
+                  <tbody>                
+                   {% for logisticdt in product.getLogisticData %}
+                   <tr>
+                      <td>{{logisticdt.product_name_pl}}</td>
+                      <td>{{logisticdt.form_pl}}</td>
+                      <td>{{logisticdt.single_pack_pl}}</td>
+                      <td>{{logisticdt.multi_pack_pl}}</td>
+                    </tr>
+                   {% endfor %}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

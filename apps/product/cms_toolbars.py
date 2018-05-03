@@ -13,7 +13,11 @@ class ProductToolbar(CMSToolbar):
     def populate(self):
         admin_menu = self.toolbar.get_or_create_menu(ADMIN_MENU_IDENTIFIER, _('Rudopal Apps'))
         position = admin_menu.find_first(Break, identifier=ADMINISTRATION_BREAK)
-        menu = admin_menu.get_or_create_menu('Produkt', _('Product'), position=position)
+        menu = admin_menu.get_or_create_menu('Produkt', _('Produkty'), position=position)
         url = reverse('admin:product_product_changelist')
-        menu.add_sideframe_item(_('Produkt'), url=url)
+        menu.add_sideframe_item(_('Produkty'), url=url)
+        url2 = reverse('admin:product_logisticdata_changelist')
+        menu.add_sideframe_item(_('Dane logistyczne'), url=url2)
         admin_menu.add_break('product-break', position=menu)
+
+

@@ -90,115 +90,7 @@ class Product(models.Model):
 		null=True,
 		verbose_name="Produkt zdjecie 3 "
 	)
-
-	pizza_pl = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Piec do pizzy PL'
-	)
-
-	pizza_en = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Piec do pizzy EN'
-	)
-
-	bake_kon_pl = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Piec konwekcyjny PL'
-
-	)
-
-	bake_kon_en = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Piec konwekcyjny EN'
-	)
-
-	mikrofave_pl = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Mikrofala PL'
-	)
-
-	mikrofave_en = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Mikrofala EN'
-	)
-
-	pan_pl = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Patelnia PL'
-	)
-
-	pan_en = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Patelnia EN'
-	)
-
-	pot_pl = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Garnek PL'
-	)
-
-	pot_en = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Garnek EN'
-	)
-
-	bake_pl = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Piekarnik PL'
-	)
-
-	bake_en = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Piekarnik EN'
-	)
-
-	toaster_op_pl = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Opiekacz PL'
-	)
-
-	toaster_op_en = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Opiekacz EN'
-	)
-
-	grill_pl = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Grill PL'
-	)
-
-	grill_en = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Grill EN'
-	)
-
-	toster_pl = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Toster  PL'
-	)
-
-	toster_en = models.TextField(
-		blank=True, 
-		null=True,
-		verbose_name='Toster  PL'
-	)
+	
 
 	slug = models.SlugField(
 		max_length=50, 
@@ -214,9 +106,21 @@ class Product(models.Model):
 		related_name="product_content_en"
 	)
 
+	spprzyg_pl = PlaceholderField(
+		slotname="sposob przygotowania pl", 
+		related_name="createed_example_pl"
+	)
+
+	spprzyg_en = PlaceholderField(
+		slotname="sposob przygotowania en", 
+		related_name="createed_example_en"
+	)
+
+	def getLogisticData(self):
+		return LogisticData.objects.filter(Logistic_data = self)
 	
 	def get_absolute_url(self):
-		return reverse('news:news_detail', kwargs={'slug': self.slug, })
+		return reverse('product:product_detail', kwargs={'slug': self.slug, })
 
 	def getlistArticle(self):		
 		return Product.objects.all()
@@ -302,6 +206,8 @@ class LogisticData(models.Model):
  		verbose_name='Paletyzacja EN'
  	)
 
+ 
+	
 
 
  	

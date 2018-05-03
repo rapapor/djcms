@@ -2,7 +2,7 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.utils import timezone
 from django.shortcuts import render
-from models import Product
+from models import Product, LogisticData
 
 # Create your views here.
 from django.http import HttpResponse
