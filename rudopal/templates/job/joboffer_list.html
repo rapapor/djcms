@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load cms_tags %}
+{% block content %}
+
+
+        <section class="text-center text-sm-left section-50 section-sm-top-80 section-sm-bottom-100 bg-ecru-white">
+          <div class="shell">
+            <h4 class="font-default text-center">Your Career Starts Here</h4>
+            <p class="text-center">Can't find the job you want? Send your resume to info@demolink.org, and we'll contact you when a new position opens.</p>
+            <div class="range">
+            {% if active_job_offer_count > 0 %}
+            {% for job in active_job_offer %}
+              <div class="cell-sm-6">
+                <div class="job-offer bg-white"><a href="{{job.slug}}" class="h5">{{ job.position_pl }}</a>
+                  <ul class="list-inline offset-top-10">
+                    <li><span class="text-middle icon icon-xxs icon-primary mdi mdi-map-marker"></span><span class="text-middle">{{ job.city }}</span></li>
+                    <li><span class="text-middle icon icon-xxs icon-primary mdi mdi-clock"></span><span class="text-middle">{{ job.time_size }}</span></li>
+                    <li><span class="text-middle icon icon-xxs icon-primary mdi mdi-calendar"></span><span class="text-middle">{{ job.pub_date | date }}</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              {% endfor %}
+              {% else %}
+              <h4 class="font-default text-center"> Niema aktualnie ofert pracy </h4>
+              {% endif %}
+             
+            </div>
+          </div>
+        </section>
+
+
+
+{% endblock content %}

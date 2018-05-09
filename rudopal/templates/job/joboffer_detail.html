@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load cms_tags %}
+{% block content %}
+
+<section class="section-50 section-sm-100">
+          <div class="shell">
+            <div class="range range-xs-center">
+              <div class="cell-md-9">
+                
+                <section>
+                  <article class="post post-classic">                    
+                    
+                    <section class="post-content text-left offset-top-25">
+                      <h5 class="text-uppercase">{{ object.position_pl }}</h5>
+                      <ul class="list-inline list-inline-md offset-top-5">
+                        <li>
+                          <div class="unit unit-horizontal unit-spacing-xxs">
+                            <div class="unit-left"><span class="text-base">Data publikacji:</span></div>
+                            <div class="unit-body">
+                              <time>{{ object.pub_date }}</time>
+                            </div>
+                          </div>
+                        </li> 
+                      </ul>
+                      <hr class="offset-top-15">
+                      <div class="offset-top-20">
+                        <p class="text-base">{% render_placeholder object.content_pl %}</p>
+                      </div>                      
+                      <div class="offset-top-10">
+                      </div>                      
+                    </section>                   
+                  </article>
+                  <hr class="offset-top-50">                  
+                </section>
+              </div>
+              <div class="cell-md-3 offset-top-60 offset-md-top-0">
+                <div class="inset-lg-left-15">
+                  
+                  <aside class="text-left">               
+                    <div class="range offset-top-55">                      
+                      <div class="cell-xs-6 cell-md-12 offset-top-50 offset-xs-top-0 offset-md-top-50">
+                       
+                        <div class="h6 text-uppercase">Inne oferty</div>
+                        {% for job in object.getlistoffer %}
+                        <div class="offset-top-30">                        	
+                          <div class="unit unit-horizontal unit-spacing-xs">
+                            
+                            <div class="unit-body"><a href="../{{job.slug}}" class="link-default"> {{ job.position_pl }}</a>
+                              <div>
+                                <time datetime="2016">{{ job.pub_date|date }}</time>
+                              </div>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+{% endblock content %}

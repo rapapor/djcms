@@ -153,7 +153,8 @@ INSTALLED_APPS = (
     'aldryn_bootstrap3',
     'rudopal',    
     'apps.news.apps.NewsConfig',
-    'apps.product.apps.ProductConfig'    
+    'apps.product.apps.ProductConfig',
+    'apps.job.apps.JobConfig'    
 )
 
 LANGUAGES = (
@@ -199,7 +200,9 @@ CMS_TEMPLATES = (
     ('single_product.html', 'widok produktu'),
     ('technology.html', 'rozwoj technologiczny'),
     ('distribution-map.html', 'dystrybutorzy'),
-    ('quality.html', 'polityka jakosci')
+    ('quality.html', 'polityka jakosci'),
+    ('joboffer_detail.html','oferta pracy'),
+    ('joboffer_list.html','Lista ofert pracy')
 )
 
 CMS_PERMISSION = True
