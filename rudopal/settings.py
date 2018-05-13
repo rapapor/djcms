@@ -154,7 +154,8 @@ INSTALLED_APPS = (
     'rudopal',    
     'apps.news.apps.NewsConfig',
     'apps.product.apps.ProductConfig',
-    'apps.job.apps.JobConfig'    
+    'apps.job.apps.JobConfig',
+    'apps.distributor.apps.DistributorConfig'    
 )
 
 LANGUAGES = (
