@@ -38,11 +38,12 @@
                     <p>
                       <q>{{distributor.street_pl}}<br> woj. {{ distributor.woj_pl }}</q>
                     </p>
+                    <cite>tel.: {{ distributor.phone }}</cite><br>
                   </div>
                   <div class="quote-footer">
-                    <cite>tel.: {{ distributor.phone }}</cite><br>
+                    
                     <div class="products">
-                    	<cite>Dostępne produkty:</cite><br>
+                    	<cite>DOSTĘPNE PRODUKTY</cite><br>
                     	{% for product in distributor.products.all%}
                     		<cite>&bull; <a class="link-color-gray" href="/produkty/{{product.slug}}">{{ product.name_pl  }}</a></cite>
                     	{% endfor %}
