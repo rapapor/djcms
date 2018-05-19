@@ -14,4 +14,20 @@ class BestSeller(CMSPluginBase):
         context = super(BestSeller, self).render(context, instance, placeholder)
         context['moja_list'] = Product.getBestSeller()
         return context
+        
 
+@plugin_pool.register_plugin    
+class RandomProduct(CMSPluginBase):
+    render_template = "random_product.html"
+    cache = False
+
+    def render(self, context, instance, placeholder):		
+        context = super(RandomProduct, self).render(context, instance, placeholder)
+        context['random'] = Product.getRandomProduct()
+        return context
+
+	   
+       
+	   
+       
+        

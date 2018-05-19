@@ -22,7 +22,7 @@
             <!-- Post content-->
             <section class="post-content text-left">
             <div class="post-meta pull-sm-right"><span class="text-middle icon-xxs mdi mdi-clock text-primary-lighter"></span>
-              <time datetime="2016-01-01" class="text-italic text-middle"> p1{{ news.pub_date|date }}</time>
+              <time datetime="2016-01-01" class="text-italic text-middle"> {{ news.pub_date|date }}</time>
             </div>
                 <ul class="list-inline offset-top-14 offset-sm-top-0">
                   <li>
@@ -32,7 +32,7 @@
                   </ul>
                   <!-- Post Title-->
                   <div class="post-title">
-                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ forloop.counter }}{{ news.title_pl }}{{ forloop.counter|divisibleby:3 }}</a></h6>
+                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ news.title_pl }}</a></h6>
                   </div>
                   <!-- Post Body-->
                   <div class="post-body offset-top-20">
@@ -59,7 +59,7 @@
             <!-- Post content-->
             <section class="post-content text-left">
             <div class="post-meta pull-sm-right"><span class="text-middle icon-xxs mdi mdi-clock text-primary-lighter"></span>
-              <time datetime="2016-01-01" class="text-italic text-middle">p2 {{ news.pub_date|date }}</time>
+              <time datetime="2016-01-01" class="text-italic text-middle">{{ news.pub_date|date }}</time>
             </div>
                 <ul class="list-inline offset-top-14 offset-sm-top-0">
                   <li>
@@ -69,7 +69,7 @@
                   </ul>
                   <!-- Post Title-->
                   <div class="post-title">
-                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ forloop.counter }}{{ news.title_pl }}{{ forloop.counter|divisibleby:3 }}</a></h6>
+                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ news.title_pl }}</a></h6>
                   </div>
                   <!-- Post Body-->
                   <div class="post-body offset-top-20">
@@ -96,7 +96,7 @@
             <!-- Post content-->
             <section class="post-content text-left">
             <div class="post-meta pull-sm-right"><span class="text-middle icon-xxs mdi mdi-clock text-primary-lighter"></span>
-              <time datetime="2016-01-01" class="text-italic text-middle">p3 {{ news.pub_date|date }}</time>
+              <time datetime="2016-01-01" class="text-italic text-middle">{{ news.pub_date|date }}</time>
             </div>
                 <ul class="list-inline offset-top-14 offset-sm-top-0">
                   <li>
@@ -106,7 +106,7 @@
                   </ul>
                   <!-- Post Title-->
                   <div class="post-title">
-                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ forloop.counter }}{{ news.title_pl }}{{ forloop.counter|divisibleby:3 }}</a></h6>
+                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ news.title_pl }}</a></h6>
                   </div>
                   <!-- Post Body-->
                   <div class="post-body offset-top-20">

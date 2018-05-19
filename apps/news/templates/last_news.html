@@ -1,0 +1,37 @@
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+
+        <section class="bg-image-6">
+          <!-- RD Parallax-->
+            <div class="shell-wide">
+                <div class="range range-xs-center">
+                    <div class="cell-sm-10 cell-lg-5 cell-md-preffix-1" id="rud-text-new">
+                        <article class="post post-modern post-modern-timeline post-modern-timeline-left" id="rud-news-article">                                        
+                            <div class="post-content text-left">
+                                <div class="post-meta pull-sm-right"><span class="text-middle icon-xxs mdi mdi-clock text-primary-lighter"></span>
+                                    <time datetime="2016-01-01" class="text-italic text-middle">{{last_news.pub_date}}</time>
+                                </div>                                
+                                <!-- Post Title-->
+                                <div class="post-title">
+                                    <div class="h6 offset-top-25"><a href="/aktualnosci/{{last_news.slug}}" class="link-default" style="color:#fff">{{last_news.title_pl}}</a></div>
+                                </div>
+                                <!-- Post Body-->
+                                <div class="post-body offset-top-20" style="color:#fff">
+                                {% render_placeholder last_news.content_pl as placeholder_content %}
+                                    <p>{{placeholder_content|slice:":200"}}...</p>
+                                    <p><a href="/aktualnosci/{{last_news.slug}}"">więcej</a></p>                                
+                                </div>                                          
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cell-sm-6 cell-lg-5" id="rud-new-img">
+                        <div class=" view-animate fadeInUpBigger delay-04" >
+                        {% if last_news.image_start %}
+                            <img src="/media/{{ last_news.image_start }}" style="max-width: 100%; padding-top:20px; padding-bottom: 20px;">
+                        {% else %}
+                            <img src="{% static "images/my/news.png" %}" style="max-width: 100%; padding-top:20px; padding-bottom: 20px;">
+                        {% endif %}                        
+                        </div>
+                    </div>                  
+                </div>                  
+            </div>
+        </section>

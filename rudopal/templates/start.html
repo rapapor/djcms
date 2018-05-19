@@ -12,7 +12,7 @@
                         <p style="color:#000;">{% placeholder "tekst_kim_jestesmy" %}</p>
                         <p style="color:#000;border-bottom: 2px solid; width: 30%;"></p>
                     </div>
-                    <div class="cell-sm-5 cell-lg-5 offset-top-50">
+                    <div class="cell-sm-5 cell-lg-5 offset-top-50 offset-bottom-25">
                         <div class=" view-animate fadeInUpBigger delay-04" >
                             <div class="view-animate zoomInSmall delay-06">
                               <a href="/mapa-dystrybucji" class="deals-block deals-block-variant-1 deals-block-variant-1-adjust"><img src="{% static "images/mapa_tlo_1.jpg" %}" alt="" width="707" height="547" class="img-responsive"/>
@@ -55,102 +55,9 @@
                 </div>                  
             </div>
         </section>
-        <section class="bg-image-6">
-          <!-- RD Parallax-->
-            <div class="shell-wide">
-                <div class="range range-xs-center">
-                    <div class="cell-sm-10 cell-lg-5 cell-md-preffix-1" id="rud-text-new">
-                        <article class="post post-modern post-modern-timeline post-modern-timeline-left" id="rud-news-article">                                        
-                            <div class="post-content text-left">
-                                <div class="post-meta pull-sm-right"><span class="text-middle icon-xxs mdi mdi-clock text-primary-lighter"></span>
-                                    <time datetime="2016-01-01" class="text-italic text-middle">2 days ago</time>
-                                </div>                                
-                                <!-- Post Title-->
-                                <div class="post-title">
-                                    <div class="h6 offset-top-25"><a href="blog-post.html" class="link-default" style="color:#fff">Aktualności</a></div>
-                                </div>
-                                <!-- Post Body-->
-                                <div class="post-body offset-top-20" style="color:#fff">
-                                    <p>If there’s one thing that signifies winter comfort to us, it’s when we start churning out soups and meals via slowcooker.  A few minutes prep time in the morning and you have the most tender and delicious dinner by evening.</p>
-                                    <p>FIRMA RUDOPAL</p>
-
-                                </div>                                          
-                            </div>
-                        </article>
-                    </div>
-                    <div class="cell-sm-6 cell-lg-5" id="rud-new-img">
-                        <div class=" view-animate fadeInUpBigger delay-04" >
-                            <img src="{% static "images/my/news.png" %}" style="max-width: 100%; padding-top:20px; padding-bottom: 20px;">
-                        </div>
-                    </div>                  
-                </div>                  
-            </div>
-        </section>
+        {% placeholder "Last_News"%}
         {% placeholder "BestSellery" %}        
-        <section class="section-50 section-sm-top-50 section-sm-bottom-100 bg-image-6">
-          <div class="shell-wide isotope-wrap">
-            <h4 class=" releway rel-700 offset-top-25">Produkty</h4>
-            <div class="range range-sm-center">
-              <div class="cell-xs-12">
-                <div class="cell-box">
-                  <ul class="isotope-filters-responsive">
-                    <li>
-                      <p>Kategoria produktów:</p>
-                    </li>
-                    <li class="block-top-level">
-                      <!-- Isotope Filters-->
-                      <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-primary-lighter btn-shape-circle">Filter<span class="caret"></span></button>
-                      <div id="isotope-1" class="isotope-filters isotope-filters-buttons isotope-filters-buttons-primary-lighter">
-                        <ul class="inline-list">
-                          <li><a data-isotope-group="gallery" href="/produkty" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width">DLA GASTRONOMII I BIZNESU</a></li>                          
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cell-xs-12 offset-top-40">
-                <!-- Isotope Content-->
-                <div data-isotope-layout="fitRows" data-isotope-group="gallery" class="row isotope isotope-menu isotope-menu-offsets">
-                  <div data-filter="Breakfast" class="col-xs-12 col-sm-6 isotope-item">
-                    <div class="thumbnail-menu-modern thumbnail-menu-modern-horizontal">
-                      <div class="unit unit-lg-horizontal unit-spacing-sm unit-middle">
-                        <div class="unit-left">
-                          <figure><img src="{% static "images/menu/dla_gastronomi_grzanki_1.png" %}" alt="" width="310" height="260" class="img-responsive"/>
-                          </figure>
-                        </div>
-                        <div class="unit-body">
-                          <div class="caption text-left">
-                            <h5>Grzanki czosnkowe</h5>
-                            <p class="text-italic">This oatmeal makes a delicious, chewy, wholesome hot cereal that will give you lasting energy throughout the morning.</p>
-                            <a href="pojedynczy-produkt/" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width" style="font-size: 10px; margin-top:10px;">więcej</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-filter="Breakfast" class="col-xs-12 col-sm-6 isotope-item">
-                    <div class="thumbnail-menu-modern thumbnail-menu-modern-horizontal">
-                      <div class="unit unit-lg-horizontal unit-spacing-sm unit-middle">
-                        <div class="unit-left">
-                          <figure><img src="{% static "images/menu/dla_biznessu_1.png" %}" alt="" width="310" height="260" class="img-responsive"/>
-                          </figure>
-                        </div>
-                        <div class="unit-body">
-                          <div class="caption text-left">
-                            <h5>Crema di Peperoni</h5>
-                            <p class="text-italic">Fresh toppings and perfectly melted cheese makes every bite of our Grilled Panini simply mouthwatering.</p>
-                            <a href="pojedynczy-produkt" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width" style="font-size: 10px; margin-top:10px;">więcej</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>                                                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {% placeholder "Random_produkt" %}
 
 
 {% endblock content %} 

@@ -122,12 +122,16 @@ class Product(models.Model):
 	def get_absolute_url(self):
 		return reverse('product:product_detail', kwargs={'slug': self.slug, })
 
-	def getlistArticle(self):		
+	def getlistProduct(self):		
 		return Product.objects.all()
 
 	@classmethod
 	def getBestSeller(cls):
 		return Product.objects.filter(best_seller=True)[:4]
+
+	@classmethod	
+	def getRandomProduct(cls):
+		return Product.objects.all().order_by('?')[:2]
 
 	def thumbnail(self):
   		return mark_safe(

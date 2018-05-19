@@ -1,3 +1,4 @@
+import datetime
 from django.db import models
 from django.utils import timezone
 from django.core.urlresolvers import reverse
@@ -13,7 +14,30 @@ class News(models.Model):
 	#content_en = models.TextField(verbose_name='Tresc EN')
 	tip_pl = models.CharField(max_length=200, verbose_name='tekst zachety PL')
 	tip_en = models.CharField(max_length=200, verbose_name='tekst zachety EN')
-	image = models.ImageField(upload_to='media/aktualnosci/', blank=True, null=True)
+
+	image = models.ImageField(
+		verbose_name='zdjecie na liste newsow',
+		upload_to='media/aktualnosci/',
+		blank=True,
+		null=True,		
+		)
+
+	image_start = models.ImageField(
+		verbose_name='zdjecie na pierwsza strone',
+		upload_to='media/aktualnosci/',
+		blank=True,
+		null=True,
+		help_text=u"sugerowana wielkosc 760x612"
+		)
+
+	image_big = models.ImageField(
+		verbose_name='zdjecie duze do tresci',
+		upload_to='media/aktualnosci/',
+		blank=True,
+		null=True,
+		help_text=u"sugerowana wielkosc 870x412"
+		)
+
 	slug = models.SlugField(max_length=50, default='')
 
 	content_pl = PlaceholderField(slotname="content_pl", related_name="news_content_pl")
@@ -24,9 +48,12 @@ class News(models.Model):
 		return reverse('news:news_detail', kwargs={'slug': self.slug, })
 
 	def getlistArticle(self):		
-		return News.objects.all()[:5]
+		return News.objects.filter(pub_date__lte=datetime.datetime.now()).order_by('-pub_date')[:5]
 
-
+	@classmethod		
+	def getLastNews(cls):
+		return News.objects.latest("pub_date")
+	
 
 	
 
