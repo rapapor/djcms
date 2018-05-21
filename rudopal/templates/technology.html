@@ -4,71 +4,98 @@
 {% load cms_tags %}
 {% block content %}
   <!-- Icon List-->
-        <section class="bg-white section-50 section-md-80">
-          <div class="shell">  
-            <div class="range range-xs-center">
-              <div class="cell-sm-6 cell-md-4">
-                        <!-- Box icon-->
-                        <article class="box-icon">
-                          <div class="icon-wrap"><span class="icon icon-lg text-base fa-thumbs-up"></span></div>
-                          <div class="box-icon-header">
-                            <h5>Innowacyjność</h5>
-                          </div>
-                          <hr class="divider-xs bg-primary">
-                          <p>Jesteśmy twórcą produktu "Iglo&nbsp;drops"&nbsp;-&nbsp;sosy porcjowane. To z naszej firmy wychodzą najciekawsze pomysły.</p>
-                        </article>
-              </div>
-              <div class="cell-sm-6 cell-md-4 offset-top-50 offset-sm-top-0">
-                        <!-- Box icon-->
-                        <article class="box-icon">
-                          <div class="icon-wrap"><span class="icon icon-lg text-base fa-group"></span></div>
-                          <div class="box-icon-header">
-                            <h5>Reputacja</h5>
-                          </div>
-                          <hr class="divider-xs bg-primary">
-                          <p>Jesteśmy liderami w swojej branży. Staramy się by nasze produkty były wyjątkowe.</p>
-                        </article>
-              </div>
-              <div class="cell-sm-6 cell-md-4 offset-top-50 offset-md-top-0">
-                        <!-- Box icon-->
-                        <article class="box-icon">
-                          <div class="icon-wrap"><span class="icon icon-lg text-base fa-lock"></span></div>
-                          <div class="box-icon-header">
-                            <h5>Poufność</h5>
-                          </div>
-                          <hr class="divider-xs bg-primary">
-                          <p>Kiedy klient wymaga od nas dotrzymania tajemnicy receptury, stajemy na wysokości zadania. Cechuje nas duża dbałość o bezpieczeństwo i poufność.</p>
-                        </article>
-              </div>
+<section class="bg-white section-50 section-md-80">
+  <div class="shell">  
+    <div class="range range-xs-center">
+      <div class="cell-sm-6 cell-md-4">
+      <!-- Box icon-->
+        <article class="box-icon">
+          <div class="icon-wrap"><span class="icon icon-lg text-base fa-thumbs-up"></span></div>
+            <div class="box-icon-header">
+              <h5>Innowacyjność</h5>
             </div>
+              <hr class="divider-xs bg-primary">
+              <p>Jesteśmy twórcą produktu "Iglo&nbsp;drops"&nbsp;-&nbsp;sosy porcjowane. To z naszej firmy wychodzą najciekawsze pomysły.</p>
+        </article>
+      </div>
+      <div class="cell-sm-6 cell-md-4 offset-top-50 offset-sm-top-0">
+        <!-- Box icon-->
+        <article class="box-icon">
+          <div class="icon-wrap"><span class="icon icon-lg text-base fa-group"></span></div>
+            <div class="box-icon-header">
+              <h5>Reputacja</h5>
+            </div>
+            <hr class="divider-xs bg-primary">
+            <p>Jesteśmy liderami w swojej branży. Staramy się by nasze produkty były wyjątkowe.</p>
+        </article>
+      </div>
+      <div class="cell-sm-6 cell-md-4 offset-top-50 offset-md-top-0">
+        <!-- Box icon-->
+        <article class="box-icon">
+          <div class="icon-wrap"><span class="icon icon-lg text-base fa-lock"></span></div>
+            <div class="box-icon-header">
+              <h5>Poufność</h5>
+            </div>
+            <hr class="divider-xs bg-primary">
+            <p>Kiedy klient wymaga od nas dotrzymania tajemnicy receptury, stajemy na wysokości zadania. Cechuje nas duża dbałość o bezpieczeństwo i poufność.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="section-top-50 section-sm-top-100 ">
+      <div class="shell">
+      <hr / style="padding-bottom:10px;">      
+        <div class="range range-xs-center">
+          <div class="cell-sm-7 cell-md-6   offset-bottom-25">
+            <div class="img-thumbnail-custom">{% placeholder "NPD foto" %}                 
+            </div>                
           </div>
-        </section>        
-    <section class="text-left section-50 section-sm-100 bg-gray-lighter">
-        <div class="shell">
-          <div class="range range-xs-center">
-            <div class="cell-md-8">
-              <div class="inset-lg-left-45 inset-lg-right-45">
-                <div data-type="accordion" class="responsive-tabs responsive-tabs-modern">
-                  <ul class="resp-tabs-list">
-                    <li>{% placeholder "NPD tytul" %}</li>
-                    <li>{% placeholder "Produkcja dedykowana tytul" %}</li>
-                    <li>{% placeholder "Zaplecze produkcyjne tytul" %}</li>                                      
-                  </ul>
-                  <div class="resp-tabs-container text-left">
-                    <div>
-                      {% placeholder "NPD Tekst" %}                      
-                    </div>
-                    <div>                      
-                        {% placeholder "Produkcja dedykowana Tekst" %}                      
-                    </div>
-                    <div>                      
-                        {% placeholder "Zaplecze produkcyjne Tekst" %}                      
-                    </div>                    
-                  </div>
-                </div>
-              </div>
+          <div class="cell-sm-7 cell-md-6 text-sm-left offset-sm-top-30 offset-md-top-0   offset-bottom-25">
+            <div class="inset-lg-left-70">
+              <div class="reveal-xs-flex range-xs-justify range-xs-middle">
+                  {% placeholder "NPD tytul" %}                   
+              </div>                  
+                <div class="offset-top-20 quote-default" >
+                    {% placeholder "NPD Tekst" %}
+                </div>                   
             </div>
           </div>
         </div>
-      </section>
+        <hr / style="padding-bottom:10px;">        
+        <div class="range range-xs-center">
+          <div class="cell-sm-7 cell-md-6   offset-bottom-25">
+            <div class="img-thumbnail-custom">{% placeholder "Produkcja dedykowana foto" %}                 
+            </div>                
+          </div>
+          <div class="cell-sm-7 cell-md-6 text-sm-left offset-sm-top-30 offset-md-top-0   offset-bottom-25">
+            <div class="inset-lg-left-70">
+              <div class="reveal-xs-flex range-xs-justify range-xs-middle">
+                  {% placeholder "Produkcja dedykowana tytul" %}                   
+              </div>                  
+                <div class="offset-top-20 quote-default"> 
+                    {% placeholder "Produkcja dedykowana Tekst" %} 
+                </div>                   
+            </div>
+          </div>
+        </div>        
+        <hr / style="padding-bottom:10px;">        
+        <div class="range range-xs-center">
+          <div class="cell-sm-7 cell-md-6   offset-bottom-25">
+            <div class="img-thumbnail-custom">{% placeholder "Zaplecze produkcyjne foto" %}                 
+            </div>                
+          </div>
+          <div class="cell-sm-7 cell-md-6 text-sm-left offset-sm-top-30 offset-md-top-0   offset-bottom-25">
+            <div class="inset-lg-left-70">
+              <div class="reveal-xs-flex range-xs-justify range-xs-middle">
+                  {% placeholder "Zaplecze produkcyjne tytul" %}                   
+              </div>                  
+                <div class="offset-top-20 quote-default" >
+                    {% placeholder "Zaplecze produkcyjne Tekst" %}
+                </div>                   
+            </div>
+          </div>
+        </div>
+      </div>          
+    </section>
 {% endblock content %}      

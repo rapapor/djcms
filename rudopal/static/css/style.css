@@ -78,7 +78,7 @@
 /*
  * Bootstrap Framework
  */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 @import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans|Raleway:400,700,800');
 html {
   font-family: sans-serif;
@@ -297,7 +297,7 @@ th {
   padding: 0;
 }
 
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
 @media print {
   *,
   *:before,
@@ -388,10 +388,10 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif; /*"Lato", Helvetica, Arial, sans-serif;*/
+  font-family: 'Open Sans', sans-serif; 
   font-size: 14px;
   line-height: 1.71429;
-  color: #9b9b9b;
+  /*color: #9b9b9b;*/
   background-color: #fff;
 }
 
@@ -489,7 +489,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Changa One", cursive;
+  /*font-family: "Changa One", cursive;*/
   font-weight: 400;
   line-height: 1.2;
   color: #2b2c2f;
@@ -10296,7 +10296,7 @@ mark,
 
 ul,
 ol {
-  list-style: none;
+  /*list-style: none;*/
   padding: 0;
   margin: 0;
 }
@@ -10816,7 +10816,7 @@ span.contact-info {
 }
 
 .page-foot .list-footer-nav a:hover {
-  color: #fccb56;
+  color: #cb3b49;
 }
 
 @media (min-width: 1200px) {
