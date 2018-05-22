@@ -138,8 +138,11 @@ class Product(models.Model):
   			'<img width="40" height="40" src="/media/{}" />'.format(
   				self.product_mini_file))
 
-  	def __str__(self):
+  	def __unicode__(self):
   		return self.name_pl
+
+  	def __str__(self):
+  		return self.name_en
 
 class LogisticData(models.Model):
  	"""docstring for LogisticData"""
