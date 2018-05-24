@@ -41955,3 +41955,7 @@ ul.nav li a:focus{
 .link-color-gray{
   color:#9b9b9b;
 }
+
+.isotope-filters-responsive li {
+  list-style-type: none;
+}
