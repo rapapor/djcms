@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import datetime
 from django.db import models
 from django.utils import timezone
@@ -54,7 +55,11 @@ class News(models.Model):
 	def getLastNews(cls):
 		return News.objects.latest("pub_date")
 	
+  	def __unicode__(self):
+  		return self.title_pl
 
+  	def __str__(self):
+  		return self.title_en
 	
 
 

@@ -67,5 +67,8 @@ class Distributor(models.Model):
 
 	products = models.ManyToManyField(Product)
 
-	def __str__(self):
+  	def __unicode__(self):
   		return self.biz_name_pl
+
+  	def __str__(self):
+  		return self.biz_name_en

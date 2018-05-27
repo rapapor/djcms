@@ -54,8 +54,11 @@ class JobOffer(models.Model):
 		default=''
 	)
 
-  	def __str__(self):
+  	def __unicode__(self):
   		return self.position_pl
+
+  	def __str__(self):
+  		return self.position_en
 
 	def getlistoffer(self):		
 		return JobOffer.objects.filter(active = True)

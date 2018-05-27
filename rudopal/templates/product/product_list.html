@@ -8,13 +8,10 @@
             <div class="range range-sm-center">
               <div class="cell-xs-12">
                 <div class="cell-box">
-                  <ul class="isotope-filters-responsive">
-                    <li>
-                      <p>Wybierz typ produktu:</p>
-                    </li>
+                  <ul class="isotope-filters-responsive">                    
                     <li class="block-top-level">
                       <!-- Isotope Filters-->
-                      <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-primary-lighter btn-shape-circle">Filtruj<span class="caret"></span></button>
+                      <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-primary-lighter btn-shape-circle">Wybierz typ produktu<span class="caret"></span></button>
                       <div id="isotope-1" class="isotope-filters isotope-filters-horizontal">
                         <ul class="inline-list">
                           <li><a data-isotope-filter="*" data-isotope-group="gallery" href="#" class="active">WSZYSTKO</a></li>
@@ -58,23 +55,24 @@
               </div>
             </div>
           </div>
-        </section>
+        </section>        
         <section>
           <!-- RD Parallax-->
           <div data-on="false" data-md-on="true" class="rd-parallax rd-parallax-light">
             <div data-speed="0.2" data-type="media" data-url="{% static "images/gallery/paralax_tlo_2.jpg" %}" class="rd-parallax-layer"></div>
-            <div data-speed="0.05" data-type="html" class="rd-parallax-layer" style="background: #000; opacity: 0.6;">
+            <div data-speed="0.05" data-type="html" class="rd-parallax-layer">
               <div class="shell section-50 section-sm-top-80 section-sm-bottom-100">
+              <div class="range range-xs-center range-xs-middle">
+                  <div class="cell-sm-6 cell-md-3"><img src="{% static "images/paralax_rudopal_logo.jpg" %}" alt="" />
+                  </div>
+                </div>
                 <div class="range range-xs-center">
-                  <div class="cell-sm-10 cell-md-8">
-                    <div class="cell-sm-8 cell-md-8"><img src="{% static "images/paralax_rudopal_logo.jpg" %}" alt="" />
+                  <div class="cell-sm-10 cell-md-7">
+                    <h5 class="font-default">Produkujemy tradycyjne potrawy dla grupy gastronomicznej,<br> a także wspieramy rozwój biznesów, nowymi innowacyjnymi produktami. Rozwijaj z nami swój biznes i skontaktuj się z nami</h5>
+                    <span>Rudopal</span>
                   </div>
-                    <h6 style="color:#fff; opacity:1;">Produkujemy tradycyjne potrawy dla grupy gastronomicznej,<br> a także wspieramy rozwój biznesów, nowymi innowacyjnymi produktami.</h6>
-
-                    <p style="color:#fff; opacity:1;">Rozwijaj z nami swój biznes i skontaktuj się z nami</p>
-                    <p style="color:#fff; opacity:1;">Rudopal</p>
-                  </div>
-                </div>                
+                </div>
+                
               </div>
             </div>
           </div>
@@ -84,7 +82,7 @@
         <div class="range">
         <div class="cell-md-4 cell-lg-4 text-sm-left" style="padding-left: 50px;">
         <h5 style="color:#fff">FORMULARZ KONTAKTOWY</h5>
-        <p style="color:#fff">Zostaw nam dane kontaktowe, a nasz dział sprzedaży na pewno się do Ciebie odezwie.
+        <p style="color:#fff">Zostaw nam swój numer telefonu, a nasz dział sprzedaży na pewno się do Ciebie odezwie.
         Jeżeli masz konkretne pytanie zapraszamy do zakładki <a style="color:#fff" href="/kontakt">kontakt &#xbb;</a></p>
         <hr align="left" width="30%">
 
