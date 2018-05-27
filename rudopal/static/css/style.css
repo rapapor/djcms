@@ -26908,12 +26908,12 @@ button.link::-moz-focus-inner {
   content: '\e823';
 }
 
-/*blockquote {
+blockquote {
   font: inherit;
   padding: 0;
   margin: 0;
   border: 0;
-}*/
+}
 
 blockquote q:before, blockquote q:after {
   content: none;
