@@ -36716,13 +36716,7 @@ html.boxed .rd-navbar--is-clone {
   background-color: rgba(165, 154, 0, 0.35) !important;
 }
 
-.gm-style-iw {
-  background-color: #a59a00 !important;
-  width: 155px !important;
-  height: 155px !important;
-  border-radius: 50% !important;
-  top: 27px !important;
-  left: 26px !important;
+.gm-style-iw {    
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
