@@ -57,26 +57,50 @@
           </div>
         </section>
         <section>
-          <!-- RD Google Map-->
-          <div data-zoom="15" data-y="52.333766" data-x="16.405098" data-styles="" class="rd-google-map rd-google-map__model">
-            <ul class="map_locations">
-              <li data-y="52.333766" data-x="16.405098">
-                <p>
-                  <span class="icon">
-                    <img src="{% static "/images/gmap-24x34.png" %}" alt="" width="24" height="34"/>
-                  </span>
-                  267 Park Avenue New York, NY 90210
-                </p>
-              </li>
-              <li data-y="53.333766" data-x="17.410098">
-                <p>
-                  <span class="icon">
-                    <img src="{% static "images/gmap-24x34.png" %}" alt="" width="24" height="34"/>
-                  </span>
-                  267 Park Avenue New York, NY 90210
-                </p>
-              </li>
-            </ul>
-          </div>
+          <div id="map"></div>
         </section> 
+
+        <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 505px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+        <script>
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: {lat: 52.5086149, lng: 16.7346916}
+        });        
+        // Create an array of alphabetical characters used to label the markers.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [];
+      {% for distributor in distributors %}
+        locations.push({lat:{{distributor.gmapCoordynator_x}}, lng:{{distributor.gmapCoordynator_y}} })
+      {% endfor %}
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXmQ1MhcKamuA8cUxsX36NnmDkCUCsWsI&callback=initMap">
+    </script>
 {% endblock content %}  

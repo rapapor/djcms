@@ -419,85 +419,85 @@ $document.ready(function () {
     }
   }
 
-  /**
-   * RD Google Maps
-   * @description Enables RD Google Maps plugin
-   */
-  if (plugins.rdGoogleMaps.length) {
-    var i;
+  // /**
+  //  * RD Google Maps
+  //  * @description Enables RD Google Maps plugin
+  //  */
+  // if (plugins.rdGoogleMaps.length) {
+  //   var i;
 
-    $.getScript("//maps.google.com/maps/api/js?key=AIzaSyAFeB0kVA6ouyJ_gEvFbMaefLy3cBCyRwo&sensor=false&libraries=geometry,places&v=3.7", function () {
-      var head = document.getElementsByTagName('head')[0],
-          insertBefore = head.insertBefore;
+  //   $.getScript("//maps.google.com/maps/api/js?key=AIzaSyAFeB0kVA6ouyJ_gEvFbMaefLy3cBCyRwo&sensor=false&libraries=geometry,places&v=3.7", function () {
+  //     var head = document.getElementsByTagName('head')[0],
+  //         insertBefore = head.insertBefore;
 
-      head.insertBefore = function (newElement, referenceElement) {
-        if (newElement.href && newElement.href.indexOf('//fonts.googleapis.com/css?family=Roboto') != -1 || newElement.innerHTML.indexOf('gm-style') != -1) {
-          return;
-        }
-        insertBefore.call(head, newElement, referenceElement);
-      };
+  //     head.insertBefore = function (newElement, referenceElement) {
+  //       if (newElement.href && newElement.href.indexOf('//fonts.googleapis.com/css?family=Roboto') != -1 || newElement.innerHTML.indexOf('gm-style') != -1) {
+  //         return;
+  //       }
+  //       insertBefore.call(head, newElement, referenceElement);
+  //     };
 
-      for (i = 0; i < plugins.rdGoogleMaps.length; i++) {
+  //     for (i = 0; i < plugins.rdGoogleMaps.length; i++) {
 
-        var $googleMapItem = $(plugins.rdGoogleMaps[i]);
+  //       var $googleMapItem = $(plugins.rdGoogleMaps[i]);
 
-        lazyInit($googleMapItem, $.proxy(function () {
-          var $this = $(this),
-              styles = $this.attr("data-styles");
+  //       lazyInit($googleMapItem, $.proxy(function () {
+  //         var $this = $(this),
+  //             styles = $this.attr("data-styles");
 
-          $this.googleMap({
-            styles: styles ? JSON.parse(styles) : [],
-            onInit: function (map) {
-              var inputAddress = $('#rd-google-map-address');
+  //         $this.googleMap({
+  //           styles: styles ? JSON.parse(styles) : [],
+  //           onInit: function (map) {
+  //             var inputAddress = $('#rd-google-map-address');
 
-              if (inputAddress.length) {
-                var input = inputAddress;
-                var geocoder = new google.maps.Geocoder();
-                var marker = new google.maps.Marker(
-                    {
-                      map: map,
-                      icon: "/images/gmap_marker.png",
-                    }
-                );
-                var autocomplete = new google.maps.places.Autocomplete(inputAddress[0]);
-                autocomplete.bindTo('bounds', map);
-                inputAddress.attr('placeholder', '');
-                inputAddress.on('change', function () {
-                  $("#rd-google-map-address-submit").trigger('click');
-                });
-                inputAddress.on('keydown', function (e) {
-                  if (e.keyCode == 13) {
-                    $("#rd-google-map-address-submit").trigger('click');
-                  }
-                });
+  //             if (inputAddress.length) {
+  //               var input = inputAddress;
+  //               var geocoder = new google.maps.Geocoder();
+  //               var marker = new google.maps.Marker(
+  //                   {
+  //                     map: map,
+  //                     icon: "/images/gmap_marker.png",
+  //                   }
+  //               );
+  //               var autocomplete = new google.maps.places.Autocomplete(inputAddress[0]);
+  //               autocomplete.bindTo('bounds', map);
+  //               inputAddress.attr('placeholder', '');
+  //               inputAddress.on('change', function () {
+  //                 $("#rd-google-map-address-submit").trigger('click');
+  //               });
+  //               inputAddress.on('keydown', function (e) {
+  //                 if (e.keyCode == 13) {
+  //                   $("#rd-google-map-address-submit").trigger('click');
+  //                 }
+  //               });
 
 
-                $("#rd-google-map-address-submit").on('click', function (e) {
-                  e.preventDefault();
-                  var address = input.val();
-                  geocoder.geocode({'address': address}, function (results, status) {
-                    if (status == google.maps.GeocoderStatus.OK) {
-                      var latitude = results[0].geometry.location.lat();
-                      var longitude = results[0].geometry.location.lng();
+  //               $("#rd-google-map-address-submit").on('click', function (e) {
+  //                 e.preventDefault();
+  //                 var address = input.val();
+  //                 geocoder.geocode({'address': address}, function (results, status) {
+  //                   if (status == google.maps.GeocoderStatus.OK) {
+  //                     var latitude = results[0].geometry.location.lat();
+  //                     var longitude = results[0].geometry.location.lng();
 
-                      map.setCenter(new google.maps.LatLng(
-                          parseFloat(latitude),
-                          parseFloat(longitude)
-                      ));
-                      marker.setPosition(new google.maps.LatLng(
-                          parseFloat(latitude),
-                          parseFloat(longitude)
-                      ))
-                    }
-                  });
-                });
-              }
-            }
-          });
-        }, $googleMapItem));
-      }
-    });
-  }
+  //                     map.setCenter(new google.maps.LatLng(
+  //                         parseFloat(latitude),
+  //                         parseFloat(longitude)
+  //                     ));
+  //                     marker.setPosition(new google.maps.LatLng(
+  //                         parseFloat(latitude),
+  //                         parseFloat(longitude)
+  //                     ))
+  //                   }
+  //                 });
+  //               });
+  //             }
+  //           }
+  //         });
+  //       }, $googleMapItem));
+  //     }
+  //   });
+  // }
 
   /**
    * Responsive Tabs
