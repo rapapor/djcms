@@ -8,7 +8,8 @@
     <div class="range">
     <div class="cell-md-12 offset-top-40">
       <h4 class="font-default text-center releway">AKTUALNOŚCI</h4>
-    </div>    
+    </div>
+        
     <div class="offset-top-40">
       <!-- Blockquote default-->
       <blockquote class="quote-default quote-default-left text-center">
@@ -33,8 +34,8 @@
     </div>
     
       <div class="cell-md-4">
-      {% for news in object_list %} 
-      {% ifequal forloop.counter|modulo:3 2 %}      
+      {% for news in object_list reversed %} 
+      {% ifequal forloop.counter0|modulo:3 0 %}      
           <div class="offset-top-30 offset-bottom-25">
           <!-- Post Modern-->
             <article class="post post-modern">
@@ -70,8 +71,8 @@
       </div>
       
       <div class="cell-md-4">
-      {% for news in object_list %}
-      {% ifequal forloop.counter|modulo:3 1 %}
+      {% for news in object_list reversed %}
+      {% ifequal forloop.counter0|modulo:3 1 %}
           <div class="offset-top-30 offset-bottom-25">
           <!-- Post Modern-->
             <article class="post post-modern">
@@ -107,8 +108,8 @@
       </div> 
       
       <div class="cell-md-4">
-      {% for news in object_list %}
-      {% ifequal forloop.counter|modulo:3 0 %}
+      {% for news in object_list reversed %}
+      {% ifequal forloop.counter0|modulo:3 2 %}
           <div class="offset-top-30 offset-bottom-25">
           <!-- Post Modern-->
             <article class="post post-modern">
