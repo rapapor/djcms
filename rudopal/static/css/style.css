@@ -41965,7 +41965,10 @@ ul.nav li a:focus{
 
 }
 
-
+.section-with-angle {
+        background-position: center;
+  }
+  
 .link-color-gray{
   color:#9b9b9b;
 }
