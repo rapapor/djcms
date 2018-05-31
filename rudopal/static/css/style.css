@@ -41932,6 +41932,10 @@ ul.nav li a:focus{
     z-index:0;
     margin:20px;
   }
+
+  /*#contact-big-images{
+    height: 500px;
+  }*/
 }
 
 @media(min-width: 1800px){
@@ -41942,9 +41946,25 @@ ul.nav li a:focus{
   #rud-news-article{
     font-size: 26px;
   }
+  #contact-big-images{
+    height: 700px;
+  }
+}
 
+@media(max-width: 1024px){
+
+  /*#contact-big-images{
+    height: 250px;
+  }*/
+  .section-sm-top-100 {
+     padding-top: 0px; 
+  }
+  .section-with-angle {
+        background-position: center;
+  }
 
 }
+
 
 .link-color-gray{
   color:#9b9b9b;
@@ -41953,3 +41973,7 @@ ul.nav li a:focus{
 .isotope-filters-responsive li {
   list-style-type: none;
 }
+
+ #contact-big-images{
+    height: 700px;
+  }

@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load cms_tags %}
+{% block content %}  
+<section id="contact-big-images" class="text-center text-sm-left section-50 section-sm-top-100 section-sm-bottom-205 section-with-angle bg-ecru-white" style="background-image:url('{% static "images/kontakt_1.jpg" %}')">
+  <div class="shell">
+    <div class="range range-xs-center range-md-right">      
+    </div>
+  </div>
+</section>
+<section>
+  	<div class="shell">
+    	<div class="range range-xs-center">
+		    <div class="cell-md-12 offset-top-40">
+		      	<h5 class="font-default text-center releway">Dział Sprzedaży</h5>
+		      	<h6 class="font-default text-center releway">Skontaktuj się z nami</h6>
+		    </div>    
+    		{% for contact in contacts %}
+    			{% if contact.get_section_display == 'seller' %}
+			    	<div class="cell-sm-6 cell-md-4 offset-top-40">
+					    <!-- Blockquote default-->
+					    <blockquote class="quote-modern">
+					      <div class="quote-header divider-custom">
+					        <div><img src="/media/{{contact.contact_file}}" alt="" width="104" height="104" class="img-circle"/>
+					        </div>
+					      </div>
+					      <div class="quote-body">
+					        <h6>{{ contact.name_pl }}</h6>
+					        <p>
+					          <q>{{contact.position_pl}}<br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
+					        </p>
+					        <cite>{{ contact.email }}</cite><br>
+					      </div>		      
+					    </blockquote>
+				  </div>
+		  		{% endif %}
+	  		{% endfor %}
+	  	</div>
+  	</div>
+</section>
+<section>
+  <div class="shell">
+    <div class="range range-xs-center">
+	    <div class="cell-md-12 offset-top-40">
+	      	<h5 class="font-default text-center releway">Dział Zakupów i Jakości</h5>	      	
+	    </div>
+    
+    {% for contact in contacts %}
+    {% if contact.get_section_display == 'buyer' %}
+	    <div class="cell-sm-6 cell-md-4 offset-top-40">
+		    <!-- Blockquote default-->
+		    <blockquote class="quote-modern">
+		      <div class="quote-header divider-custom">
+		        <div><img src="/media/{{contact.contact_file}}" alt="" width="104" height="104" class="img-circle"/>
+		        </div>
+		      </div>
+		      <div class="quote-body">
+		        <h6>{{ contact.name_pl }}</h6>
+		        <p>
+		          <q>{{contact.position_pl}}<br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
+		        </p>
+		        <cite>{{ contact.email }}</cite><br>
+		      </div>		      
+		    </blockquote>
+		  </div>
+		  {% endif %}
+	  {% endfor %}
+	  </div>
+  </div>
+</section>
+<section>
+  	<div class="shell">
+    	<div class="range range-xs-center">
+		    <div class="cell-md-12 offset-top-40">
+		      	<h5 class="font-default text-center releway">Dział Produkcji i NPD</h5>	      	
+		    </div>
+			{% for contact in contacts %}
+    			{% if contact.get_section_display == 'production' %}
+	    			<div class="cell-sm-6 cell-md-4 offset-top-40">
+		    			<!-- Blockquote default-->
+		    			<blockquote class="quote-modern">
+		      				<div class="quote-header divider-custom">
+		        				<div>
+		        					<img src="/media/{{contact.contact_file}}" alt="" width="104" height="104" class="img-circle"/>
+		        				</div>
+		      				</div>
+		      				<div class="quote-body">
+		        				<h6>{{ contact.name_pl }}</h6>
+						        <p>
+						          <q>{{contact.position_pl}}<br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
+						        </p>
+		        				<cite>{{ contact.email }}</cite><br>
+		      				</div>		      
+		    			</blockquote>
+		  			</div>
+		  		{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<section>
+  <div class="shell">
+    <div class="range range-xs-center">
+	    <div class="cell-md-12 offset-top-40">
+	      	<h5 class="font-default text-center releway">Dział Księgowości, Kadr i Płac</h5>	      	
+	    </div>
+			{% for contact in contacts %}
+			    {% if contact.get_section_display == 'hr' %}
+				    <div class="cell-sm-6 cell-md- offset-top-40">
+					    <!-- Blockquote default-->
+					    <blockquote class="quote-modern">
+					      <div class="quote-header divider-custom">
+					        <div><img src="/media/{{contact.contact_file}}" alt="" width="104" height="104" class="img-circle"/>
+					        </div>
+					      </div>
+					      <div class="quote-body">
+					        <h6>{{ contact.name_pl }}</h6>
+					        <p>
+					          <q>{{contact.position_pl}}<br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
+					        </p>
+					        <cite>{{ contact.email }}</cite><br>
+					      </div>		      
+					    </blockquote>
+				  </div>
+				{% endif %}
+			{% endfor %}
+	  </div>
+  </div>
+</section>
+
+<section>
+	<div class="cell-md-12 offset-top-50 offset-md-top-0 text-left">
+                <aside class="inset-lg-left-70">
+                  <div class="range">
+                    <div class="cell-xs-6 cell-md-4 offset-top-50 offset-xs-top-0 offset-md-top-50">
+                      <div class="h6 text-uppercase">Zadzwoń</div>
+                      <div class="text-subline offset-top-15"></div>
+                      <div class="offset-top-25">
+                        <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                          <div class="unit-left"><span class="icon icon-xs icon-primary text-middle mdi mdi-phone"></span></div>
+                          <div  class="unit-body"><a href="callto:+ 48 61 64 16 831" class="link-default">+ 48 61 64 16 831</a></div>
+                          <div style="padding-left:5px;" class="unit-left"><span class="icon icon-xs icon-primary text-middle mdi mdi-phone"></span></div>
+                          <div class="unit-body"><a href="callto:+ 48 61 64 19 835" class="link-default">+ 48 61 64 19 835</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell-xs-6 cell-md-4 offset-top-50">
+                      <div class="h6 text-uppercase">Odwiedź nas</div>
+                      <div class="text-subline offset-top-15"></div>
+                      <div class="offset-top-25 unit unit-horizontal unit-spacing-xs">
+                        <div class="unit-left"><span class="icon icon-xs icon-primary text-middle mdi mdi-map-marker"></span></div>
+                        <div class="unit-body"><a href="#" class="link-default">Ul. Rudniki 109, 64-330 Opalenica lub</a></div>  
+                        <ul class="list-inline" style="padding-left:5px;">
+                          <li><a href="https://www.facebook.com/Rudopal/" class="icon icon-xs link-gray-light fa-facebook">acebook</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="cell-xs-6 cell-md-4 offset-top-50">
+                      <div class="h6 text-uppercase">Godziny pracy</div>
+                      <div class="text-subline offset-top-15"></div>
+                      <div class="offset-top-25 unit unit-horizontal unit-spacing-xs">
+                        <div class="unit-left"><span class="icon icon-xs icon-primary mdi mdi-clock text-middle"></span></div>
+                        <div class="unit-body"><span class="text-dark inset-left-5">7:00–15:00</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+</section>
+
+<section class="offset-top-50">
+    <div id="map"></div>
+</section> 
+
+        <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 505px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+        <script>
+
+   function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 52.333686, lng: 16.410076};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 12, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({
+  	position: uluru,
+  	map: map,
+  	icon: "/static/images/rudopal.png",
+  	title: "Rudopal Ul. Rudniki 109, 64-330 Opalenica",  	
+  });
+}
+        
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXmQ1MhcKamuA8cUxsX36NnmDkCUCsWsI&callback=initMap">
+    </script>
+
+
+{% endblock content %}  

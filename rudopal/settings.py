@@ -155,7 +155,8 @@ INSTALLED_APPS = (
     'apps.news.apps.NewsConfig',
     'apps.product.apps.ProductConfig',
     'apps.job.apps.JobConfig',
-    'apps.distributor.apps.DistributorConfig'    
+    'apps.distributor.apps.DistributorConfig', 
+    'apps.contact.apps.ContactConfig',   
 )
 
 LANGUAGES = (
