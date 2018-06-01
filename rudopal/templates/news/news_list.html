@@ -34,7 +34,7 @@
     </div>
     
       <div class="cell-md-4">
-      {% for news in object_list reversed %} 
+      {% for news in object_list  %} 
       {% ifequal forloop.counter0|modulo:3 0 %}      
           <div class="offset-top-30 offset-bottom-25">
           <!-- Post Modern-->
@@ -71,7 +71,7 @@
       </div>
       
       <div class="cell-md-4">
-      {% for news in object_list reversed %}
+      {% for news in object_list  %}
       {% ifequal forloop.counter0|modulo:3 1 %}
           <div class="offset-top-30 offset-bottom-25">
           <!-- Post Modern-->
@@ -108,7 +108,7 @@
       </div> 
       
       <div class="cell-md-4">
-      {% for news in object_list reversed %}
+      {% for news in object_list  %}
       {% ifequal forloop.counter0|modulo:3 2 %}
           <div class="offset-top-30 offset-bottom-25">
           <!-- Post Modern-->
