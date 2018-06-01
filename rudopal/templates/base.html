@@ -149,6 +149,11 @@
       </main>
       <!-- Page Footer-->
       <footer class="page-foot text-center footer-light">
+      <div id="cookie-message" data-cookie-expiry="60">
+          <p>
+              Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia maksymalnej wygody w korzystaniu z naszego serwisu. Jeśli nie wyrażasz zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej przeglądarce.
+          </p>
+      </div>
         <section class="section-top-45 section-bottom-45">
           <div class="shell">
             <ul class="list list-inline list-footer-nav">
@@ -186,7 +191,92 @@
     <!-- Java script-->
     <script src="{% static "js/core.min.js" %}"></script>
     <script src="{% static "js/script.js" %}"></script>
-    <script src="{% static "js/main.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script> 
+    <script type="text/javascript">
+      // $(document).ready(function() {
+      //   if ($.cookie('pop') == null) {
+      //     $('#myModal').modal('show');
+      //     $.cookie('pop', '1');
+      //   }
+      // });
+      (function() {
+
+      /**
+       * Set cookie
+       *
+       * @param string name
+       * @param string value
+       * @param int days
+       * @param string path
+       * @see http://www.quirksmode.org/js/cookies.html
+       */
+      function createCookie(name,value,days,path) {
+          if (days) {
+              var date = new Date();
+              date.setTime(date.getTime()+(days*24*60*60*1000));
+              var expires = "; expires="+date.toGMTString();
+          }
+          else var expires = "";
+          document.cookie = name+"="+value+expires+"; path="+path;
+      }
+
+      /**
+       * Read cookie
+       * @param string name
+       * @returns {*}
+       * @see http://www.quirksmode.org/js/cookies.html
+       */
+      function readCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for(var i=0;i < ca.length;i++) {
+              var c = ca[i];
+              while (c.charAt(0)==' ') c = c.substring(1,c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+          }
+          return null;
+      }
+
+      var cookieMessage = document.getElementById('cookie-message');
+      if (cookieMessage == null) {
+          return;
+      }
+      var cookie = readCookie('seen-cookie-message');
+      if (cookie != null && cookie == 'yes') {
+          cookieMessage.style.display = 'none';
+      } else {
+          cookieMessage.style.display = 'block';
+      }
+      
+      // Set/update cookie
+      var cookieExpiry = cookieMessage.getAttribute('data-cookie-expiry');
+      if (cookieExpiry == null) {
+          cookieExpiry = 30;
+      }
+      var cookiePath = cookieMessage.getAttribute('data-cookie-path');
+      if (cookiePath == null) {
+          cookiePath = "/";
+      }
+      createCookie('seen-cookie-message','yes',cookieExpiry,cookiePath);
+
+  })();
+    </script>  
+    <style>
+        .js_enabled #cookie-message {
+            display: none;
+        }
+        
+        #cookie-message {
+            background-color: rgba(117, 117, 90, 0.5294117647058824);            
+            color: #fff;
+            margin: 0 auto;
+            padding: 1em;
+        }
+        #cookie-message p {
+            color: #fff;
+        }
+    </style>
+
     {% render_block "js" %}
   </body>
 </html>
