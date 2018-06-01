@@ -1,8 +1,8 @@
 from .settings import *
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"] #wpisac nazwe domeny
+ALLOWED_HOSTS = ["rudopal.pl"] #wpisac nazwe domeny
 
 
 
