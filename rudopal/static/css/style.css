@@ -4231,6 +4231,7 @@ tbody.collapse.in {
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
+
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -4359,6 +4360,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     color: #444;
     background-color: transparent;
   }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+  
+  background-color: #2f2c2c75;
+}
 }
 
 .navbar-inverse .navbar-link {
