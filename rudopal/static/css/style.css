@@ -38356,7 +38356,7 @@ html.boxed .rd-navbar--is-clone {
   margin-left: 24px;
 }
 
-.responsive-tabs-shop li + li:before {
+/*.responsive-tabs-shop li + li:before {
   position: absolute;
   left: -26px;
   top: 50%;
@@ -38365,7 +38365,7 @@ html.boxed .rd-navbar--is-clone {
   content: "or";
   display: inline-block;
   pointer-events: none;
-}
+}*/
 
 .responsive-tabs-shop li.resp-tab-active .price {
   font-weight: 700;
