@@ -2,10 +2,16 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% load cms_tags %}
 {% block content %}     
-    <section class="section-50 section-sm-top-90 section-sm-bottom-100">
+    <section class="section-50 section-sm-top-50 section-sm-bottom-100">
           <div class="shell">
-            <div class="range range-xs-center">                               
-                  <blockquote class="quote-default quote-default-left offset-bottom-25">
+            <div class="range range-xs-center"> 
+            <div>
+              <a href="#gmap">
+                <h5 class="font-default text-center releway" style="float:left;">Kliknij aby przejść do mapy dystrybutorów</h5>&nbsp;
+                <img style="margin-top: 0px;" src="{% static "images/mini-map.png" %}">
+              </a>
+            </div>                              
+                  <blockquote class="section-sm-top-50 quote-default quote-default-left offset-bottom-25">
                     <div class="quote-body">
                       <div class="unit unit-xs-horizontal unit-xs-top unit-spacing-sm">
                         <div class="unit-left">
@@ -57,6 +63,7 @@
           </div>
         </section>
         <section>
+        <a name="gmap"></a>
           <div id="map"></div>
         </section> 
 
