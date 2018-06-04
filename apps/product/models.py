@@ -62,12 +62,21 @@ class Product(models.Model):
 		default='gastro'
 	)
 
-	desc_pl = models.TextField(
-		verbose_name='Opis PL'
-	)
+	# desc_pl = models.TextField(
+	# 	verbose_name='Opis PL'
+	# )
 
-	desc_en = models.TextField(
-		verbose_name='Opis EN'
+	# desc_en = models.TextField(
+	# 	verbose_name='Opis EN'
+	# )
+
+	descript_pl = PlaceholderField(
+		slotname="descript_pl",
+		related_name="product_descript_pl"
+	)
+	descript_en = PlaceholderField(
+		slotname="descript_en", 
+		related_name="product_descript_en"
 	)
 
 	product_file_1 = models.ImageField(
