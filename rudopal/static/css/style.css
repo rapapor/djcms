@@ -38351,10 +38351,10 @@ html.boxed .rd-navbar--is-clone {
   padding: 0 24px 0 0;
 }
 
-.responsive-tabs-shop li + li {
+/*.responsive-tabs-shop li + li {
   position: relative;
   margin-left: 24px;
-}
+}*/
 
 /*.responsive-tabs-shop li + li:before {
   position: absolute;
