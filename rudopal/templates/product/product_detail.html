@@ -87,6 +87,7 @@
               {% endif %}
               <li>Sposób przygotowania</li>
               <li>Dane Logistyczne</li>
+              <li>Dystrybutorzy</li>
             </ul>
             <div class="resp-tabs-container">
               <div>
@@ -117,10 +118,35 @@
                   </tbody>
                 </table>
               </div>
+              <div id="over-x-2">
+                <table class="table" >
+                  <thead>
+                    <tr>
+                      <th>Nazwa</th>
+                      <th>telefon</th>                      
+                      <th>adres</th>
+                      <th>województwo</th>
+                    </tr>
+                  </thead>
+                  <tbody>                
+                   {% for distributor in product.distributor_set.all %}
+                   <tr>
+                      <td>{{distributor.biz_name_pl}}</td>
+                      <td>{{distributor.phone}}</td>
+                      <td>{{distributor.street_pl}}</td>
+                      <td>{{distributor.woj_pl}}</td>
+                    </tr>
+                   {% endfor %}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
           <style type="text/css">
             #over-x{
+              overflow-x:auto;
+            }
+            #over-x-2{
               overflow-x:auto;
             }
           </style>
