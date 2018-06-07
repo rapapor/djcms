@@ -129,7 +129,7 @@
                     </tr>
                   </thead>
                   <tbody>                
-                   {% for distributor in product.distributor_set.all %}
+                   {% for distributor in product.get_distributos %}
                    <tr>
                       <td>{{distributor.biz_name_pl}}</td>
                       <td>{{distributor.phone}}</td>

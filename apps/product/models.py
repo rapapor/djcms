@@ -134,6 +134,9 @@ class Product(models.Model):
 	def getlistProduct(self):		
 		return Product.objects.all()
 
+	def get_distributos(self):
+		return self.distributor_set.all().order_by('woj_pl')
+
 	@classmethod
 	def getBestSeller(cls):
 		return Product.objects.filter(best_seller=True)[:4]
