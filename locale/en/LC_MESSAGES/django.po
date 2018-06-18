@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 21:46+0200\n"
+"POT-Creation-Date: 2018-06-18 23:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,7 +80,8 @@ msgid "Dane logistyczne"
 msgstr "Logistics data"
 
 #: apps/product/templates/random_product.html:34
-#: rudopal/templates/base.html:165
+#: rudopal/templates/base.html:178
+#: rudopal/templates/distributor/distributor_list.html:76
 msgid "produkty"
 msgstr "products"
 
@@ -109,7 +110,10 @@ msgid ""
 "Firma Rudopal to rodzinne przedsiębiorstwo istniejące na rynku od 1991 roku. "
 "Firma rozpoczynała swoją działalność od produkcji grzybni pieczarki, "
 "ewaluując do nowoczesnego zakładu przetwórstwa spożywczego"
-msgstr "The Rudopal company is a family-run company existing on the market since 1991. The company started its activity from mushroom mycelium production, evolving to a modern food processing plant"
+msgstr ""
+"The Rudopal company is a family-run company existing on the market since "
+"1991. The company started its activity from mushroom mycelium production, "
+"evolving to a modern food processing plant"
 
 #: rudopal/templates/about.html:38
 msgid "PRZEMIANA"
@@ -119,7 +123,9 @@ msgstr "TRANSFORMATION"
 msgid ""
 "W ciągu 2006 roku dokonano przebudowy zakładu przystosowując go na potrzeby "
 "produkcji spożywczej zgodnej z wymogami UE."
-msgstr "In 2006, the plant was rebuilt, adapting it to the needs of food production in line with EU requirements."
+msgstr ""
+"In 2006, the plant was rebuilt, adapting it to the needs of food production "
+"in line with EU requirements."
 
 #: rudopal/templates/about.html:47
 msgid "NOWOCZESNE"
@@ -129,7 +135,9 @@ msgstr "MODERN"
 msgid ""
 "Lata 2010-2011 to kolejne inwestycje - tym razem nowoczesny magazyn wraz z "
 "przestrzenią magazynową"
-msgstr "The years 2010-2011 are further investments - this time a modern warehouse with storage space"
+msgstr ""
+"The years 2010-2011 are further investments - this time a modern warehouse "
+"with storage space"
 
 #: rudopal/templates/about.html:56
 msgid "PIEKARNIA"
@@ -139,7 +147,9 @@ msgstr "A BAKERY"
 msgid ""
 "W roku 2015 uruchomiono własną piekarnie, produkującą pieczywo na własne "
 "potrzeby oraz dla innych klientów"
-msgstr "In 2015, our own bakery was started, producing bread for our own needs and for other customers"
+msgstr ""
+"In 2015, our own bakery was started, producing bread for our own needs and "
+"for other customers"
 
 #: rudopal/templates/about.html:65
 msgid "LIDER"
@@ -150,20 +160,27 @@ msgid ""
 "W pierwszym kwartale 2017 roku uruchamiamy innowacyjną linię do produkcji "
 "produktów porcjowanych  typu Iglo Drops współfinansowaną ze środków Unii "
 "Europejskiej."
-msgstr "In the first quarter of 2017, we launch an innovative line for the production of portioned Iglo Drops products co-financed by the European Union."
+msgstr ""
+"In the first quarter of 2017, we launch an innovative line for the "
+"production of portioned Iglo Drops products co-financed by the European "
+"Union."
 
 #: rudopal/templates/about.html:71
 msgid ""
 "Poprzez inwestycje w technologie oraz ludzi, przedsiębiorstwo stopniowo "
 "poszerzało swoje portfolio produktowe, pozyskując nowych odbiorców w Polsce "
 "i za granicą"
-msgstr "Through investments in technologies and people, the company gradually expanded its product portfolio, acquiring new customers in Poland and abroad"
+msgstr ""
+"Through investments in technologies and people, the company gradually "
+"expanded its product portfolio, acquiring new customers in Poland and abroad"
 
 #: rudopal/templates/about.html:90
 msgid ""
 "Sztukę gotowania opanowaliśmy do perfekcji. Naszymi&nbsp;potrawami dzielimy "
 "się z Państwem nie od dziś."
-msgstr "We mastered the art of cooking to perfection. We share our dishes with you not from today."
+msgstr ""
+"We mastered the art of cooking to perfection. We share our dishes with you "
+"not from today."
 
 #: rudopal/templates/about.html:106
 msgid "ODBIORCY B2B"
@@ -191,97 +208,100 @@ msgstr "If you have a question, please visit the contact tab"
 msgid "Napisz do wybranej z odpowiedniego działu osoby"
 msgstr "Write to the person selected from the appropriate department"
 
-#: rudopal/templates/about.html:133 rudopal/templates/base.html:168
+#: rudopal/templates/about.html:133 rudopal/templates/base.html:181
 #: rudopal/templates/product/product_list.html:100
 msgid "kontakt"
 msgstr "contact"
 
-#: rudopal/templates/base.html:79 rudopal/templates/base.html.py:93
-#: rudopal/templates/base.html:108
+#: rudopal/templates/base.html:92 rudopal/templates/base.html.py:106
+#: rudopal/templates/base.html:121
 msgid "Gastronomia"
 msgstr "Gastronomy"
 
-#: rudopal/templates/base.html:81
+#: rudopal/templates/base.html:94
 msgid "Ciasto do pizzy"
 msgstr "Pizza dough"
 
-#: rudopal/templates/base.html:82
+#: rudopal/templates/base.html:95
 msgid "zawsze pod ręką"
 msgstr "always at hand"
 
-#: rudopal/templates/base.html:94
+#: rudopal/templates/base.html:107
 msgid "Gofry tradycyjne"
 msgstr "Traditional waffles"
 
-#: rudopal/templates/base.html:95
+#: rudopal/templates/base.html:108
 msgid "umilą każdy dzień"
 msgstr "they will make every day happy"
 
-#: rudopal/templates/base.html:110
+#: rudopal/templates/base.html:123
 msgid "Grzanki czosnkowe"
 msgstr "Garlic toasts"
 
-#: rudopal/templates/base.html:111
+#: rudopal/templates/base.html:124
 msgid "na chrupkie powitanie"
 msgstr "for a crisp welcome"
 
-#: rudopal/templates/base.html:122
+#: rudopal/templates/base.html:135
 msgid "Dla Biznesu"
 msgstr "For business"
 
-#: rudopal/templates/base.html:123
+#: rudopal/templates/base.html:136
 msgid "Sosy porcjowane"
 msgstr "Portioned sauces"
 
-#: rudopal/templates/base.html:124
+#: rudopal/templates/base.html:137
 msgid "doskonale powtarzalny smak potraw"
 msgstr "perfectly repetitive taste of dishes"
 
-#: rudopal/templates/base.html:157
+#: rudopal/templates/base.html:170
 msgid ""
 "Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia "
 "maksymalnej wygody w korzystaniu z naszego serwisu. Jeśli nie wyrażasz "
 "zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej "
 "przeglądarce."
-msgstr "We use information saved via cookies to ensure maximum convenience in using our website. If you do not agree, the cookie settings can be changed in your browser."
+msgstr ""
+"We use information saved via cookies to ensure maximum convenience in using "
+"our website. If you do not agree, the cookie settings can be changed in your "
+"browser."
 
-#: rudopal/templates/base.html:164
+#: rudopal/templates/base.html:177
 msgid "START"
 msgstr "START"
 
-#: rudopal/templates/base.html:165
+#: rudopal/templates/base.html:178
 msgid "PRODUKTY"
 msgstr "PRODUCTS"
 
-#: rudopal/templates/base.html:166 rudopal/templates/start.html:19
+#: rudopal/templates/base.html:179 rudopal/templates/start.html:19
 msgid "mapa-dystrybucji"
 msgstr "map-distribution"
 
-#: rudopal/templates/base.html:166
+#: rudopal/templates/base.html:179
 msgid "MAPA DYSTRYBUCJI"
 msgstr "MAP OF DISTRIBUTION"
 
-#: rudopal/templates/base.html:167
+#: rudopal/templates/base.html:180
 msgid "aktualnosci"
 msgstr "news"
 
-#: rudopal/templates/base.html:167 rudopal/templates/news/news_list.html:10
+#: rudopal/templates/base.html:180 rudopal/templates/news/news_list.html:10
 msgid "AKTUALNOŚCI"
 msgstr "NEWS"
 
-#: rudopal/templates/base.html:168
+#: rudopal/templates/base.html:181
 msgid "KONTAKT"
 msgstr "CONTACT"
 
-#: rudopal/templates/base.html:169
+#: rudopal/templates/base.html:182
 msgid "praca"
 msgstr "job"
 
-#: rudopal/templates/base.html:169
+#: rudopal/templates/base.html:182
 msgid "PRACA"
 msgstr "JOB"
 
-#: rudopal/templates/base.html:183
+#: rudopal/templates/base.html:196
 msgid "Wszystkie prawa zastrzeżone"
 msgstr "All rights reserved"
 
@@ -309,6 +329,35 @@ msgstr "visit us"
 msgid "Godziny pracy"
 msgstr "Work hours"
 
+#: rudopal/templates/distributor/distributor_list.html:11
+msgid "Kliknij aby przejść do mapy dystrybutorów"
+msgstr "Click to go to the distributor map"
+
+#: rudopal/templates/distributor/distributor_list.html:25
+msgid ""
+" Od kilkunastu lat współpracujemy z najbardziej znaczącymi dystrybutorami i "
+"hurtowaniami gastronomicznymi w kraju. Dzięki tak długoletniej, partnerskiej "
+"relacji wypracowaliśmy wspólnie bardzo korzystne warunki handlowe i cenowe "
+"dla Odbiorcy\n"
+"                            finalnego, czyli Właścicieli, Menagerów punktów "
+"gastronomicznych. W przypadku zainteresowania zakupem naszych produktów\n"
+"                            pomagamy przy nawiązaniu współpracy z "
+"najbardziej odpowiednim dystrybutorem, który dzięki swojej wiedzy o naszym "
+"asortymencie\n"
+"                            oraz o rozbudowanych możliwościach logistycznych "
+"zaproponuje już bezpośrednio z Państwem najbardziej korzystne warunki\n"
+"                            współpracy. "
+msgstr ""
+"We have been cooperating with the most significant"
+"distributors and gastronomic wholesalers in the country for  over a dozen years. "
+"Thanks to such a long-term partner relationship, we have developed very favorable "
+"trading and pricing terms for the final recipient, ie the owners, "
+"managers of catering outlets. If you are interested in purchasing "
+"our products we help in establishing cooperation with the most "
+"suitable distributor, who, thanks to his knowledge of our assortment and extensive "
+"logistic possibilities, will propose directly with you the most favorable "
+"terms of cooperation."
+
 #: rudopal/templates/distributor/distributor_list.html:74
 msgid "DOSTĘPNE PRODUKTY"
 msgstr "AVAILABLE PRODUCTS"
@@ -329,7 +378,8 @@ msgstr "Job offers"
 msgid ""
 "Nie wahaj się i zaaplikuj na interesujące cię stanowisko pracy, dołącz do "
 "naszego zespołu."
-msgstr "Do not hesitate and apply for the job that interests you, join our team."
+msgstr ""
+"Do not hesitate and apply for the job that interests you, join our team."
 
 #: rudopal/templates/job/joboffer_list.html:35
 msgid "Niema aktualnie ofert pracy"
@@ -339,13 +389,17 @@ msgstr "There are currently no job offers"
 msgid ""
 "Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i "
 "najnowsze wydarzenia"
-msgstr "We are innovative and we are changing for you. Follow our activities and the latest events"
+msgstr ""
+"We are innovative and we are changing for you. Follow our activities and the "
+"latest events"
 
 #: rudopal/templates/news/news_list.html:25
 msgid ""
 "Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i "
 "najnowsze wydarzenia."
-msgstr "We are innovative and we are changing for you. Follow our activities and the latest events."
+msgstr ""
+"We are innovative and we are changing for you. Follow our activities and the "
+"latest events."
 
 #: rudopal/templates/news/news_list.html:54
 #: rudopal/templates/news/news_list.html:105
@@ -435,11 +489,15 @@ msgid ""
 "Produkujemy tradycyjne potrawy dla gastronomii,<br> a także wspieramy rozwój "
 "biznesów, nowymi innowacyjnymi produktami. Rozwijaj z nami swój biznes i "
 "skontaktuj się z nami"
-msgstr "We produce traditional dishes for gastronomy, and we also support business development, new innovative products. Develop your business with us and contact us"
+msgstr ""
+"We produce traditional dishes for gastronomy, and we also support business "
+"development, new innovative products. Develop your business with us and "
+"contact us"
 
 #: rudopal/templates/quality.html:13
 msgid "JAKOŚĆ NASZYCH PRODUKTÓW POTWIERDZAJĄ UZYSKANE NAGRODY I CERTYFIKATY"
-msgstr "THE QUALITY OF OUR PRODUCTS CONFIRM THE RECEIVED AWARDS AND CERTIFICATES"
+msgstr ""
+"THE QUALITY OF OUR PRODUCTS CONFIRM THE RECEIVED AWARDS AND CERTIFICATES"
 
 #: rudopal/templates/quality.html:18
 msgid "Nagrody"
@@ -453,25 +511,31 @@ msgstr "Garlic bread - award granted by PepsiCo Restaurants"
 msgid ""
 "Grzanki czosnkowe - certyfikat przyznany przez Wielkopolską Fundację "
 "Żywnościową"
-msgstr "Garlic Croutons - a certificate awarded by the Wielkopolska Food Foundation"
+msgstr ""
+"Garlic Croutons - a certificate awarded by the Wielkopolska Food Foundation"
 
 #: rudopal/templates/quality.html:22
 msgid ""
 "grupa produktów- żywność wygodna- Certyfikat przyznany przez Wielkopolską "
 "Fundację Żywnościową"
-msgstr "group of products - convenient food - Certificate awarded by the Wielkopolska Food Foundation"
+msgstr ""
+"group of products - convenient food - Certificate awarded by the "
+"Wielkopolska Food Foundation"
 
 #: rudopal/templates/quality.html:23
 msgid ""
 "wyróżnienie przyznane przez Korporację Producentów Żywności - Klub Promocji "
 "Jakości"
-msgstr "distinction awarded by the Food Industry Corporation - Quality Promotion Club"
+msgstr ""
+"distinction awarded by the Food Industry Corporation - Quality Promotion Club"
 
 #: rudopal/templates/quality.html:24
 msgid ""
 "Grzanki czosnkowe - Nagroda Ministra Gospodarki w kategorii Żywność - Targi "
 "EuroGastro Warszawa"
-msgstr "Garlic croutons - Minister of Economy's Award in the Food - EuroGastro Warsaw Fair category"
+msgstr ""
+"Garlic croutons - Minister of Economy's Award in the Food - EuroGastro "
+"Warsaw Fair category"
 
 #: rudopal/templates/quality.html:31
 msgid "Polityka jakości"
@@ -490,13 +554,22 @@ msgid ""
 "                    dotyczących jakości spoczywa na każdym pracowniku, "
 "dlatego dążymy do podnoszenie świadomości załogi\n"
 "                    i motywujemy do dążenia do doskonałości."
-msgstr " Our food quality and safety policy is based on the production and delivery of products in accordance with the expectations of customers. We strive to make our products safe and comply with food law regulations. Quality is a decisive factor for us for success, further development and market position. We are convinced that the responsibility for fulfilling quality obligations lies with every employee, therefore we strive to raise the awareness of the staff and motivate us to strive for perfection."
+msgstr ""
+" Our food quality and safety policy is based on the production and delivery "
+"of products in accordance with the expectations of customers. We strive to "
+"make our products safe and comply with food law regulations. Quality is a "
+"decisive factor for us for success, further development and market position. "
+"We are convinced that the responsibility for fulfilling quality obligations "
+"lies with every employee, therefore we strive to raise the awareness of the "
+"staff and motivate us to strive for perfection."
 
 #: rudopal/templates/quality.html:51
 msgid ""
 "Gwarantujemy, że nasze produkty pomyślnie przeszły specjalistyczne testy i "
 "inspekcje, są bezpieczne dla konsumentów i najwyższej jakości."
-msgstr "We guarantee that our products have successfully passed specialist tests and inspections, are safe for consumers and of the highest quality."
+msgstr ""
+"We guarantee that our products have successfully passed specialist tests and "
+"inspections, are safe for consumers and of the highest quality."
 
 #: rudopal/templates/quality.html:66
 msgid "Międzynarodowy certyfikat jakości - TUV CERT - TUV Saarland"
@@ -530,7 +603,9 @@ msgstr "innovation"
 msgid ""
 " Jesteśmy twórcą produktu \"Iglo&nbsp;drops\"&nbsp;-&nbsp;sosy porcjowane. "
 "To z naszej firmy wychodzą najciekawsze pomysły."
-msgstr " We are the creator of the product \"Iglo&nbsp;drops\"&nbsp;-&nbsp; portions of sauces. The most interesting ideas come from our company."
+msgstr ""
+" We are the creator of the product \"Iglo&nbsp;drops\"&nbsp;-&nbsp; portions "
+"of sauces. The most interesting ideas come from our company."
 
 #: rudopal/templates/technology.html:27
 msgid "Reputacja"
@@ -550,5 +625,6 @@ msgstr "confidentiality"
 msgid ""
 "Kiedy klient wymaga od nas dotrzymania tajemnicy receptury, stajemy na "
 "wysokości zadania. Cechuje nas duża dbałość o bezpieczeństwo i poufność."
-msgstr "When a client requires us to keep the recipe secret, we are up to the task. We are characterized by great care for security and confidentiality."
-
+msgstr ""
+"When a client requires us to keep the recipe secret, we are up to the task. "
+"We are characterized by great care for security and confidentiality."

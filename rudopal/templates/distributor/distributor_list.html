@@ -8,7 +8,7 @@
             <div class="range range-xs-center"> 
             <div>
               <a href="#gmap">
-                <h5 class="font-default text-center releway" style="float:left;">Kliknij aby przejść do mapy dystrybutorów</h5>&nbsp;
+                <h5 class="font-default text-center releway" style="float:left;">{% trans "Kliknij aby przejść do mapy dystrybutorów" %} </h5>&nbsp;
                 <img style="margin-top: 0px;" src="{% static "images/mini-map.png" %}">
               </a>
             </div>                              
@@ -22,11 +22,11 @@
                         </div>
                         <div class="unit-body">
                           <p>
-                            <q>Od kilkunastu lat współpracujemy z najbardziej znaczącymi dystrybutorami i hurtowaniami gastronomicznymi w kraju. Dzięki tak długoletniej, partnerskiej relacji wypracowaliśmy wspólnie bardzo korzystne warunki handlowe i cenowe dla Odbiorcy
+                            <q>{% blocktrans %} Od kilkunastu lat współpracujemy z najbardziej znaczącymi dystrybutorami i hurtowaniami gastronomicznymi w kraju. Dzięki tak długoletniej, partnerskiej relacji wypracowaliśmy wspólnie bardzo korzystne warunki handlowe i cenowe dla Odbiorcy
                             finalnego, czyli Właścicieli, Menagerów punktów gastronomicznych. W przypadku zainteresowania zakupem naszych produktów
                             pomagamy przy nawiązaniu współpracy z najbardziej odpowiednim dystrybutorem, który dzięki swojej wiedzy o naszym asortymencie
                             oraz o rozbudowanych możliwościach logistycznych zaproponuje już bezpośrednio z Państwem najbardziej korzystne warunki
-                            współpracy.</q>
+                            współpracy. {% endblocktrans %}</q>
                           </p>
                         </div>
                       </div>
@@ -73,7 +73,7 @@
                     <div class="products">
                     	<cite>{% trans "DOSTĘPNE PRODUKTY" %}</cite><br>
                     	{% for product in distributor.products.all%}
-                    		<cite>&bull; <a class="link-color-gray" href="/produkty/{{product.slug}}">
+                    		<cite>&bull; <a class="link-color-gray" href="/{% trans "produkty" %}/{{product.slug}}">
                         {% if LANGUAGE_CODE == 'pl' %}
                           {{ product.name_pl }}
 

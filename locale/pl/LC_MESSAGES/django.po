@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 21:46+0200\n"
+"POT-Creation-Date: 2018-06-18 23:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,8 @@ msgid "Dane logistyczne"
 msgstr ""
 
 #: apps/product/templates/random_product.html:34
-#: rudopal/templates/base.html:165
+#: rudopal/templates/base.html:178
+#: rudopal/templates/distributor/distributor_list.html:76
 msgid "produkty"
 msgstr ""
 
@@ -193,53 +194,53 @@ msgstr ""
 msgid "Napisz do wybranej z odpowiedniego działu osoby"
 msgstr ""
 
-#: rudopal/templates/about.html:133 rudopal/templates/base.html:168
+#: rudopal/templates/about.html:133 rudopal/templates/base.html:181
 #: rudopal/templates/product/product_list.html:100
 msgid "kontakt"
 msgstr ""
 
-#: rudopal/templates/base.html:79 rudopal/templates/base.html.py:93
-#: rudopal/templates/base.html:108
+#: rudopal/templates/base.html:92 rudopal/templates/base.html.py:106
+#: rudopal/templates/base.html:121
 msgid "Gastronomia"
 msgstr ""
 
-#: rudopal/templates/base.html:81
+#: rudopal/templates/base.html:94
 msgid "Ciasto do pizzy"
 msgstr ""
 
-#: rudopal/templates/base.html:82
+#: rudopal/templates/base.html:95
 msgid "zawsze pod ręką"
 msgstr ""
 
-#: rudopal/templates/base.html:94
+#: rudopal/templates/base.html:107
 msgid "Gofry tradycyjne"
 msgstr ""
 
-#: rudopal/templates/base.html:95
+#: rudopal/templates/base.html:108
 msgid "umilą każdy dzień"
 msgstr ""
 
-#: rudopal/templates/base.html:110
+#: rudopal/templates/base.html:123
 msgid "Grzanki czosnkowe"
 msgstr ""
 
-#: rudopal/templates/base.html:111
+#: rudopal/templates/base.html:124
 msgid "na chrupkie powitanie"
 msgstr ""
 
-#: rudopal/templates/base.html:122
+#: rudopal/templates/base.html:135
 msgid "Dla Biznesu"
 msgstr ""
 
-#: rudopal/templates/base.html:123
+#: rudopal/templates/base.html:136
 msgid "Sosy porcjowane"
 msgstr ""
 
-#: rudopal/templates/base.html:124
+#: rudopal/templates/base.html:137
 msgid "doskonale powtarzalny smak potraw"
 msgstr ""
 
-#: rudopal/templates/base.html:157
+#: rudopal/templates/base.html:170
 msgid ""
 "Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia "
 "maksymalnej wygody w korzystaniu z naszego serwisu. Jeśli nie wyrażasz "
@@ -247,43 +248,43 @@ msgid ""
 "przeglądarce."
 msgstr ""
 
-#: rudopal/templates/base.html:164
+#: rudopal/templates/base.html:177
 msgid "START"
 msgstr ""
 
-#: rudopal/templates/base.html:165
+#: rudopal/templates/base.html:178
 msgid "PRODUKTY"
 msgstr ""
 
-#: rudopal/templates/base.html:166 rudopal/templates/start.html:19
+#: rudopal/templates/base.html:179 rudopal/templates/start.html:19
 msgid "mapa-dystrybucji"
 msgstr ""
 
-#: rudopal/templates/base.html:166
+#: rudopal/templates/base.html:179
 msgid "MAPA DYSTRYBUCJI"
 msgstr ""
 
-#: rudopal/templates/base.html:167
+#: rudopal/templates/base.html:180
 msgid "aktualnosci"
 msgstr ""
 
-#: rudopal/templates/base.html:167 rudopal/templates/news/news_list.html:10
+#: rudopal/templates/base.html:180 rudopal/templates/news/news_list.html:10
 msgid "AKTUALNOŚCI"
 msgstr ""
 
-#: rudopal/templates/base.html:168
+#: rudopal/templates/base.html:181
 msgid "KONTAKT"
 msgstr ""
 
-#: rudopal/templates/base.html:169
+#: rudopal/templates/base.html:182
 msgid "praca"
 msgstr ""
 
-#: rudopal/templates/base.html:169
+#: rudopal/templates/base.html:182
 msgid "PRACA"
 msgstr ""
 
-#: rudopal/templates/base.html:183
+#: rudopal/templates/base.html:196
 msgid "Wszystkie prawa zastrzeżone"
 msgstr ""
 
@@ -309,6 +310,26 @@ msgstr ""
 
 #: rudopal/templates/contact/contact_list.html:215
 msgid "Godziny pracy"
+msgstr ""
+
+#: rudopal/templates/distributor/distributor_list.html:11
+msgid "Kliknij aby przejść do mapy dystrybutorów"
+msgstr ""
+
+#: rudopal/templates/distributor/distributor_list.html:25
+msgid ""
+" Od kilkunastu lat współpracujemy z najbardziej znaczącymi dystrybutorami i "
+"hurtowaniami gastronomicznymi w kraju. Dzięki tak długoletniej, partnerskiej "
+"relacji wypracowaliśmy wspólnie bardzo korzystne warunki handlowe i cenowe "
+"dla Odbiorcy\n"
+"                            finalnego, czyli Właścicieli, Menagerów punktów "
+"gastronomicznych. W przypadku zainteresowania zakupem naszych produktów\n"
+"                            pomagamy przy nawiązaniu współpracy z "
+"najbardziej odpowiednim dystrybutorem, który dzięki swojej wiedzy o naszym "
+"asortymencie\n"
+"                            oraz o rozbudowanych możliwościach logistycznych "
+"zaproponuje już bezpośrednio z Państwem najbardziej korzystne warunki\n"
+"                            współpracy. "
 msgstr ""
 
 #: rudopal/templates/distributor/distributor_list.html:74
