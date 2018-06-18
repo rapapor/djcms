@@ -26,7 +26,7 @@
                       <ul class="list-inline list-inline-md offset-top-5">
                         <li>
                           <div class="unit unit-horizontal unit-spacing-xxs">
-                            <div class="unit-left"><span class="text-base">Data publikacji:</span></div>
+                            <div class="unit-left"><span class="text-base">{% trans "Data publikacji" %}:</span></div>
                             <div class="unit-body">
                               <time>{% render_model news "pub_date" %}</time>
                             </div>
@@ -80,7 +80,7 @@
                     <div class="range offset-top-55">                      
                       <div class="cell-xs-6 cell-md-12 offset-top-50 offset-xs-top-0 offset-md-top-50">
                         <!-- Archive-->
-                        <div class="h6 text-uppercase">Ostatnio dodane</div>
+                        <div class="h6 text-uppercase">{% trans "Ostatnio dodane" %}</div>
                         {% for news in object.getlistArticle %}
                         <div class="offset-top-30">                        	
                           <div class="unit unit-horizontal unit-spacing-xs">

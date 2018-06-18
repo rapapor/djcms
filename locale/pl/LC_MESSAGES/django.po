@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 23:39+0200\n"
+"POT-Creation-Date: 2018-06-18 23:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -343,6 +343,7 @@ msgid "DOSTĘPNE PRODUKTY"
 msgstr ""
 
 #: rudopal/templates/job/joboffer_detail.html:26
+#: rudopal/templates/news/news_detail.html:29
 msgid "Data publikacji"
 msgstr ""
 
@@ -368,6 +369,10 @@ msgstr ""
 msgid ""
 "Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i "
 "najnowsze wydarzenia"
+msgstr ""
+
+#: rudopal/templates/news/news_detail.html:83
+msgid "Ostatnio dodane"
 msgstr ""
 
 #: rudopal/templates/news/news_list.html:25
