@@ -2,6 +2,7 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% load cms_tags %}
 {% block content %}
+{% load i18n %} 
 
 <section class="section-50 section-sm-100">
           <div class="shell">
@@ -12,11 +13,17 @@
                   <article class="post post-classic">                    
                     
                     <section class="post-content text-left offset-top-25">
-                      <h5 class="text-uppercase">{{ object.position_pl }}</h5>
+                      <h5 class="text-uppercase">
+                      {% if LANGUAGE_CODE == 'pl' %}
+                        {{ object.position_pl }}
+                      {% elif LANGUAGE_CODE == 'en' %}
+                        {{ object.position_en }}
+                      {% endif %}
+                      </h5>
                       <ul class="list-inline list-inline-md offset-top-5">
                         <li>
                           <div class="unit unit-horizontal unit-spacing-xxs">
-                            <div class="unit-left"><span class="text-base">Data publikacji:</span></div>
+                            <div class="unit-left"><span class="text-base">{% trans "Data publikacji" %}:</span></div>
                             <div class="unit-body">
                               <time>{{ object.pub_date }}</time>
                             </div>
@@ -41,12 +48,20 @@
                     <div class="range offset-top-55">                      
                       <div class="cell-xs-6 cell-md-12 offset-top-50 offset-xs-top-0 offset-md-top-50">
                        
-                        <div class="h6 text-uppercase">Inne oferty</div>
+                        <div class="h6 text-uppercase">{% trans "Inne oferty" %}</div>
                         {% for job in object.getlistoffer %}
                         <div class="offset-top-30">                        	
                           <div class="unit unit-horizontal unit-spacing-xs">
                             
-                            <div class="unit-body"><a href="../{{job.slug}}" class="link-default"> {{ job.position_pl }}</a>
+                            <div class="unit-body">
+                              <a href="../{{job.slug}}" class="link-default">
+                              {% if LANGUAGE_CODE == 'pl' %}
+                                {{ job.position_pl }}
+
+                              {% elif LANGUAGE_CODE == 'en' %}
+                                {{ job.position_en }}
+                              {% endif %}
+                            </a>
                               <div>
                                 <time datetime="2016">{{ job.pub_date|date }}</time>
                               </div>

@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% load cms_tags %}
-{% block content %}  
+{% block content %}
+{% load i18n %}  
 <section id="contact-big-images" class="text-center text-sm-left section-50 section-sm-top-100 section-sm-bottom-205 section-with-angle bg-ecru-white" style="background-image:url('{% static "images/kontakt_1.jpg" %}')">
   <div class="shell">
     <div class="range range-xs-center range-md-right">      
@@ -12,8 +13,8 @@
   	<div class="shell">
     	<div class="range range-xs-center">
 		    <div class="cell-md-12 offset-top-40">
-		      	<h5 class="font-default text-center releway">Dział Sprzedaży</h5>
-		      	<h6 class="font-default text-center releway">Skontaktuj się z nami</h6>
+		      	<h5 class="font-default text-center releway">{% trans "Dział Sprzedaży" %}</h5>
+		      	<h6 class="font-default text-center releway">{% trans "Skontaktuj się z nami" %}</h6>
 		    </div>    
     		{% for contact in contacts %}
     			{% if contact.get_section_display == 'seller' %}
@@ -25,9 +26,24 @@
 					        </div>
 					      </div>
 					      <div class="quote-body">
-					        <h6>{{ contact.name_pl }}</h6>
+					        <h6>
+					        	{% if LANGUAGE_CODE == 'pl' %}
+					        		{{ contact.name_pl }}
+ 
+					        	{% elif LANGUAGE_CODE == 'en' %}
+					        		{{ contact.name_en }}
+					        	{% endif %}
+					        </h6>
 					        <p>
-					          <q>{{contact.position_pl}}<br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
+					          <q>
+					          	{% if LANGUAGE_CODE == 'pl' %}
+					        		{{contact.position_pl}}
+ 
+					        	{% elif LANGUAGE_CODE == 'en' %}
+					        		{{contact.position_en}}
+					        	{% endif %}
+					          <br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a>
+					          </q>
 					        </p>
 					        <cite><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></cite><br>
 					      </div>		      
@@ -42,7 +58,7 @@
   <div class="shell">
     <div class="range range-xs-center">
 	    <div class="cell-md-12 offset-top-40">
-	      	<h5 class="font-default text-center releway">Dział Zakupów i Jakości</h5>	      	
+	      	<h5 class="font-default text-center releway">{% trans "Dział Zakupów i Jakości" %}</h5>	      	
 	    </div>
     
     {% for contact in contacts %}
@@ -55,9 +71,24 @@
 		        </div>
 		      </div>
 		      <div class="quote-body">
-		        <h6>{{ contact.name_pl }}</h6>
+		        <h6>
+		        	{% if LANGUAGE_CODE == 'pl' %}
+		        		{{ contact.name_pl }}
+
+		        	{% elif LANGUAGE_CODE == 'en' %}
+		        		{{ contact.name_en }}
+		        	{% endif %}
+
+		        </h6>
 		        <p>
-		          <q>{{contact.position_pl}}<br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
+		          <q>
+		        	{% if LANGUAGE_CODE == 'pl' %}
+	        			{{contact.position_pl}}
+
+	        		{% elif LANGUAGE_CODE == 'en' %}
+	        			{{contact.position_en}}
+	        		{% endif %}
+		          <br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
 		        </p>
 		        <cite><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></cite><br>
 		      </div>		      
@@ -85,9 +116,23 @@
 		        				</div>
 		      				</div>
 		      				<div class="quote-body">
-		        				<h6>{{ contact.name_pl }}</h6>
+		        				<h6>
+		        					{% if LANGUAGE_CODE == 'pl' %}
+		        						{{ contact.name_pl }}
+
+		        					{% elif LANGUAGE_CODE == 'en' %}
+		        						{{ contact.name_en }}
+		        					{% endif %}
+		        				</h6>
 						        <p>
-						          <q>{{contact.position_pl}}<br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
+						          <q>
+						        	{% if LANGUAGE_CODE == 'pl' %}
+					        			{{contact.position_pl}}
+
+					        		{% elif LANGUAGE_CODE == 'en' %}
+					        			{{contact.position_en}}
+					        		{% endif %}
+						          <br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
 						        </p>
 		        				<cite><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></cite><br>
 		      				</div>		      
@@ -114,9 +159,22 @@
 					        </div>
 					      </div>
 					      <div class="quote-body">
-					        <h6>{{ contact.name_pl }}</h6>
+					        <h6>
+					        	{% if LANGUAGE_CODE == 'pl' %}
+		        					{{ contact.name_pl }}
+		        				{% elif LANGUAGE_CODE == 'en' %}
+		        					{{ contact.name_en }}
+		        				{% endif %}
+		        			</h6>
 					        <p>
-					          <q>{{contact.position_pl}}<br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
+					          <q>
+					        	{% if LANGUAGE_CODE == 'pl' %}
+				        			{{contact.position_pl}}
+
+				        		{% elif LANGUAGE_CODE == 'en' %}
+				        			{{contact.position_en}}
+				        		{% endif %}
+					          <br><a href="callto:{{ contact.phone }}" class="link-default">{{ contact.phone }}</a></q>
 					        </p>
 					        <cite><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></cite><br>
 					      </div>		      
@@ -133,7 +191,7 @@
                 <aside class="inset-lg-left-70">
                   <div class="range">
                     <div class="cell-xs-6 cell-md-3 offset-top-50 offset-xs-top-0 offset-md-top-50">
-                      <div class="h6 text-uppercase">Zadzwoń</div>
+                      <div class="h6 text-uppercase">{% trans "Zadzwoń" %}</div>
                       <div class="text-subline offset-top-15"></div>
                       <div class="offset-top-25">
                         <div class="unit unit-horizontal unit-middle unit-spacing-xs">
@@ -143,7 +201,7 @@
                       </div>
                     </div>
                     <div class="cell-xs-6 cell-md-6 offset-top-50">
-                      <div class="h6 text-uppercase">Odwiedź nas</div>
+                      <div class="h6 text-uppercase">{% trans "Odwiedź nas" %}</div>
                       <div class="text-subline offset-top-15"></div>
                       <div class="offset-top-25 unit unit-horizontal unit-spacing-xs">
                         <div class="unit-left"><span class="icon icon-xs icon-primary text-middle mdi mdi-map-marker"></span></div>
@@ -154,7 +212,7 @@
                       </div>
                     </div>
                     <div class="cell-xs-6 cell-md-3 offset-top-50">
-                      <div class="h6 text-uppercase">Godziny pracy</div>
+                      <div class="h6 text-uppercase">{% trans "Godziny pracy" %}</div>
                       <div class="text-subline offset-top-15"></div>
                       <div class="offset-top-25 unit unit-horizontal unit-spacing-xs">
                         <div class="unit-left"><span class="icon icon-xs icon-primary mdi mdi-clock text-middle"></span></div>

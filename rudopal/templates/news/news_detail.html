@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 {% block content %}
+{% load i18n %}
 
 <section class="section-50 section-sm-100">
           <div class="shell">
@@ -15,7 +16,13 @@
                     {% endif%}
                     <!-- Post content-->
                     <section class="post-content text-left offset-top-25">
-                      <h5 class="text-uppercase">{% render_model news "title_pl" %}</h5>
+                      <h5 class="text-uppercase">
+                      {% if LANGUAGE_CODE == 'pl' %}
+                        {% render_model news "title_pl" %}
+                      {% elif LANGUAGE_CODE == 'en' %}
+                        {% render_model news "title_en" %}
+                      {% endif %}
+                      </h5>
                       <ul class="list-inline list-inline-md offset-top-5">
                         <li>
                           <div class="unit unit-horizontal unit-spacing-xxs">
@@ -42,7 +49,7 @@
                               </div>
                               <div class="unit-body">
                                 <p class="h5 text-light">
-                                  <q>Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i najnowsze wydarzenia.</q>
+                                  <q>{% trans "Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i najnowsze wydarzenia" %}.</q>
                                 </p>
                               </div>
                             </div>
@@ -82,7 +89,14 @@
                             <img src="{{news.image.url}}" alt="" width="70" height="70" class="img-rounded"/>
                             {% endif %}
                             </div>
-                            <div class="unit-body"><a href="../{{news.slug}}" class="link-default"> {{ news.title_pl }}</a>
+                            <div class="unit-body">
+                              <a href="../{{news.slug}}" class="link-default">
+                                {% if LANGUAGE_CODE == 'pl' %}
+                                  {{ news.title_pl }}
+                                {% elif LANGUAGE_CODE == 'en' %}
+                                  {{ news.title_en }}
+                                {% endif %}
+                              </a>
                               <div>
                                 <time datetime="2016">{{ news.pub_date|date }}</time>
                               </div>

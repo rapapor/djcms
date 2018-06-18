@@ -1,8 +1,8 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
-
+{% load i18n %}
 <section class="section-50 section-sm-top-50 section-sm-bottom-100 bg-image-6">
           <div class="shell-wide isotope-wrap">
-            <h4 class=" releway rel-700 offset-top-25">Produkty</h4>
+            <h4 class=" releway rel-700 offset-top-25">{% trans "Produkty" %}</h4>
             <div class="range range-sm-center">              
               <div class="cell-xs-12 offset-top-40">
                 <!-- Isotope Content-->
@@ -17,9 +17,21 @@
 	                        </div>
 	                        <div class="unit-body">
 	                          <div class="caption text-left">
-	                            <h5>{{singleproduct.name_pl}}</h5>
-	                            <p class="text-italic">{{singleproduct.desc_mini_pl}}</p>
-	                            <a href="produkty/{{singleproduct.slug}}" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width" style="font-size: 10px; margin-top:10px;">więcej</a>
+	                            <h5>
+	                            	{% if LANGUAGE_CODE == 'pl' %}
+                                      {{singleproduct.name_pl}}
+                                    {% elif LANGUAGE_CODE == 'en' %}
+                                      {{singleproduct.name_en}}
+                                    {% endif %}
+	                            </h5>
+	                            <p class="text-italic">
+	                            	{% if LANGUAGE_CODE == 'pl' %}
+                                      {{singleproduct.desc_mini_pl}}
+                                    {% elif LANGUAGE_CODE == 'en' %}
+                                      {{singleproduct.desc_mini_en}}
+                                    {% endif %}	                            	
+	                            </p>
+	                            <a href="{% trans "produkty" %}/{{singleproduct.slug}}" class="btn btn-xs btn-burnt-sienna text-bottom btn-min-width" style="font-size: 10px; margin-top:10px;">{% trans "więcej" %}</a>
 	                          </div>
 	                        </div>
 	                      </div>

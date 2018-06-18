@@ -2,17 +2,26 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% load cms_tags %}
 {% block content %}
+{% load i18n %} 
 
 
         <section class="text-center text-sm-left section-50 section-sm-top-80 section-sm-bottom-100 bg-ecru-white">
           <div class="shell">
-            <h4 class="font-default text-center">Oferty pracy</h4>
-            <p class="text-center">Nie wahaj się i zaaplikuj na interesujące cię stanowisko pracy, dołącz do naszego zespołu.</p>
+            <h4 class="font-default text-center">{% trans "Oferty pracy" %}</h4>
+            <p class="text-center">{% trans "Nie wahaj się i zaaplikuj na interesujące cię stanowisko pracy, dołącz do naszego zespołu." %}</p>
             <div class="range">
             {% if active_job_offer_count > 0 %}
             {% for job in active_job_offer %}
               <div class="cell-sm-6">
-                <div class="job-offer bg-white"><a href="{{job.slug}}" class="h5">{{ job.position_pl }}</a>
+                <div class="job-offer bg-white">
+                  <a href="{{job.slug}}" class="h5">
+                    {% if LANGUAGE_CODE == 'pl' %}
+                      {{ job.position_pl }}
+
+                    {% elif LANGUAGE_CODE == 'en' %}
+                      {{ job.position_en }}
+                    {% endif %}
+                  </a>
                   <ul class="list-inline offset-top-10">
                     <li><span class="text-middle icon icon-xxs icon-primary mdi mdi-map-marker"></span><span class="text-middle">{{ job.city }}</span></li>
                     <li><span class="text-middle icon icon-xxs icon-primary mdi mdi-clock"></span><span class="text-middle">{{ job.time_size }}</span></li>
@@ -23,7 +32,7 @@
 
               {% endfor %}
               {% else %}
-              <h4 class="font-default text-center"> Niema aktualnie ofert pracy </h4>
+              <h4 class="font-default text-center"> {% trans "Niema aktualnie ofert pracy" %} </h4>
               {% endif %}
              
             </div>

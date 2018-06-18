@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% load cms_tags filters%}
-
 {% block content %}
+{% load i18n %}
 
  <section>
   <div class="shell">
     <div class="range">
     <div class="cell-md-12 offset-top-40">
-      <h4 class="font-default text-center releway">AKTUALNOŚCI</h4>
+      <h4 class="font-default text-center releway">{% trans "AKTUALNOŚCI" %}</h4>
     </div>
         
     <div class="offset-top-40">
@@ -22,7 +22,7 @@
             </div>
             <div class="unit-body">
               <p class="h5 text-light">
-                <q>Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i najnowsze wydarzenia.</q>
+                <q>{% trans "Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i najnowsze wydarzenia." %}</q>
               </p>
             </div>
           </div>
@@ -51,17 +51,31 @@
             </div>
                 <ul class="list-inline offset-top-14 offset-sm-top-0">
                   <li>
-                    <div class="post-tags group-xs"><a href="{{news.slug}}" class="label-custom label-sm-custom label-rounded-custom label-primary text-normal">Czytaj więcej</a>
+                    <div class="post-tags group-xs"><a href="{{news.slug}}" class="label-custom label-sm-custom label-rounded-custom label-primary text-normal">{% trans "Czytaj więcej" %}</a>
                     </div>
                   </li>                                  
                   </ul>
                   <!-- Post Title-->
                   <div class="post-title">
-                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ news.title_pl }}</a></h6>
+                    <h6 class="offset-top-25">
+                      <a href="{{news.slug}}" class="link-default">
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{ news.title_pl }}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{ news.title_en }}
+                        {% endif %}
+                      </a>
+                    </h6>
                   </div>
                   <!-- Post Body-->
                   <div class="post-body offset-top-20">
-                    <p>{{news.tip_pl}}</p>
+                    <p>
+                      {% if LANGUAGE_CODE == 'pl' %}
+                          {{news.tip_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{news.tip_en}}
+                        {% endif %}
+                    </p>
                   </div>
               </section>
             </article>
@@ -88,17 +102,30 @@
             </div>
                 <ul class="list-inline offset-top-14 offset-sm-top-0">
                   <li>
-                    <div class="post-tags group-xs"><a href="{{news.slug}}" class="label-custom label-sm-custom label-rounded-custom label-primary text-normal">Czytaj więcej</a>
+                    <div class="post-tags group-xs"><a href="{{news.slug}}" class="label-custom label-sm-custom label-rounded-custom label-primary text-normal">{% trans "Czytaj więcej" %}</a>
                     </div>
                   </li>                                  
-                  </ul>
                   <!-- Post Title-->
                   <div class="post-title">
-                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ news.title_pl }}</a></h6>
+                    <h6 class="offset-top-25">
+                      <a href="{{news.slug}}" class="link-default">
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{ news.title_pl }}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{ news.title_en }}
+                        {% endif %}
+                      </a>
+                    </h6>
                   </div>
                   <!-- Post Body-->
                   <div class="post-body offset-top-20">
-                    <p>{{news.tip_pl}}</p>
+                    <p>
+                      {% if LANGUAGE_CODE == 'pl' %}
+                          {{news.tip_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{news.tip_en}}
+                        {% endif %}
+                    </p>
                   </div>
               </section>
             </article>
@@ -125,17 +152,31 @@
             </div>
                 <ul class="list-inline offset-top-14 offset-sm-top-0">
                   <li>
-                    <div class="post-tags group-xs"><a href="{{news.slug}}" class="label-custom label-sm-custom label-rounded-custom label-primary text-normal">Czytaj więcej</a>
+                    <div class="post-tags group-xs"><a href="{{news.slug}}" class="label-custom label-sm-custom label-rounded-custom label-primary text-normal">{% trans "Czytaj więcej" %}</a>
                     </div>
                   </li>                                  
                   </ul>
                   <!-- Post Title-->
                   <div class="post-title">
-                    <h6 class="offset-top-25"><a href="{{news.slug}}" class="link-default">{{ news.title_pl }}</a></h6>
+                    <h6 class="offset-top-25">
+                      <a href="{{news.slug}}" class="link-default">
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{ news.title_pl }}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{ news.title_en }}
+                        {% endif %}
+                      </a>
+                    </h6>
                   </div>
                   <!-- Post Body-->
                   <div class="post-body offset-top-20">
-                    <p>{{news.tip_pl}}</p>
+                    <p>
+                      {% if LANGUAGE_CODE == 'pl' %}
+                          {{news.tip_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{news.tip_en}}
+                        {% endif %}
+                    </p>
                   </div>
               </section>
             </article>

@@ -2,6 +2,7 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% load cms_tags %}
 {% block content %}
+{% load i18n %}
         <!-- Gallery grid-->
         <section class="section-50 section-sm-80">
           <div class="shell isotope-wrap">
@@ -10,16 +11,16 @@
                 <div class="cell-box">
                   <ul class="isotope-filters-responsive">
                     <li>
-                       <p>Wybierz typ produktu:</p>
+                       <p>{% trans "Wybierz typ produktu" %}:</p>
                     </li>                    
                     <li class="block-top-level">
                       <!-- Isotope Filters-->
-                      <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-primary-lighter btn-shape-circle">Lista kategorii<span class="caret"></span></button>
+                      <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-primary-lighter btn-shape-circle">{% trans "Lista kategorii" %}<span class="caret"></span></button>
                       <div id="isotope-1" class="isotope-filters isotope-filters-horizontal">
                         <ul class="inline-list">
-                          <li><a data-isotope-filter="*" data-isotope-group="gallery" href="#" class="active">WSZYSTKO</a></li>
-                          <li><a data-isotope-filter="gastro" data-isotope-group="gallery" href="#">DLA GASTRONOMII</a></li>
-                          <li><a data-isotope-filter="biz" data-isotope-group="gallery" href="#">DLA BIZNESU</a></li>
+                          <li><a data-isotope-filter="*" data-isotope-group="gallery" href="#" class="active">{% trans "WSZYSTKO" %}</a></li>
+                          <li><a data-isotope-filter="gastro" data-isotope-group="gallery" href="#">{% trans "DLA GASTRONOMII" %}</a></li>
+                          <li><a data-isotope-filter="biz" data-isotope-group="gallery" href="#">{% trans "DLA BIZNESU" %}</a></li>
                         </ul>
                       </div>
                     </li>
@@ -34,9 +35,21 @@
                       <figure><img src="/media/{{ product.product_mini_file }}" alt="" width="370" height="278" class="img-responsive"/>
                       </figure>
                       <div class="caption">
-                        <h5>{{ product.name_pl }}</h5>
+                        <h5>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{ product.name_pl }}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{ product.name_en }}
+                        {% endif %}
+                        </h5>
                         <hr class="hr divider-xs bg-white"/>
-                        <p>{{ product.desc_mini_pl }}</p>
+                        <p>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{ product.desc_mini_pl }}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{ product.desc_mini_en }}
+                        {% endif %}
+                        </p>
                         <svg x="0px" y="0px" width="35px" height="35px" viewbox="0 0 127.725 127.65">
                           <g>
                             <defs>
@@ -71,7 +84,7 @@
                 </div>
                 <div class="range range-xs-center">
                   <div class="cell-sm-10 cell-md-7">
-                    <h5 class="font-default">Produkujemy tradycyjne potrawy dla gastronomii,<br> a także wspieramy rozwój biznesów, nowymi innowacyjnymi produktami. Rozwijaj z nami swój biznes i skontaktuj się z nami</h5>
+                    <h5 class="font-default">{% trans "Produkujemy tradycyjne potrawy dla gastronomii,<br> a także wspieramy rozwój biznesów, nowymi innowacyjnymi produktami. Rozwijaj z nami swój biznes i skontaktuj się z nami" %}</h5>
                     <span>Rudopal</span>
                   </div>
                 </div>
@@ -80,29 +93,14 @@
             </div>
           </div>
         </section>        
-        <section class="section-50 section-sm-100" style="background: #a03b45;">
-        <div class="offset-top-40"> 
-        <div class="range">
-        <div class="cell-md-4 cell-lg-4 text-sm-left" style="padding-left: 50px;">
-        <h5 style="color:#fff">FORMULARZ KONTAKTOWY</h5>
-        <p style="color:#fff">Zostaw nam swój numer telefonu, a nasz dział sprzedaży na pewno się do Ciebie odezwie.
-        Jeżeli masz konkretne pytanie zapraszamy do zakładki <a style="color:#fff" href="/kontakt">kontakt &#xbb;</a></p>
-        <hr align="left" width="30%">
-
-        </div>           
-          <div class="cell-md-8 cell-lg-8">                
-                  <div class="form-bg-transparent">
-                    <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="/" class=" form-subscribe form-inline-flex-xs">
-                      <div class="form-group">
-                        <input placeholder="podaj Twój numer telefonu..." type="phone" name="phone" class="form-control" style="background: #fff;" />
-                      </div>
-                      <button id="special-send-set-btn" style="" type="submit" class="btn btn-burnt-sienna btn-shape-default">Wyślij</button>
-                    </form>
-                  </div>
-                  </div>
-                </div>
-        </div>
+        <section class="section-20 section-sm-50" style="background: #a03b45;">
+          <div class="offset-top-40"> 
+            <div class="range">
+              <div class="cell-md-8 cell-lg-8" style="padding-left: 50px; margin: 0 auto;">
+                <h5 style="color:#fff">{% trans "Jeżeli masz pytanie zapraszamy do zakładki kontakt" %}. {% trans "Napisz do wybranej z odpowiedniego działu osoby" %}. <a style="color:#fff" href="/{% trans "kontakt" %} ">{% trans "Kontakt" %} &#xbb;</a></h5>
+                <hr align="center" width="30%">
+              </div>           
+            </div>
+          </div>
         </section>
-
-
 {% endblock content %}

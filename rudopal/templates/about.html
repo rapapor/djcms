@@ -2,7 +2,8 @@
 {% extends "base.html" %}
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% load cms_tags %}
-{% block content %}        
+{% block content %}  
+{% load i18n %}    
         <section class="text-center text-sm-left section-50 section-sm-top-100 section-sm-bottom-205 section-with-angle bg-ecru-white">
           <div class="shell">
             <div class="range range-xs-center range-md-right">
@@ -16,7 +17,7 @@
         </section>
         <section class="section-50 section-sm-top-90 section-sm-bottom-100">
           <div class="shell">
-            <h4 class="font-default">O NAS</h4>
+            <h4 class="font-default">{% trans "O NAS" %}</h4>
             <div class="range range-xs-center">
               <div class="cell-md-10">
                 <div class="timeline text-center">
@@ -25,8 +26,8 @@
                     <div class="cell-sm-6"><img src="{% static "images/about-01-420x259.jpg" %}" alt="" width="420" height="259" class="img-responsive"/>
                     </div>
                     <div class="cell-sm-6">
-                      <h5>NA RYNKU</h5>
-                      <p class="body-text">Firma Rudopal to rodzinne przedsiębiorstwo istniejące na rynku od 1991 roku. Firma rozpoczynała swoją działalność od produkcji grzybni pieczarki, ewaluując do nowoczesnego zakładu przetwórstwa spożywczego</p>
+                      <h5>{% trans "NA RYNKU" %}</h5>
+                      <p class="body-text">{% trans "Firma Rudopal to rodzinne przedsiębiorstwo istniejące na rynku od 1991 roku. Firma rozpoczynała swoją działalność od produkcji grzybni pieczarki, ewaluując do nowoczesnego zakładu przetwórstwa spożywczego" %}</p>
                     </div>
                   </div>
                   <div class="timeline-date"><span class="h5">2006</span></div>
@@ -34,8 +35,8 @@
                     <div class="cell-sm-6"><img src="{% static "images/about-02-420x259.jpg" %}" alt="" width="420" height="259" class="img-responsive"/>
                     </div>
                     <div class="cell-sm-6">
-                      <h5>PRZEMIANA</h5>
-                      <p class="body-text">W ciągu 2006 roku dokonano przebudowy zakładu przystosowując go na potrzeby produkcji spożywczej zgodnej z wymogami UE.</p>
+                      <h5>{% trans "PRZEMIANA" %}</h5>
+                      <p class="body-text">{% trans "W ciągu 2006 roku dokonano przebudowy zakładu przystosowując go na potrzeby produkcji spożywczej zgodnej z wymogami UE." %}</p>
                     </div>
                   </div>
                   <div class="timeline-date"><span class="h5">2010</span></div>
@@ -43,8 +44,8 @@
                     <div class="cell-sm-6"><img src="{% static "images/about-03-420x259.jpg" %}" alt="" width="420" height="259" class="img-responsive"/>
                     </div>
                     <div class="cell-sm-6">
-                      <h5>NOWOCZESNE</h5>
-                      <p class="body-text">Lata 2010-2011 to kolejne inwestycje - tym razem nowoczesny magazyn wraz z przestrzenią magazynową</p>
+                      <h5>{% trans "NOWOCZESNE" %}</h5>
+                      <p class="body-text">{% trans "Lata 2010-2011 to kolejne inwestycje - tym razem nowoczesny magazyn wraz z przestrzenią magazynową" %}</p>
                     </div>
                   </div>
                   <div class="timeline-date"><span class="h5">2015</span></div>
@@ -52,8 +53,8 @@
                     <div class="cell-sm-6"><img src="{% static "images/about-04-420x259.jpg" %}" alt="" width="420" height="259" class="img-responsive"/>
                     </div>
                     <div class="cell-sm-6">
-                      <h5>PIEKARNIA</h5>
-                      <p class="body-text">W roku 2015 uruchomiono własną piekarnie, produkującą pieczywo na własne potrzeby oraz dla innych klientów</p>
+                      <h5>{% trans "PIEKARNIA" %}</h5>
+                      <p class="body-text">{% trans "W roku 2015 uruchomiono własną piekarnie, produkującą pieczywo na własne potrzeby oraz dla innych klientów" %}</p>
                     </div>
                   </div>
                   <div class="timeline-date"><span class="h5">2017</span></div>
@@ -61,13 +62,13 @@
                     <div class="cell-sm-6"><img src="{% static "images/about-05-420x259.jpg" %}" alt="" width="420" height="259" class="img-responsive"/>
                     </div>
                     <div class="cell-sm-6">
-                      <h5>LIDER</h5>
-                      <p class="body-text">W pierwszym kwartale 2017 roku uruchamiamy innowacyjną linię do produkcji produktów porcjowanych  typu Iglo Drops współfinansowaną ze środków Unii Europejskiej.</p>
+                      <h5>{% trans "LIDER" %}</h5>
+                      <p class="body-text">{% trans "W pierwszym kwartale 2017 roku uruchamiamy innowacyjną linię do produkcji produktów porcjowanych  typu Iglo Drops współfinansowaną ze środków Unii Europejskiej." %}</p>
                     </div>
                   </div>
                   <div class="timeline-date"><span class="h5">2018</span></div>
                   <div class="range range-sm-reverse range-sm-middle timeline-item timeline-item-reverse">
-                      <p class="body-text">Poprzez inwestycje w technologie oraz ludzi, przedsiębiorstwo stopniowo poszerzało swoje portfolio produktowe, pozyskując nowych odbiorców w Polsce i za granicą</p>
+                      <p class="body-text">{% trans "Poprzez inwestycje w technologie oraz ludzi, przedsiębiorstwo stopniowo poszerzało swoje portfolio produktowe, pozyskując nowych odbiorców w Polsce i za granicą" %}</p>
                   </div>
                 </div>
               </div>
@@ -86,7 +87,7 @@
                 </div>
                 <div class="range range-xs-center">
                   <div class="cell-sm-10 cell-md-7">
-                    <h5 class="font-default">Sztukę gotowania opanowaliśmy do perfekcji. Naszymi&nbsp;potrawami dzielimy się z Państwem nie od dziś.</h5>
+                    <h5 class="font-default">{% trans "Sztukę gotowania opanowaliśmy do perfekcji. Naszymi&nbsp;potrawami dzielimy się z Państwem nie od dziś." %}</h5>
                     <span>Rudopal</span>
                   </div>
                 </div>
@@ -102,51 +103,37 @@
                 <div class="progress-bar-radial-wrap">
                   <div data-value="37" data-stroke="5" data-easing="linear" data-duration="1000" data-counter="true" data-trail="4" class="progress-bar-js progress-bar-radial progress-bar-default-1"></div>
                 </div>
-                <p class="text-uppercase offset-sm-top-25">ODBIORCY B2B</p>
+                <p class="text-uppercase offset-sm-top-25">{% trans "ODBIORCY B2B" %}</p>
               </div>
               <div class="cell-xs-6 cell-sm-6 cell-md-3">
                 <div class="progress-bar-radial-wrap">
                   <div data-value="35" data-stroke="5" data-easing="linear" data-duration="1000" data-counter="true" data-trail="4" class="progress-bar-js progress-bar-radial progress-bar-default-1"></div>
                 </div>
-                <p class="text-uppercase offset-sm-top-25">ODBIORCY SIECI GASTRONOMICZNE</p>
+                <p class="text-uppercase offset-sm-top-25">{% trans "ODBIORCY SIECI GASTRONOMICZNE" %}</p>
               </div>              
               <div class="cell-xs-6 cell-sm-6 cell-md-3 offset-top-50 offset-md-top-0">
                 <div class="progress-bar-radial-wrap">
                   <div data-value="16" data-stroke="5" data-easing="linear" data-duration="1000" data-counter="true" data-trail="4" class="progress-bar-js progress-bar-radial progress-bar-default-1"></div>
                 </div>
-                <p class="text-uppercase offset-sm-top-25">HORECA</p>
+                <p class="text-uppercase offset-sm-top-25">{% trans "HORECA" %}</p>
               </div>
               <div class="cell-xs-6 cell-sm-6 cell-md-3 offset-top-50 offset-md-top-0">
                 <div class="progress-bar-radial-wrap">
                   <div data-value="12" data-stroke="5" data-trail="4" data-easing="linear" data-duration="1000" data-counter="true" class="progress-bar-js progress-bar-radial progress-bar-default-1"></div>
                 </div>
-                <p class="text-uppercase offset-sm-top-25">EKSPORT</p>
+                <p class="text-uppercase offset-sm-top-25">{% trans "EKSPORT" %}</p>
               </div>
             </div>
           </div>
         </section>
-        <section class="section-50 section-sm-100" style="background: #a03b45;">
-        <div class="offset-top-40"> 
-        <div class="range">
-        <div class="cell-md-4 cell-lg-4 text-sm-left" style="padding-left: 50px;">
-        <h5 style="color:#fff">FORMULARZ KONTAKTOWY</h5>
-        <p style="color:#fff">Zostaw nam swój numer telefonu, a nasz dział sprzedaży na pewno się do Ciebie odezwie.
-        Jeżeli masz konkretne pytanie zapraszamy do zakładki <a style="color:#fff" href="/kontakt">kontakt &#xbb;</a></p>
-        <hr align="left" width="30%">
-
-        </div>           
-          <div class="cell-md-8 cell-lg-8">                
-                  <div class="form-bg-transparent">
-                    <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="/" class=" form-subscribe form-inline-flex-xs">
-                      <div class="form-group">
-                        <input placeholder="podaj Twój numer..." type="phone" name="phone" class="form-control" style="background: #fff;" />
-                      </div>
-                      <button id="special-send-set-btn" style="" type="submit" class="btn btn-burnt-sienna btn-shape-default">Wyślij</button>
-                    </form>
-                  </div>
-                  </div>
-                </div>
-        </div>
+        <section class="section-20 section-sm-50" style="background: #a03b45;">
+          <div class="offset-top-40"> 
+            <div class="range">
+              <div class="cell-md-8 cell-lg-8" style="padding-left: 50px; margin: 0 auto;">
+                <h5 style="color:#fff">{% trans "Jeżeli masz pytanie zapraszamy do zakładki kontakt" %}. {% trans "Napisz do wybranej z odpowiedniego działu osoby" %}. <a style="color:#fff" href="/{% trans "kontakt" %} ">{% trans "Kontakt" %} &#xbb;</a></h5>
+                <hr align="center" width="30%">
+              </div>           
+            </div>
+          </div>
         </section>
-       
 {% endblock content %}      

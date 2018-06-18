@@ -1,0 +1,554 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-18 21:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/contact/cms_apps.py:9
+msgid "Contact"
+msgstr "Contact"
+
+#: apps/contact/cms_toolbars.py:15 apps/distributor/cms_toolbars.py:15
+#: apps/job/cms_toolbars.py:15 apps/news/cms_toolbars.py:14
+#: apps/product/cms_toolbars.py:15
+msgid "Rudopal Apps"
+msgstr "Rudopal Apps"
+
+#: apps/contact/cms_toolbars.py:17 apps/contact/cms_toolbars.py:19
+#: rudopal/templates/about.html:133
+#: rudopal/templates/product/product_list.html:100
+msgid "Kontakt"
+msgstr "contact"
+
+#: apps/distributor/cms_apps.py:9
+msgid "Distributor"
+msgstr "Distributor"
+
+#: apps/distributor/cms_toolbars.py:17 apps/distributor/cms_toolbars.py:19
+#: rudopal/templates/product/product_detail.html:102
+msgid "Dystrybutorzy"
+msgstr "distributors"
+
+#: apps/job/cms_apps.py:9
+msgid "JobOffer"
+msgstr "JobOffer"
+
+#: apps/job/cms_toolbars.py:17
+msgid "Praca"
+msgstr "job"
+
+#: apps/job/cms_toolbars.py:19
+msgid "Oferty Pracy"
+msgstr "Job Offers"
+
+#: apps/news/cms_apps.py:9 apps/news/cms_toolbars.py:16
+msgid "News"
+msgstr "News"
+
+#: apps/news/cms_toolbars.py:18
+msgid "Aktualnosc"
+msgstr "News"
+
+#: apps/news/menu.py:12
+msgid "News Sub-Menu"
+msgstr "News Sub-Menu"
+
+#: apps/product/cms_apps.py:9
+msgid "Product"
+msgstr "Product"
+
+#: apps/product/cms_toolbars.py:17 apps/product/cms_toolbars.py:19
+#: apps/product/templates/random_product.html:5
+msgid "Produkty"
+msgstr "products"
+
+#: apps/product/cms_toolbars.py:21
+msgid "Dane logistyczne"
+msgstr "Logistics data"
+
+#: apps/product/templates/random_product.html:34
+#: rudopal/templates/base.html:165
+msgid "produkty"
+msgstr "products"
+
+#: apps/product/templates/random_product.html:34
+msgid "więcej"
+msgstr "more"
+
+#: rudopal/settings.py:164 rudopal/settings.py:180
+msgid "pl"
+msgstr "pl"
+
+#: rudopal/settings.py:165 rudopal/settings.py:187
+msgid "en"
+msgstr "en"
+
+#: rudopal/templates/about.html:20
+msgid "O NAS"
+msgstr "ABOUT US"
+
+#: rudopal/templates/about.html:29
+msgid "NA RYNKU"
+msgstr "ON THE MARKET"
+
+#: rudopal/templates/about.html:30
+msgid ""
+"Firma Rudopal to rodzinne przedsiębiorstwo istniejące na rynku od 1991 roku. "
+"Firma rozpoczynała swoją działalność od produkcji grzybni pieczarki, "
+"ewaluując do nowoczesnego zakładu przetwórstwa spożywczego"
+msgstr "The Rudopal company is a family-run company existing on the market since 1991. The company started its activity from mushroom mycelium production, evolving to a modern food processing plant"
+
+#: rudopal/templates/about.html:38
+msgid "PRZEMIANA"
+msgstr "TRANSFORMATION"
+
+#: rudopal/templates/about.html:39
+msgid ""
+"W ciągu 2006 roku dokonano przebudowy zakładu przystosowując go na potrzeby "
+"produkcji spożywczej zgodnej z wymogami UE."
+msgstr "In 2006, the plant was rebuilt, adapting it to the needs of food production in line with EU requirements."
+
+#: rudopal/templates/about.html:47
+msgid "NOWOCZESNE"
+msgstr "MODERN"
+
+#: rudopal/templates/about.html:48
+msgid ""
+"Lata 2010-2011 to kolejne inwestycje - tym razem nowoczesny magazyn wraz z "
+"przestrzenią magazynową"
+msgstr "The years 2010-2011 are further investments - this time a modern warehouse with storage space"
+
+#: rudopal/templates/about.html:56
+msgid "PIEKARNIA"
+msgstr "A BAKERY"
+
+#: rudopal/templates/about.html:57
+msgid ""
+"W roku 2015 uruchomiono własną piekarnie, produkującą pieczywo na własne "
+"potrzeby oraz dla innych klientów"
+msgstr "In 2015, our own bakery was started, producing bread for our own needs and for other customers"
+
+#: rudopal/templates/about.html:65
+msgid "LIDER"
+msgstr "LEADER"
+
+#: rudopal/templates/about.html:66
+msgid ""
+"W pierwszym kwartale 2017 roku uruchamiamy innowacyjną linię do produkcji "
+"produktów porcjowanych  typu Iglo Drops współfinansowaną ze środków Unii "
+"Europejskiej."
+msgstr "In the first quarter of 2017, we launch an innovative line for the production of portioned Iglo Drops products co-financed by the European Union."
+
+#: rudopal/templates/about.html:71
+msgid ""
+"Poprzez inwestycje w technologie oraz ludzi, przedsiębiorstwo stopniowo "
+"poszerzało swoje portfolio produktowe, pozyskując nowych odbiorców w Polsce "
+"i za granicą"
+msgstr "Through investments in technologies and people, the company gradually expanded its product portfolio, acquiring new customers in Poland and abroad"
+
+#: rudopal/templates/about.html:90
+msgid ""
+"Sztukę gotowania opanowaliśmy do perfekcji. Naszymi&nbsp;potrawami dzielimy "
+"się z Państwem nie od dziś."
+msgstr "We mastered the art of cooking to perfection. We share our dishes with you not from today."
+
+#: rudopal/templates/about.html:106
+msgid "ODBIORCY B2B"
+msgstr "B2B CLIENTS"
+
+#: rudopal/templates/about.html:112
+msgid "ODBIORCY SIECI GASTRONOMICZNE"
+msgstr "RECIPIENTS OF THE GASTRONOMY NETWORK"
+
+#: rudopal/templates/about.html:118
+msgid "HORECA"
+msgstr "HORECA"
+
+#: rudopal/templates/about.html:124
+msgid "EKSPORT"
+msgstr "EXPORT"
+
+#: rudopal/templates/about.html:133
+#: rudopal/templates/product/product_list.html:100
+msgid "Jeżeli masz pytanie zapraszamy do zakładki kontakt"
+msgstr "If you have a question, please visit the contact tab"
+
+#: rudopal/templates/about.html:133
+#: rudopal/templates/product/product_list.html:100
+msgid "Napisz do wybranej z odpowiedniego działu osoby"
+msgstr "Write to the person selected from the appropriate department"
+
+#: rudopal/templates/about.html:133 rudopal/templates/base.html:168
+#: rudopal/templates/product/product_list.html:100
+msgid "kontakt"
+msgstr "contact"
+
+#: rudopal/templates/base.html:79 rudopal/templates/base.html.py:93
+#: rudopal/templates/base.html:108
+msgid "Gastronomia"
+msgstr "Gastronomy"
+
+#: rudopal/templates/base.html:81
+msgid "Ciasto do pizzy"
+msgstr "Pizza dough"
+
+#: rudopal/templates/base.html:82
+msgid "zawsze pod ręką"
+msgstr "always at hand"
+
+#: rudopal/templates/base.html:94
+msgid "Gofry tradycyjne"
+msgstr "Traditional waffles"
+
+#: rudopal/templates/base.html:95
+msgid "umilą każdy dzień"
+msgstr "they will make every day happy"
+
+#: rudopal/templates/base.html:110
+msgid "Grzanki czosnkowe"
+msgstr "Garlic toasts"
+
+#: rudopal/templates/base.html:111
+msgid "na chrupkie powitanie"
+msgstr "for a crisp welcome"
+
+#: rudopal/templates/base.html:122
+msgid "Dla Biznesu"
+msgstr "For business"
+
+#: rudopal/templates/base.html:123
+msgid "Sosy porcjowane"
+msgstr "Portioned sauces"
+
+#: rudopal/templates/base.html:124
+msgid "doskonale powtarzalny smak potraw"
+msgstr "perfectly repetitive taste of dishes"
+
+#: rudopal/templates/base.html:157
+msgid ""
+"Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia "
+"maksymalnej wygody w korzystaniu z naszego serwisu. Jeśli nie wyrażasz "
+"zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej "
+"przeglądarce."
+msgstr "We use information saved via cookies to ensure maximum convenience in using our website. If you do not agree, the cookie settings can be changed in your browser."
+
+#: rudopal/templates/base.html:164
+msgid "START"
+msgstr "START"
+
+#: rudopal/templates/base.html:165
+msgid "PRODUKTY"
+msgstr "PRODUCTS"
+
+#: rudopal/templates/base.html:166 rudopal/templates/start.html:19
+msgid "mapa-dystrybucji"
+msgstr "map-distribution"
+
+#: rudopal/templates/base.html:166
+msgid "MAPA DYSTRYBUCJI"
+msgstr "MAP OF DISTRIBUTION"
+
+#: rudopal/templates/base.html:167
+msgid "aktualnosci"
+msgstr "news"
+
+#: rudopal/templates/base.html:167 rudopal/templates/news/news_list.html:10
+msgid "AKTUALNOŚCI"
+msgstr "NEWS"
+
+#: rudopal/templates/base.html:168
+msgid "KONTAKT"
+msgstr "CONTACT"
+
+#: rudopal/templates/base.html:169
+msgid "praca"
+msgstr "job"
+
+#: rudopal/templates/base.html:169
+msgid "PRACA"
+msgstr "JOB"
+
+#: rudopal/templates/base.html:183
+msgid "Wszystkie prawa zastrzeżone"
+msgstr "All rights reserved"
+
+#: rudopal/templates/contact/contact_list.html:16
+msgid "Dział Sprzedaży"
+msgstr "Sales department"
+
+#: rudopal/templates/contact/contact_list.html:17
+msgid "Skontaktuj się z nami"
+msgstr "contact us"
+
+#: rudopal/templates/contact/contact_list.html:61
+msgid "Dział Zakupów i Jakości"
+msgstr "Purchasing and Quality Department"
+
+#: rudopal/templates/contact/contact_list.html:194
+msgid "Zadzwoń"
+msgstr "call"
+
+#: rudopal/templates/contact/contact_list.html:204
+msgid "Odwiedź nas"
+msgstr "visit us"
+
+#: rudopal/templates/contact/contact_list.html:215
+msgid "Godziny pracy"
+msgstr "Work hours"
+
+#: rudopal/templates/distributor/distributor_list.html:74
+msgid "DOSTĘPNE PRODUKTY"
+msgstr "AVAILABLE PRODUCTS"
+
+#: rudopal/templates/job/joboffer_detail.html:26
+msgid "Data publikacji"
+msgstr "Date of publication"
+
+#: rudopal/templates/job/joboffer_detail.html:51
+msgid "Inne oferty"
+msgstr "Other offers"
+
+#: rudopal/templates/job/joboffer_list.html:10
+msgid "Oferty pracy"
+msgstr "Job offers"
+
+#: rudopal/templates/job/joboffer_list.html:11
+msgid ""
+"Nie wahaj się i zaaplikuj na interesujące cię stanowisko pracy, dołącz do "
+"naszego zespołu."
+msgstr "Do not hesitate and apply for the job that interests you, join our team."
+
+#: rudopal/templates/job/joboffer_list.html:35
+msgid "Niema aktualnie ofert pracy"
+msgstr "There are currently no job offers"
+
+#: rudopal/templates/news/news_detail.html:52
+msgid ""
+"Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i "
+"najnowsze wydarzenia"
+msgstr "We are innovative and we are changing for you. Follow our activities and the latest events"
+
+#: rudopal/templates/news/news_list.html:25
+msgid ""
+"Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i "
+"najnowsze wydarzenia."
+msgstr "We are innovative and we are changing for you. Follow our activities and the latest events."
+
+#: rudopal/templates/news/news_list.html:54
+#: rudopal/templates/news/news_list.html:105
+#: rudopal/templates/news/news_list.html:155
+msgid "Czytaj więcej"
+msgstr "read more"
+
+#: rudopal/templates/product/product_detail.html:56
+msgid "Dla&nbsp;biznesu"
+msgstr "For &nbsp; business"
+
+#: rudopal/templates/product/product_detail.html:58
+msgid "Dla&nbsp;gastronomii"
+msgstr "For &nbsp; gastronomy"
+
+#: rudopal/templates/product/product_detail.html:85
+msgid "Powrót"
+msgstr "Return"
+
+#: rudopal/templates/product/product_detail.html:96
+msgid "Produkty dla biznesu"
+msgstr "Products for business"
+
+#: rudopal/templates/product/product_detail.html:98
+msgid "Produkty dla gastronomii"
+msgstr "Products for gastronomy"
+
+#: rudopal/templates/product/product_detail.html:100
+msgid "Sposób przygotowania"
+msgstr "A method of preparing"
+
+#: rudopal/templates/product/product_detail.html:101
+msgid "Dane Logistyczne"
+msgstr "Logistics data"
+
+#: rudopal/templates/product/product_detail.html:115
+#: rudopal/templates/product/product_detail.html:161
+msgid "Nazwa"
+msgstr "Name"
+
+#: rudopal/templates/product/product_detail.html:116
+msgid "Forma"
+msgstr "Form"
+
+#: rudopal/templates/product/product_detail.html:117
+msgid "Opakowanie"
+msgstr "Package"
+
+#: rudopal/templates/product/product_detail.html:118
+msgid "Paletyzacja"
+msgstr "palletizing"
+
+#: rudopal/templates/product/product_detail.html:162
+msgid "telefon"
+msgstr "phone"
+
+#: rudopal/templates/product/product_detail.html:163
+msgid "adres"
+msgstr "address"
+
+#: rudopal/templates/product/product_detail.html:164
+msgid "województwo"
+msgstr "voivodeship"
+
+#: rudopal/templates/product/product_list.html:14
+msgid "Wybierz typ produktu"
+msgstr "Choose the type of product"
+
+#: rudopal/templates/product/product_list.html:18
+msgid "Lista kategorii"
+msgstr "List of categories"
+
+#: rudopal/templates/product/product_list.html:21
+msgid "WSZYSTKO"
+msgstr "ALL"
+
+#: rudopal/templates/product/product_list.html:22
+msgid "DLA GASTRONOMII"
+msgstr "FOR GASTRONOMY"
+
+#: rudopal/templates/product/product_list.html:23
+msgid "DLA BIZNESU"
+msgstr "FOR BUSINESS"
+
+#: rudopal/templates/product/product_list.html:87
+msgid ""
+"Produkujemy tradycyjne potrawy dla gastronomii,<br> a także wspieramy rozwój "
+"biznesów, nowymi innowacyjnymi produktami. Rozwijaj z nami swój biznes i "
+"skontaktuj się z nami"
+msgstr "We produce traditional dishes for gastronomy, and we also support business development, new innovative products. Develop your business with us and contact us"
+
+#: rudopal/templates/quality.html:13
+msgid "JAKOŚĆ NASZYCH PRODUKTÓW POTWIERDZAJĄ UZYSKANE NAGRODY I CERTYFIKATY"
+msgstr "THE QUALITY OF OUR PRODUCTS CONFIRM THE RECEIVED AWARDS AND CERTIFICATES"
+
+#: rudopal/templates/quality.html:18
+msgid "Nagrody"
+msgstr "Awards"
+
+#: rudopal/templates/quality.html:20
+msgid "Pieczywo czosnkowe - nagroda przyznana przez PepsiCo Restaurants"
+msgstr "Garlic bread - award granted by PepsiCo Restaurants"
+
+#: rudopal/templates/quality.html:21
+msgid ""
+"Grzanki czosnkowe - certyfikat przyznany przez Wielkopolską Fundację "
+"Żywnościową"
+msgstr "Garlic Croutons - a certificate awarded by the Wielkopolska Food Foundation"
+
+#: rudopal/templates/quality.html:22
+msgid ""
+"grupa produktów- żywność wygodna- Certyfikat przyznany przez Wielkopolską "
+"Fundację Żywnościową"
+msgstr "group of products - convenient food - Certificate awarded by the Wielkopolska Food Foundation"
+
+#: rudopal/templates/quality.html:23
+msgid ""
+"wyróżnienie przyznane przez Korporację Producentów Żywności - Klub Promocji "
+"Jakości"
+msgstr "distinction awarded by the Food Industry Corporation - Quality Promotion Club"
+
+#: rudopal/templates/quality.html:24
+msgid ""
+"Grzanki czosnkowe - Nagroda Ministra Gospodarki w kategorii Żywność - Targi "
+"EuroGastro Warszawa"
+msgstr "Garlic croutons - Minister of Economy's Award in the Food - EuroGastro Warsaw Fair category"
+
+#: rudopal/templates/quality.html:31
+msgid "Polityka jakości"
+msgstr "Quality policy"
+
+#: rudopal/templates/quality.html:33
+msgid ""
+" Nasza polityka jakości i bezpieczeństwa żywności polega na wytwarzaniu i "
+"dostarczaniu produktów zgodnie\n"
+"                    z oczekiwaniami Klientów. Staramy się, aby produkowane "
+"przez nas wyroby były bezpieczne i zgodne z\n"
+"                    przepisami prawa żywnościowego. Jakość stanowi dla nas "
+"czynnik decydujący o sukcesie, dalszym rozwoju i\n"
+"                    pozycji na rynku. Jesteśmy przekonani, że "
+"odpowiedzialność za wywiązywanie się ze zobowiązań\n"
+"                    dotyczących jakości spoczywa na każdym pracowniku, "
+"dlatego dążymy do podnoszenie świadomości załogi\n"
+"                    i motywujemy do dążenia do doskonałości."
+msgstr " Our food quality and safety policy is based on the production and delivery of products in accordance with the expectations of customers. We strive to make our products safe and comply with food law regulations. Quality is a decisive factor for us for success, further development and market position. We are convinced that the responsibility for fulfilling quality obligations lies with every employee, therefore we strive to raise the awareness of the staff and motivate us to strive for perfection."
+
+#: rudopal/templates/quality.html:51
+msgid ""
+"Gwarantujemy, że nasze produkty pomyślnie przeszły specjalistyczne testy i "
+"inspekcje, są bezpieczne dla konsumentów i najwyższej jakości."
+msgstr "We guarantee that our products have successfully passed specialist tests and inspections, are safe for consumers and of the highest quality."
+
+#: rudopal/templates/quality.html:66
+msgid "Międzynarodowy certyfikat jakości - TUV CERT - TUV Saarland"
+msgstr "International quality certificate - TUV CERT - TUV Saarland"
+
+#: rudopal/templates/quality.html:68
+msgid "certyfikat rzetelnego i wiarygodnego Kontrahenta"
+msgstr "certificate of a reliable and reliable contractor"
+
+#: rudopal/templates/start.html:12
+msgid "KIM JESTEŚMY"
+msgstr "WHO WE ARE"
+
+#: rudopal/templates/start.html:22
+msgid "Nasi Dystrybutorzy"
+msgstr "Our Distributors"
+
+#: rudopal/templates/start.html:23
+msgid "Sprawdź gdzie aktualnie zamówisz nasze produkty w Polsce"
+msgstr "Check where you currently order our products in Poland"
+
+#: rudopal/templates/start.html:47
+msgid "NASZA MISJA"
+msgstr "OUR MISSION"
+
+#: rudopal/templates/technology.html:16
+msgid "Innowacyjność"
+msgstr "innovation"
+
+#: rudopal/templates/technology.html:19
+msgid ""
+" Jesteśmy twórcą produktu \"Iglo&nbsp;drops\"&nbsp;-&nbsp;sosy porcjowane. "
+"To z naszej firmy wychodzą najciekawsze pomysły."
+msgstr " We are the creator of the product \"Iglo&nbsp;drops\"&nbsp;-&nbsp; portions of sauces. The most interesting ideas come from our company."
+
+#: rudopal/templates/technology.html:27
+msgid "Reputacja"
+msgstr "Reputation"
+
+#: rudopal/templates/technology.html:30
+msgid ""
+"Jesteśmy liderami w swojej branży. Staramy się by nasze produkty były "
+"wyjątkowe."
+msgstr "We are leaders in our industry. We strive to make our products unique."
+
+#: rudopal/templates/technology.html:38
+msgid "Poufność"
+msgstr "confidentiality"
+
+#: rudopal/templates/technology.html:41
+msgid ""
+"Kiedy klient wymaga od nas dotrzymania tajemnicy receptury, stajemy na "
+"wysokości zadania. Cechuje nas duża dbałość o bezpieczeństwo i poufność."
+msgstr "When a client requires us to keep the recipe secret, we are up to the task. We are characterized by great care for security and confidentiality."
+

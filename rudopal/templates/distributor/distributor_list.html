@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% load cms_tags %}
-{% block content %}     
+{% block content %}
+{% load i18n %}     
     <section class="section-50 section-sm-top-50 section-sm-bottom-100">
           <div class="shell">
             <div class="range range-xs-center"> 
@@ -40,18 +41,46 @@
                     </div>
                   </div>
                   <div class="quote-body">
-                    <h6>{{ distributor.biz_name_pl }}</h6>
+                    <h6>
+                      {% if LANGUAGE_CODE == 'pl' %}
+                        {{ distributor.biz_name_pl }}
+
+                      {% elif LANGUAGE_CODE == 'en' %}
+                        {{ distributor.biz_name_en }}
+                      {% endif %}
+                    </h6>
                     <p>
-                      <q>{{distributor.street_pl}}<br> woj. {{ distributor.woj_pl }}</q>
+                      <q>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{ distributor.street_pl }}
+
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{ distributor.street_en }}
+                        {% endif %}
+                      <br> woj.
+                      {% if LANGUAGE_CODE == 'pl' %}
+                          {{ distributor.woj_pl }}
+
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{ distributor.woj_en }}
+                        {% endif %}
+                      </q>
                     </p>
                     <cite>tel.: {{ distributor.phone }}</cite><br>
                   </div>
                   <div class="quote-footer">
                     
                     <div class="products">
-                    	<cite>DOSTĘPNE PRODUKTY</cite><br>
+                    	<cite>{% trans "DOSTĘPNE PRODUKTY" %}</cite><br>
                     	{% for product in distributor.products.all%}
-                    		<cite>&bull; <a class="link-color-gray" href="/produkty/{{product.slug}}">{{ product.name_pl  }}</a></cite>
+                    		<cite>&bull; <a class="link-color-gray" href="/produkty/{{product.slug}}">
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{ product.name_pl }}
+
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{ product.name_en }}
+                        {% endif %}
+                        </a></cite>
                     	{% endfor %}
                     </div>
                     

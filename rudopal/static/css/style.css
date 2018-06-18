@@ -20663,9 +20663,6 @@ a:hover > .icon-google.icon-circle {
   transition: 250ms;
 }
 
-.img-wrap-mod-2:hover:before {
-  opacity: 1;
-}
 
 .img-wrap-mod-2:hover .icon {
   -webkit-transform: translate(-50%, -50%) scale(1);

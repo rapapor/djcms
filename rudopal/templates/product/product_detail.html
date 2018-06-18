@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% block content %}
-
+{% load i18n %}
 <section class="section-50 section-sm-100">
           <div class="shell">
             <div class="range range-xs-center">
@@ -44,16 +44,28 @@
               </div>
               <div class="cell-sm-6 cell-lg-5 text-sm-left offset-top-60 offset-sm-top-0">
                 <div class="reveal-xs-flex range-xs-middle range-xs-center range-sm-left">
-                  <h4 class="font-default">{% render_model product "name_pl" %}</h4>                  
+                  <h4 class="font-default">
+                    {% if LANGUAGE_CODE == 'pl' %}
+                      {% render_model product "name_pl" %}
+                    {% elif LANGUAGE_CODE == 'en' %}
+                      {% render_model product "name_en" %}
+                    {% endif %}
+                  </h4>                  
                   <div class="inset-xs-left-50 offset-top-0">
                   {% if product.category = "biz" %}
-                    <div class="team-member-position team-member-position-burnt-sienna"><span class="big text-italic text-middle">Dla&nbsp;biznesu</span></div>
+                    <div class="team-member-position team-member-position-burnt-sienna"><span class="big text-italic text-middle">{% trans "Dla&nbsp;biznesu" %}</span></div>
                   {% else %}
-                  <div class="team-member-position team-member-position-burnt-sienna"><span class="big text-italic text-middle">Dla&nbsp;gastronomii</span></div>
+                  <div class="team-member-position team-member-position-burnt-sienna"><span class="big text-italic text-middle">{% trans "Dla&nbsp;gastronomii" %}</span></div>
                   {% endif %}
                   </div>
                 </div>
-                <h5 style="padding-left:10px;">{% render_model product "desc_mini_pl" %}</h5>                
+                <h5 style="padding-left:10px;">
+                  {% if LANGUAGE_CODE == 'pl' %}
+                    {% render_model product "desc_mini_pl" %}
+                  {% elif LANGUAGE_CODE == 'en' %}
+                    {% render_model product "desc_mini_en" %}
+                  {% endif %}                  
+                </h5>                
                 <div class="offset-top-15">
                   <div class="group-sm">
                   <!-- <a href="#" class="link-zoom">
@@ -70,7 +82,7 @@
                 <div class="offset-top-45">
                   <div class="group-sm">
                     <div class="stepper-type-1">                      
-                    </div><a href="/produkty" ><span> &#x3c; Powrót</span></a>
+                    </div><a href="/produkty" ><span> &#x3c; {% trans "Powrót" %}</span></a>
                   </div>
                 </div>
               </div>
@@ -81,13 +93,13 @@
           <div id="tabs-product" class="responsive-tabs responsive-tabs-horizontal responsive-tabs-horizontal-background">
             <ul class="resp-tabs-list shell">
               {% if product.category = "biz" %}
-                <li>Produkty dla biznesu</li>
+                <li>{% trans "Produkty dla biznesu" %}</li>
                {% else %}
-                <li>Produkty dla gastronomii</li>
+                <li>{% trans "Produkty dla gastronomii" %}</li>
               {% endif %}
-              <li>Sposób przygotowania</li>
-              <li>Dane Logistyczne</li>
-              <li>Dystrybutorzy</li>
+              <li>{% trans "Sposób przygotowania" %}</li>
+              <li>{% trans "Dane Logistyczne" %}</li>
+              <li>{% trans "Dystrybutorzy" %}</li>
             </ul>
             <div class="resp-tabs-container">
               <div>
@@ -100,19 +112,43 @@
                 <table class="table" >
                   <thead>
                     <tr>
-                      <th>Nazwa</th>
-                      <th>Forma</th>
-                      <th>Opakowanie</th>
-                      <th>Paletyzacja</th>
+                      <th>{% trans "Nazwa" %}</th>
+                      <th>{% trans "Forma" %}</th>
+                      <th>{% trans "Opakowanie" %}</th>
+                      <th>{% trans "Paletyzacja" %}</th>
                     </tr>
                   </thead>
                   <tbody>                
                    {% for logisticdt in product.getLogisticData %}
                    <tr>
-                      <td>{{logisticdt.product_name_pl}}</td>
-                      <td>{{logisticdt.form_pl}}</td>
-                      <td>{{logisticdt.single_pack_pl}}</td>
-                      <td>{{logisticdt.multi_pack_pl}}</td>
+                      <td>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{logisticdt.product_name_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{logisticdt.product_name_en}}
+                        {% endif %}
+                      </td>
+                      <td>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{logisticdt.form_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{logisticdt.form_en}}
+                        {% endif %}
+                      </td>
+                      <td>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{logisticdt.single_pack_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{logisticdt.single_pack_en}}
+                        {% endif %}
+                      </td>
+                      <td>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{logisticdt.multi_pack_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{logisticdt.multi_pack_en}}
+                        {% endif %}
+                      </td>
                     </tr>
                    {% endfor %}
                   </tbody>
@@ -122,19 +158,37 @@
                 <table class="table" >
                   <thead>
                     <tr>
-                      <th>Nazwa</th>
-                      <th>telefon</th>                      
-                      <th>adres</th>
-                      <th>województwo</th>
+                      <th>{% trans "Nazwa" %}</th>
+                      <th>{% trans "telefon" %}</th>                      
+                      <th>{% trans "adres" %}</th>
+                      <th>{% trans "województwo" %}</th>
                     </tr>
                   </thead>
                   <tbody>                
                    {% for distributor in product.get_distributos %}
                    <tr>
-                      <td>{{distributor.biz_name_pl}}</td>
+                      <td>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{distributor.biz_name_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{distributor.biz_name_en}}
+                        {% endif %}
+                      </td>
                       <td>{{distributor.phone}}</td>
-                      <td>{{distributor.street_pl}}</td>
-                      <td>{{distributor.woj_pl}}</td>
+                      <td>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{distributor.street_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{distributor.street_en}}
+                        {% endif %}
+                      </td>
+                      <td>
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          {{distributor.woj_pl}}
+                        {% elif LANGUAGE_CODE == 'en' %}
+                          {{distributor.woj_en}}
+                        {% endif %}
+                      </td>
                     </tr>
                    {% endfor %}
                   </tbody>

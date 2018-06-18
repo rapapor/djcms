@@ -1,0 +1,553 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-18 21:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/contact/cms_apps.py:9
+msgid "Contact"
+msgstr ""
+
+#: apps/contact/cms_toolbars.py:15 apps/distributor/cms_toolbars.py:15
+#: apps/job/cms_toolbars.py:15 apps/news/cms_toolbars.py:14
+#: apps/product/cms_toolbars.py:15
+msgid "Rudopal Apps"
+msgstr ""
+
+#: apps/contact/cms_toolbars.py:17 apps/contact/cms_toolbars.py:19
+#: rudopal/templates/about.html:133
+#: rudopal/templates/product/product_list.html:100
+msgid "Kontakt"
+msgstr ""
+
+#: apps/distributor/cms_apps.py:9
+msgid "Distributor"
+msgstr ""
+
+#: apps/distributor/cms_toolbars.py:17 apps/distributor/cms_toolbars.py:19
+#: rudopal/templates/product/product_detail.html:102
+msgid "Dystrybutorzy"
+msgstr ""
+
+#: apps/job/cms_apps.py:9
+msgid "JobOffer"
+msgstr ""
+
+#: apps/job/cms_toolbars.py:17
+msgid "Praca"
+msgstr ""
+
+#: apps/job/cms_toolbars.py:19
+msgid "Oferty Pracy"
+msgstr ""
+
+#: apps/news/cms_apps.py:9 apps/news/cms_toolbars.py:16
+msgid "News"
+msgstr ""
+
+#: apps/news/cms_toolbars.py:18
+msgid "Aktualnosc"
+msgstr ""
+
+#: apps/news/menu.py:12
+msgid "News Sub-Menu"
+msgstr ""
+
+#: apps/product/cms_apps.py:9
+msgid "Product"
+msgstr ""
+
+#: apps/product/cms_toolbars.py:17 apps/product/cms_toolbars.py:19
+#: apps/product/templates/random_product.html:5
+msgid "Produkty"
+msgstr ""
+
+#: apps/product/cms_toolbars.py:21
+msgid "Dane logistyczne"
+msgstr ""
+
+#: apps/product/templates/random_product.html:34
+#: rudopal/templates/base.html:165
+msgid "produkty"
+msgstr ""
+
+#: apps/product/templates/random_product.html:34
+msgid "więcej"
+msgstr ""
+
+#: rudopal/settings.py:164 rudopal/settings.py:180
+msgid "pl"
+msgstr ""
+
+#: rudopal/settings.py:165 rudopal/settings.py:187
+msgid "en"
+msgstr ""
+
+#: rudopal/templates/about.html:20
+msgid "O NAS"
+msgstr ""
+
+#: rudopal/templates/about.html:29
+msgid "NA RYNKU"
+msgstr ""
+
+#: rudopal/templates/about.html:30
+msgid ""
+"Firma Rudopal to rodzinne przedsiębiorstwo istniejące na rynku od 1991 roku. "
+"Firma rozpoczynała swoją działalność od produkcji grzybni pieczarki, "
+"ewaluując do nowoczesnego zakładu przetwórstwa spożywczego"
+msgstr ""
+
+#: rudopal/templates/about.html:38
+msgid "PRZEMIANA"
+msgstr ""
+
+#: rudopal/templates/about.html:39
+msgid ""
+"W ciągu 2006 roku dokonano przebudowy zakładu przystosowując go na potrzeby "
+"produkcji spożywczej zgodnej z wymogami UE."
+msgstr ""
+
+#: rudopal/templates/about.html:47
+msgid "NOWOCZESNE"
+msgstr ""
+
+#: rudopal/templates/about.html:48
+msgid ""
+"Lata 2010-2011 to kolejne inwestycje - tym razem nowoczesny magazyn wraz z "
+"przestrzenią magazynową"
+msgstr ""
+
+#: rudopal/templates/about.html:56
+msgid "PIEKARNIA"
+msgstr ""
+
+#: rudopal/templates/about.html:57
+msgid ""
+"W roku 2015 uruchomiono własną piekarnie, produkującą pieczywo na własne "
+"potrzeby oraz dla innych klientów"
+msgstr ""
+
+#: rudopal/templates/about.html:65
+msgid "LIDER"
+msgstr ""
+
+#: rudopal/templates/about.html:66
+msgid ""
+"W pierwszym kwartale 2017 roku uruchamiamy innowacyjną linię do produkcji "
+"produktów porcjowanych  typu Iglo Drops współfinansowaną ze środków Unii "
+"Europejskiej."
+msgstr ""
+
+#: rudopal/templates/about.html:71
+msgid ""
+"Poprzez inwestycje w technologie oraz ludzi, przedsiębiorstwo stopniowo "
+"poszerzało swoje portfolio produktowe, pozyskując nowych odbiorców w Polsce "
+"i za granicą"
+msgstr ""
+
+#: rudopal/templates/about.html:90
+msgid ""
+"Sztukę gotowania opanowaliśmy do perfekcji. Naszymi&nbsp;potrawami dzielimy "
+"się z Państwem nie od dziś."
+msgstr ""
+
+#: rudopal/templates/about.html:106
+msgid "ODBIORCY B2B"
+msgstr ""
+
+#: rudopal/templates/about.html:112
+msgid "ODBIORCY SIECI GASTRONOMICZNE"
+msgstr ""
+
+#: rudopal/templates/about.html:118
+msgid "HORECA"
+msgstr ""
+
+#: rudopal/templates/about.html:124
+msgid "EKSPORT"
+msgstr ""
+
+#: rudopal/templates/about.html:133
+#: rudopal/templates/product/product_list.html:100
+msgid "Jeżeli masz pytanie zapraszamy do zakładki kontakt"
+msgstr ""
+
+#: rudopal/templates/about.html:133
+#: rudopal/templates/product/product_list.html:100
+msgid "Napisz do wybranej z odpowiedniego działu osoby"
+msgstr ""
+
+#: rudopal/templates/about.html:133 rudopal/templates/base.html:168
+#: rudopal/templates/product/product_list.html:100
+msgid "kontakt"
+msgstr ""
+
+#: rudopal/templates/base.html:79 rudopal/templates/base.html.py:93
+#: rudopal/templates/base.html:108
+msgid "Gastronomia"
+msgstr ""
+
+#: rudopal/templates/base.html:81
+msgid "Ciasto do pizzy"
+msgstr ""
+
+#: rudopal/templates/base.html:82
+msgid "zawsze pod ręką"
+msgstr ""
+
+#: rudopal/templates/base.html:94
+msgid "Gofry tradycyjne"
+msgstr ""
+
+#: rudopal/templates/base.html:95
+msgid "umilą każdy dzień"
+msgstr ""
+
+#: rudopal/templates/base.html:110
+msgid "Grzanki czosnkowe"
+msgstr ""
+
+#: rudopal/templates/base.html:111
+msgid "na chrupkie powitanie"
+msgstr ""
+
+#: rudopal/templates/base.html:122
+msgid "Dla Biznesu"
+msgstr ""
+
+#: rudopal/templates/base.html:123
+msgid "Sosy porcjowane"
+msgstr ""
+
+#: rudopal/templates/base.html:124
+msgid "doskonale powtarzalny smak potraw"
+msgstr ""
+
+#: rudopal/templates/base.html:157
+msgid ""
+"Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia "
+"maksymalnej wygody w korzystaniu z naszego serwisu. Jeśli nie wyrażasz "
+"zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej "
+"przeglądarce."
+msgstr ""
+
+#: rudopal/templates/base.html:164
+msgid "START"
+msgstr ""
+
+#: rudopal/templates/base.html:165
+msgid "PRODUKTY"
+msgstr ""
+
+#: rudopal/templates/base.html:166 rudopal/templates/start.html:19
+msgid "mapa-dystrybucji"
+msgstr ""
+
+#: rudopal/templates/base.html:166
+msgid "MAPA DYSTRYBUCJI"
+msgstr ""
+
+#: rudopal/templates/base.html:167
+msgid "aktualnosci"
+msgstr ""
+
+#: rudopal/templates/base.html:167 rudopal/templates/news/news_list.html:10
+msgid "AKTUALNOŚCI"
+msgstr ""
+
+#: rudopal/templates/base.html:168
+msgid "KONTAKT"
+msgstr ""
+
+#: rudopal/templates/base.html:169
+msgid "praca"
+msgstr ""
+
+#: rudopal/templates/base.html:169
+msgid "PRACA"
+msgstr ""
+
+#: rudopal/templates/base.html:183
+msgid "Wszystkie prawa zastrzeżone"
+msgstr ""
+
+#: rudopal/templates/contact/contact_list.html:16
+msgid "Dział Sprzedaży"
+msgstr ""
+
+#: rudopal/templates/contact/contact_list.html:17
+msgid "Skontaktuj się z nami"
+msgstr ""
+
+#: rudopal/templates/contact/contact_list.html:61
+msgid "Dział Zakupów i Jakości"
+msgstr ""
+
+#: rudopal/templates/contact/contact_list.html:194
+msgid "Zadzwoń"
+msgstr ""
+
+#: rudopal/templates/contact/contact_list.html:204
+msgid "Odwiedź nas"
+msgstr ""
+
+#: rudopal/templates/contact/contact_list.html:215
+msgid "Godziny pracy"
+msgstr ""
+
+#: rudopal/templates/distributor/distributor_list.html:74
+msgid "DOSTĘPNE PRODUKTY"
+msgstr ""
+
+#: rudopal/templates/job/joboffer_detail.html:26
+msgid "Data publikacji"
+msgstr ""
+
+#: rudopal/templates/job/joboffer_detail.html:51
+msgid "Inne oferty"
+msgstr ""
+
+#: rudopal/templates/job/joboffer_list.html:10
+msgid "Oferty pracy"
+msgstr ""
+
+#: rudopal/templates/job/joboffer_list.html:11
+msgid ""
+"Nie wahaj się i zaaplikuj na interesujące cię stanowisko pracy, dołącz do "
+"naszego zespołu."
+msgstr ""
+
+#: rudopal/templates/job/joboffer_list.html:35
+msgid "Niema aktualnie ofert pracy"
+msgstr ""
+
+#: rudopal/templates/news/news_detail.html:52
+msgid ""
+"Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i "
+"najnowsze wydarzenia"
+msgstr ""
+
+#: rudopal/templates/news/news_list.html:25
+msgid ""
+"Jesteśmy innowacyjni i zmieniamy się dla Was. Śledź nasze działania i "
+"najnowsze wydarzenia."
+msgstr ""
+
+#: rudopal/templates/news/news_list.html:54
+#: rudopal/templates/news/news_list.html:105
+#: rudopal/templates/news/news_list.html:155
+msgid "Czytaj więcej"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:56
+msgid "Dla&nbsp;biznesu"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:58
+msgid "Dla&nbsp;gastronomii"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:85
+msgid "Powrót"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:96
+msgid "Produkty dla biznesu"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:98
+msgid "Produkty dla gastronomii"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:100
+msgid "Sposób przygotowania"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:101
+msgid "Dane Logistyczne"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:115
+#: rudopal/templates/product/product_detail.html:161
+msgid "Nazwa"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:116
+msgid "Forma"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:117
+msgid "Opakowanie"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:118
+msgid "Paletyzacja"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:162
+msgid "telefon"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:163
+msgid "adres"
+msgstr ""
+
+#: rudopal/templates/product/product_detail.html:164
+msgid "województwo"
+msgstr ""
+
+#: rudopal/templates/product/product_list.html:14
+msgid "Wybierz typ produktu"
+msgstr ""
+
+#: rudopal/templates/product/product_list.html:18
+msgid "Lista kategorii"
+msgstr ""
+
+#: rudopal/templates/product/product_list.html:21
+msgid "WSZYSTKO"
+msgstr ""
+
+#: rudopal/templates/product/product_list.html:22
+msgid "DLA GASTRONOMII"
+msgstr ""
+
+#: rudopal/templates/product/product_list.html:23
+msgid "DLA BIZNESU"
+msgstr ""
+
+#: rudopal/templates/product/product_list.html:87
+msgid ""
+"Produkujemy tradycyjne potrawy dla gastronomii,<br> a także wspieramy rozwój "
+"biznesów, nowymi innowacyjnymi produktami. Rozwijaj z nami swój biznes i "
+"skontaktuj się z nami"
+msgstr ""
+
+#: rudopal/templates/quality.html:13
+msgid "JAKOŚĆ NASZYCH PRODUKTÓW POTWIERDZAJĄ UZYSKANE NAGRODY I CERTYFIKATY"
+msgstr ""
+
+#: rudopal/templates/quality.html:18
+msgid "Nagrody"
+msgstr ""
+
+#: rudopal/templates/quality.html:20
+msgid "Pieczywo czosnkowe - nagroda przyznana przez PepsiCo Restaurants"
+msgstr ""
+
+#: rudopal/templates/quality.html:21
+msgid ""
+"Grzanki czosnkowe - certyfikat przyznany przez Wielkopolską Fundację "
+"Żywnościową"
+msgstr ""
+
+#: rudopal/templates/quality.html:22
+msgid ""
+"grupa produktów- żywność wygodna- Certyfikat przyznany przez Wielkopolską "
+"Fundację Żywnościową"
+msgstr ""
+
+#: rudopal/templates/quality.html:23
+msgid ""
+"wyróżnienie przyznane przez Korporację Producentów Żywności - Klub Promocji "
+"Jakości"
+msgstr ""
+
+#: rudopal/templates/quality.html:24
+msgid ""
+"Grzanki czosnkowe - Nagroda Ministra Gospodarki w kategorii Żywność - Targi "
+"EuroGastro Warszawa"
+msgstr ""
+
+#: rudopal/templates/quality.html:31
+msgid "Polityka jakości"
+msgstr ""
+
+#: rudopal/templates/quality.html:33
+msgid ""
+" Nasza polityka jakości i bezpieczeństwa żywności polega na wytwarzaniu i "
+"dostarczaniu produktów zgodnie\n"
+"                    z oczekiwaniami Klientów. Staramy się, aby produkowane "
+"przez nas wyroby były bezpieczne i zgodne z\n"
+"                    przepisami prawa żywnościowego. Jakość stanowi dla nas "
+"czynnik decydujący o sukcesie, dalszym rozwoju i\n"
+"                    pozycji na rynku. Jesteśmy przekonani, że "
+"odpowiedzialność za wywiązywanie się ze zobowiązań\n"
+"                    dotyczących jakości spoczywa na każdym pracowniku, "
+"dlatego dążymy do podnoszenie świadomości załogi\n"
+"                    i motywujemy do dążenia do doskonałości."
+msgstr ""
+
+#: rudopal/templates/quality.html:51
+msgid ""
+"Gwarantujemy, że nasze produkty pomyślnie przeszły specjalistyczne testy i "
+"inspekcje, są bezpieczne dla konsumentów i najwyższej jakości."
+msgstr ""
+
+#: rudopal/templates/quality.html:66
+msgid "Międzynarodowy certyfikat jakości - TUV CERT - TUV Saarland"
+msgstr ""
+
+#: rudopal/templates/quality.html:68
+msgid "certyfikat rzetelnego i wiarygodnego Kontrahenta"
+msgstr ""
+
+#: rudopal/templates/start.html:12
+msgid "KIM JESTEŚMY"
+msgstr ""
+
+#: rudopal/templates/start.html:22
+msgid "Nasi Dystrybutorzy"
+msgstr ""
+
+#: rudopal/templates/start.html:23
+msgid "Sprawdź gdzie aktualnie zamówisz nasze produkty w Polsce"
+msgstr ""
+
+#: rudopal/templates/start.html:47
+msgid "NASZA MISJA"
+msgstr ""
+
+#: rudopal/templates/technology.html:16
+msgid "Innowacyjność"
+msgstr ""
+
+#: rudopal/templates/technology.html:19
+msgid ""
+" Jesteśmy twórcą produktu \"Iglo&nbsp;drops\"&nbsp;-&nbsp;sosy porcjowane. "
+"To z naszej firmy wychodzą najciekawsze pomysły."
+msgstr ""
+
+#: rudopal/templates/technology.html:27
+msgid "Reputacja"
+msgstr ""
+
+#: rudopal/templates/technology.html:30
+msgid ""
+"Jesteśmy liderami w swojej branży. Staramy się by nasze produkty były "
+"wyjątkowe."
+msgstr ""
+
+#: rudopal/templates/technology.html:38
+msgid "Poufność"
+msgstr ""
+
+#: rudopal/templates/technology.html:41
+msgid ""
+"Kiedy klient wymaga od nas dotrzymania tajemnicy receptury, stajemy na "
+"wysokości zadania. Cechuje nas duża dbałość o bezpieczeństwo i poufność."
+msgstr ""

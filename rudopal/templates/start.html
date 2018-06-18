@@ -1,25 +1,26 @@
 {% extends "base.html" %}
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% load cms_tags %}
-{% block content %} 
+{% block content %}
+{% load i18n %}  
 
 <section class="bg-image-6">
           <!-- RD Parallax-->
             <div class="shell-wide text-left">
                 <div class="range range-xs-center">
                     <div class="cell-sm-5 cell-lg-5 cell-md-preffix-1 offset-top-25 offset-bottom-25">
-                        <h5 class="font-default" style="border-bottom: 2px solid;width: 50%;">KIM JESTEŚMY</h5>
+                        <h5 class="font-default" style="border-bottom: 2px solid;width: 50%;">{% trans "KIM JESTEŚMY" %}</h5>
                         <p style="color:#000;">{% placeholder "tekst_kim_jestesmy" %}</p>
                         <p style="color:#000;border-bottom: 2px solid; width: 30%;"></p>
                     </div>
                     <div class="cell-sm-5 cell-lg-5 offset-top-50 offset-bottom-25">
                         <div class=" view-animate fadeInUpBigger delay-04" >
                             <div class="view-animate zoomInSmall delay-06">
-                              <a href="/mapa-dystrybucji" class="deals-block deals-block-variant-1 deals-block-variant-1-adjust"><img src="{% static "images/mapa_tlo_1.jpg" %}" alt="" width="707" height="547" class="img-responsive"/>
+                              <a href="/{% trans "mapa-dystrybucji" %}" class="deals-block deals-block-variant-1 deals-block-variant-1-adjust"><img src="{% static "images/mapa_tlo_1.jpg" %}" alt="" width="707" height="547" class="img-responsive"/>
                                 <div class="caption" style="padding-bottom:15px;">
                                   <div class="title-wrap">
-                                    <h4 class="releway" style="color:#fff; font-weight: 800;">Nasi Dystrybutorzy</h4>
-                                    <p class="big">Sprawdź gdzie aktualnie zamówisz nasze produkty w Polsce
+                                    <h4 class="releway" style="color:#fff; font-weight: 800;">{% trans "Nasi Dystrybutorzy" %}</h4>
+                                    <p class="big">{% trans "Sprawdź gdzie aktualnie zamówisz nasze produkty w Polsce" %}
                                     </p>
                                   </div>                              
                                 </div>
@@ -43,7 +44,7 @@
                             <div class="post-content text-left">
                                 <!-- Post Title-->
                                 <div class="post-title">
-                                    <div class="h6 offset-top-25"><a href="blog-post.html" class="link-default" style="color:#fff">NASZA MISJA</a></div>
+                                    <div class="h6 offset-top-25"><a href="blog-post.html" class="link-default" style="color:#fff">{% trans "NASZA MISJA" %}</a></div>
                                 </div>
                                 <!-- Post Body-->
                                 <div class="post-body offset-top-20 rud-front-text-10" id="mission-content" style="color:#fff">
