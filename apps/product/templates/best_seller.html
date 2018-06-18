@@ -1,10 +1,11 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load i18n %}
 <!--section gallery-->
 <section>		
-    <h5 class="text-center releway rel-700 offset-top-25">Nasze Bestsellery</h5>        
+    <h5 class="text-center releway rel-700 offset-top-25">{% trans "Nasze Bestsellery" %}</h5>        
     <div data-photo-swipe-gallery="gallery" class="reveal-flex gallery-wrap">
     	{% for singleproduct in moja_list %}           
-        <a  data-size="1200x800" href="produkty/{{singleproduct.slug}}" data-author="" class="thumbnail-gallery">
+        <a  data-size="1200x800" href="{% trans "produkty" %}/{{singleproduct.slug}}" data-author="" class="thumbnail-gallery">
             <img src="/media/{{singleproduct.best_seller_file}}" alt="" width="322" height="307"/>
         </a>        
         {% endfor %}                

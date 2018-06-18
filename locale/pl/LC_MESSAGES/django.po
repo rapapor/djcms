@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 23:19+0200\n"
+"POT-Creation-Date: 2018-06-18 23:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,6 +68,15 @@ msgstr ""
 msgid "News Sub-Menu"
 msgstr ""
 
+#: apps/news/templates/last_news.html:17 rudopal/templates/base.html:180
+msgid "aktualnosci"
+msgstr ""
+
+#: apps/news/templates/last_news.html:30
+#: apps/product/templates/random_product.html:34
+msgid "więcej"
+msgstr ""
+
 #: apps/product/cms_apps.py:9
 msgid "Product"
 msgstr ""
@@ -81,14 +90,15 @@ msgstr ""
 msgid "Dane logistyczne"
 msgstr ""
 
+#: apps/product/templates/best_seller.html:5
+msgid "Nasze Bestsellery"
+msgstr ""
+
+#: apps/product/templates/best_seller.html:8
 #: apps/product/templates/random_product.html:34
 #: rudopal/templates/base.html:178
 #: rudopal/templates/distributor/distributor_list.html:76
 msgid "produkty"
-msgstr ""
-
-#: apps/product/templates/random_product.html:34
-msgid "więcej"
 msgstr ""
 
 #: rudopal/settings.py:164 rudopal/settings.py:180
@@ -262,10 +272,6 @@ msgstr ""
 
 #: rudopal/templates/base.html:179
 msgid "MAPA DYSTRYBUCJI"
-msgstr ""
-
-#: rudopal/templates/base.html:180
-msgid "aktualnosci"
 msgstr ""
 
 #: rudopal/templates/base.html:180 rudopal/templates/news/news_list.html:10

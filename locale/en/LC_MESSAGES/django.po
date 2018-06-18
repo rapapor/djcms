@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 23:19+0200\n"
+"POT-Creation-Date: 2018-06-18 23:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,6 +66,15 @@ msgstr "News"
 msgid "News Sub-Menu"
 msgstr "News Sub-Menu"
 
+#: apps/news/templates/last_news.html:17 rudopal/templates/base.html:180
+msgid "aktualnosci"
+msgstr "news"
+
+#: apps/news/templates/last_news.html:30
+#: apps/product/templates/random_product.html:34
+msgid "więcej"
+msgstr "more"
+
 #: apps/product/cms_apps.py:9
 msgid "Product"
 msgstr "Product"
@@ -79,15 +88,16 @@ msgstr "products"
 msgid "Dane logistyczne"
 msgstr "Logistics data"
 
+#: apps/product/templates/best_seller.html:5
+msgid "Nasze Bestsellery"
+msgstr "Our bestsellers"
+
+#: apps/product/templates/best_seller.html:8
 #: apps/product/templates/random_product.html:34
 #: rudopal/templates/base.html:178
 #: rudopal/templates/distributor/distributor_list.html:76
 msgid "produkty"
 msgstr "products"
-
-#: apps/product/templates/random_product.html:34
-msgid "więcej"
-msgstr "more"
 
 #: rudopal/settings.py:164 rudopal/settings.py:180
 msgid "pl"
@@ -281,10 +291,6 @@ msgstr "map-distribution"
 msgid "MAPA DYSTRYBUCJI"
 msgstr "MAP OF DISTRIBUTION"
 
-#: rudopal/templates/base.html:180
-msgid "aktualnosci"
-msgstr "news"
-
 #: rudopal/templates/base.html:180 rudopal/templates/news/news_list.html:10
 msgid "AKTUALNOŚCI"
 msgstr "NEWS"
@@ -348,15 +354,15 @@ msgid ""
 "zaproponuje już bezpośrednio z Państwem najbardziej korzystne warunki\n"
 "                            współpracy. "
 msgstr ""
-"We have been cooperating with the most significant"
-"distributors and gastronomic wholesalers in the country for  over a dozen years. "
-"Thanks to such a long-term partner relationship, we have developed very favorable "
-"trading and pricing terms for the final recipient, ie the owners, "
-"managers of catering outlets. If you are interested in purchasing "
-"our products we help in establishing cooperation with the most "
-"suitable distributor, who, thanks to his knowledge of our assortment and extensive "
-"logistic possibilities, will propose directly with you the most favorable "
-"terms of cooperation."
+"We have been cooperating with the most significantdistributors and "
+"gastronomic wholesalers in the country for  over a dozen years. Thanks to "
+"such a long-term partner relationship, we have developed very favorable "
+"trading and pricing terms for the final recipient, ie the owners, managers "
+"of catering outlets. If you are interested in purchasing our products we "
+"help in establishing cooperation with the most suitable distributor, who, "
+"thanks to his knowledge of our assortment and extensive logistic "
+"possibilities, will propose directly with you the most favorable terms of "
+"cooperation."
 
 #: rudopal/templates/distributor/distributor_list.html:74
 msgid "DOSTĘPNE PRODUKTY"
