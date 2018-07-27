@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 23:47+0200\n"
+"POT-Creation-Date: 2018-07-27 17:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,9 +121,9 @@ msgid ""
 "Firma rozpoczynała swoją działalność od produkcji grzybni pieczarki, "
 "ewaluując do nowoczesnego zakładu przetwórstwa spożywczego"
 msgstr ""
-"The Rudopal company is a family-run company existing on the market since "
-"1991. The company started its activity from mushroom mycelium production, "
-"evolving to a modern food processing plant"
+"Rudopal company is a family-run company existing on the market since 1991. "
+"The company started its activity from mushroom mycelium production, evolving "
+"to a modern food processing plant"
 
 #: rudopal/templates/about.html:38
 msgid "PRZEMIANA"
@@ -134,8 +134,8 @@ msgid ""
 "W ciągu 2006 roku dokonano przebudowy zakładu przystosowując go na potrzeby "
 "produkcji spożywczej zgodnej z wymogami UE."
 msgstr ""
-"In 2006, the plant was rebuilt, adapting it to the needs of food production "
-"in line with EU requirements."
+"In 2006, the plant was rebuilt, adapting it to the EU requirements of food "
+"production."
 
 #: rudopal/templates/about.html:47
 msgid "NOWOCZESNE"
@@ -147,19 +147,19 @@ msgid ""
 "przestrzenią magazynową"
 msgstr ""
 "The years 2010-2011 are further investments - this time a modern warehouse "
-"with storage space"
+"with large storage space."
 
 #: rudopal/templates/about.html:56
 msgid "PIEKARNIA"
-msgstr "A BAKERY"
+msgstr "BAKERY"
 
 #: rudopal/templates/about.html:57
 msgid ""
 "W roku 2015 uruchomiono własną piekarnie, produkującą pieczywo na własne "
 "potrzeby oraz dla innych klientów"
 msgstr ""
-"In 2015, our own bakery was started, producing bread for our own needs and "
-"for other customers"
+"In 2015, our own bakery was started, producing bread for our own needs for "
+"our customers"
 
 #: rudopal/templates/about.html:65
 msgid "LIDER"
@@ -172,8 +172,8 @@ msgid ""
 "Europejskiej."
 msgstr ""
 "In the first quarter of 2017, we launch an innovative line for the "
-"production of portioned Iglo Drops products co-financed by the European "
-"Union."
+"production of portioned Iglo Drops products, which was co-financed by the "
+"European Union. "
 
 #: rudopal/templates/about.html:71
 msgid ""
@@ -189,8 +189,8 @@ msgid ""
 "Sztukę gotowania opanowaliśmy do perfekcji. Naszymi&nbsp;potrawami dzielimy "
 "się z Państwem nie od dziś."
 msgstr ""
-"We mastered the art of cooking to perfection. We share our dishes with you "
-"not from today."
+"We mastered the art of cooking to perfection, and have shared our dishes "
+"with you a long time."
 
 #: rudopal/templates/about.html:106
 msgid "ODBIORCY B2B"
@@ -198,7 +198,7 @@ msgstr "B2B CLIENTS"
 
 #: rudopal/templates/about.html:112
 msgid "ODBIORCY SIECI GASTRONOMICZNE"
-msgstr "RECIPIENTS OF THE GASTRONOMY NETWORK"
+msgstr "Gastronomy network recipients"
 
 #: rudopal/templates/about.html:118
 msgid "HORECA"
@@ -211,7 +211,7 @@ msgstr "EXPORT"
 #: rudopal/templates/about.html:133
 #: rudopal/templates/product/product_list.html:100
 msgid "Jeżeli masz pytanie zapraszamy do zakładki kontakt"
-msgstr "If you have a question, please visit the contact tab"
+msgstr "If you have a question please visit the contact tab"
 
 #: rudopal/templates/about.html:133
 #: rudopal/templates/product/product_list.html:100
@@ -333,7 +333,7 @@ msgstr "visit us"
 
 #: rudopal/templates/contact/contact_list.html:215
 msgid "Godziny pracy"
-msgstr "Work hours"
+msgstr "office hours"
 
 #: rudopal/templates/distributor/distributor_list.html:11
 msgid "Kliknij aby przejść do mapy dystrybutorów"
@@ -355,14 +355,12 @@ msgid ""
 "                            współpracy. "
 msgstr ""
 "We have been cooperating with the most significantdistributors and "
-"gastronomic wholesalers in the country for  over a dozen years. Thanks to "
-"such a long-term partner relationship, we have developed very favorable "
-"trading and pricing terms for the final recipient, ie the owners, managers "
-"of catering outlets. If you are interested in purchasing our products we "
-"help in establishing cooperation with the most suitable distributor, who, "
-"thanks to his knowledge of our assortment and extensive logistic "
-"possibilities, will propose directly with you the most favorable terms of "
-"cooperation."
+"gastronomic wholesalers in the country for over a dozen years. Thanks to "
+"such long-time partnership we established advantagous trade terms and prices "
+"for ultimate customers i.e. for owners and managers of gastronomic "
+"premisses. If you are interested in purchasing our products We help clients "
+"find most suitable distributors who, having large knowledge about our goods, "
+"will arrange directly with the clients best terms of cooperation."
 
 #: rudopal/templates/distributor/distributor_list.html:74
 msgid "DOSTĘPNE PRODUKTY"
@@ -440,7 +438,7 @@ msgstr "Products for gastronomy"
 
 #: rudopal/templates/product/product_detail.html:100
 msgid "Sposób przygotowania"
-msgstr "A method of preparing"
+msgstr "Preparation"
 
 #: rudopal/templates/product/product_detail.html:101
 msgid "Dane Logistyczne"
@@ -461,7 +459,7 @@ msgstr "Package"
 
 #: rudopal/templates/product/product_detail.html:118
 msgid "Paletyzacja"
-msgstr "palletizing"
+msgstr "Palletisation"
 
 #: rudopal/templates/product/product_detail.html:162
 msgid "telefon"
@@ -502,8 +500,8 @@ msgid ""
 "skontaktuj się z nami"
 msgstr ""
 "We produce traditional dishes for gastronomy, and we also support business "
-"development, new innovative products. Develop your business with us and "
-"contact us"
+"development AND new innovative products. contact us AND Develop your "
+"business with us."
 
 #: rudopal/templates/quality.html:13
 msgid "JAKOŚĆ NASZYCH PRODUKTÓW POTWIERDZAJĄ UZYSKANE NAGRODY I CERTYFIKATY"
@@ -515,15 +513,27 @@ msgid "Nagrody"
 msgstr "Awards"
 
 #: rudopal/templates/quality.html:20
+msgid "Product of the year"
+msgstr ""
+
+#: rudopal/templates/quality.html:20
 msgid "Pieczywo czosnkowe - nagroda przyznana przez PepsiCo Restaurants"
 msgstr "Garlic bread - award granted by PepsiCo Restaurants"
+
+#: rudopal/templates/quality.html:21 rudopal/templates/quality.html.py:22
+msgid "Dobre bo polskie"
+msgstr "Good because its Polish"
 
 #: rudopal/templates/quality.html:21
 msgid ""
 "Grzanki czosnkowe - certyfikat przyznany przez Wielkopolską Fundację "
 "Żywnościową"
 msgstr ""
-"Garlic Croutons - a certificate awarded by the Wielkopolska Food Foundation"
+"Garlic Bread – awarded by Greater Poland Food Fundation"
+
+#: rudopal/templates/quality.html:22
+msgid "oraz wyróżnienie"
+msgstr "and honourable mention"
 
 #: rudopal/templates/quality.html:22
 msgid ""
@@ -534,19 +544,26 @@ msgstr ""
 "Wielkopolska Food Foundation"
 
 #: rudopal/templates/quality.html:23
+msgid "Wzorowy Producent Żywności"
+msgstr ""
+"Exemplary Food Manufacturer"
+
+#: rudopal/templates/quality.html:23
 msgid ""
 "wyróżnienie przyznane przez Korporację Producentów Żywności - Klub Promocji "
 "Jakości"
 msgstr ""
-"distinction awarded by the Food Industry Corporation - Quality Promotion Club"
+"awarded by Korporacja Producentów Żywności - Food Manufacturers Corporation"
+
+#: rudopal/templates/quality.html:24
+msgid "Nagroda Ministra Gospodarki"
+msgstr "Economy Mister Award"
 
 #: rudopal/templates/quality.html:24
 msgid ""
 "Grzanki czosnkowe - Nagroda Ministra Gospodarki w kategorii Żywność - Targi "
 "EuroGastro Warszawa"
-msgstr ""
-"Garlic croutons - Minister of Economy's Award in the Food - EuroGastro "
-"Warsaw Fair category"
+msgstr "Garlic bread - In the food category. EuroGastro trade fair, Warsaw."
 
 #: rudopal/templates/quality.html:31
 msgid "Polityka jakości"
@@ -566,13 +583,14 @@ msgid ""
 "dlatego dążymy do podnoszenie świadomości załogi\n"
 "                    i motywujemy do dążenia do doskonałości."
 msgstr ""
-" Our food quality and safety policy is based on the production and delivery "
+"Our Food Quality and Safety Policy is based on the production and delivery "
 "of products in accordance with the expectations of customers. We strive to "
-"make our products safe and comply with food law regulations. Quality is a "
-"decisive factor for us for success, further development and market position. "
-"We are convinced that the responsibility for fulfilling quality obligations "
-"lies with every employee, therefore we strive to raise the awareness of the "
-"staff and motivate us to strive for perfection."
+"make our products safe and compliant with food law regulations. Quality is "
+"our key factor, vital in achieving success, further development, and "
+"maintaining good position on the market. We are convinced that the "
+"responsibility for fulfilling quality obligations lies with every employee, "
+"therefore we strive to raise the awareness of the staff and motivate us to "
+"strive for perfection."
 
 #: rudopal/templates/quality.html:51
 msgid ""
@@ -582,9 +600,23 @@ msgstr ""
 "We guarantee that our products have successfully passed specialist tests and "
 "inspections, are safe for consumers and of the highest quality."
 
+#: rudopal/templates/quality.html:63
+msgid "Certyfikaty"
+msgstr "Certifications"
+
+#: rudopal/templates/quality.html:65
+#, fuzzy
+#| msgid "Międzynarodowy certyfikat jakości - TUV CERT - TUV Saarland"
+msgid "Międzynarowody certyfikat jakości – TUV CERT – TUV Saarland"
+msgstr "International quality certificate - TUV CERT - TUV Saarland"
+
 #: rudopal/templates/quality.html:66
 msgid "Międzynarodowy certyfikat jakości - TUV CERT - TUV Saarland"
 msgstr "International quality certificate - TUV CERT - TUV Saarland"
+
+#: rudopal/templates/quality.html:68
+msgid "Rzetelna Firma"
+msgstr "Certified reliable company"
 
 #: rudopal/templates/quality.html:68
 msgid "certyfikat rzetelnego i wiarygodnego Kontrahenta"
@@ -600,7 +632,7 @@ msgstr "Our Distributors"
 
 #: rudopal/templates/start.html:23
 msgid "Sprawdź gdzie aktualnie zamówisz nasze produkty w Polsce"
-msgstr "Check where you currently order our products in Poland"
+msgstr "Check where you can currently order our products in Poland"
 
 #: rudopal/templates/start.html:47
 msgid "NASZA MISJA"
@@ -615,8 +647,9 @@ msgid ""
 " Jesteśmy twórcą produktu \"Iglo&nbsp;drops\"&nbsp;-&nbsp;sosy porcjowane. "
 "To z naszej firmy wychodzą najciekawsze pomysły."
 msgstr ""
-" We are the creator of the product \"Iglo&nbsp;drops\"&nbsp;-&nbsp; portions "
-"of sauces. The most interesting ideas come from our company."
+" We are the creator of the product \"Iglo&nbsp;drops\"&nbsp;-&nbsp; sauces "
+"portioned out in small cubes. The most interesting idea that has been "
+"developed in our company."
 
 #: rudopal/templates/technology.html:27
 msgid "Reputacja"

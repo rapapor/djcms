@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 23:47+0200\n"
+"POT-Creation-Date: 2018-07-27 17:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -480,7 +480,15 @@ msgid "Nagrody"
 msgstr ""
 
 #: rudopal/templates/quality.html:20
+msgid "Product of the year"
+msgstr ""
+
+#: rudopal/templates/quality.html:20
 msgid "Pieczywo czosnkowe - nagroda przyznana przez PepsiCo Restaurants"
+msgstr ""
+
+#: rudopal/templates/quality.html:21 rudopal/templates/quality.html.py:22
+msgid "Dobre bo polskie"
 msgstr ""
 
 #: rudopal/templates/quality.html:21
@@ -490,15 +498,27 @@ msgid ""
 msgstr ""
 
 #: rudopal/templates/quality.html:22
+msgid "oraz wyróżnienie"
+msgstr ""
+
+#: rudopal/templates/quality.html:22
 msgid ""
 "grupa produktów- żywność wygodna- Certyfikat przyznany przez Wielkopolską "
 "Fundację Żywnościową"
 msgstr ""
 
 #: rudopal/templates/quality.html:23
+msgid "Wzorowy Producent Żywności"
+msgstr ""
+
+#: rudopal/templates/quality.html:23
 msgid ""
 "wyróżnienie przyznane przez Korporację Producentów Żywności - Klub Promocji "
 "Jakości"
+msgstr ""
+
+#: rudopal/templates/quality.html:24
+msgid "Nagroda Ministra Gospodarki"
 msgstr ""
 
 #: rudopal/templates/quality.html:24
@@ -532,8 +552,20 @@ msgid ""
 "inspekcje, są bezpieczne dla konsumentów i najwyższej jakości."
 msgstr ""
 
+#: rudopal/templates/quality.html:63
+msgid "Certyfikaty"
+msgstr ""
+
+#: rudopal/templates/quality.html:65
+msgid "Międzynarowody certyfikat jakości – TUV CERT – TUV Saarland"
+msgstr ""
+
 #: rudopal/templates/quality.html:66
 msgid "Międzynarodowy certyfikat jakości - TUV CERT - TUV Saarland"
+msgstr ""
+
+#: rudopal/templates/quality.html:68
+msgid "Rzetelna Firma"
 msgstr ""
 
 #: rudopal/templates/quality.html:68
