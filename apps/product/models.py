@@ -62,6 +62,34 @@ class Product(models.Model):
 		default='gastro'
 	)
 
+	meta_title_pl = models.CharField(
+		max_length=255,
+		default='',
+		verbose_name='Tytuł strony w meta tagu PL',
+		blank=True,
+	)
+
+	meta_title_en = models.CharField(
+		max_length=255,
+		default='',
+		verbose_name='Tytuł strony w meta tagu EN',
+		blank=True,
+	)
+
+	meta_description_pl = models.CharField(
+		max_length=255,
+		default='',
+		verbose_name='Opis strony w metatagu PL',
+		blank=True,
+	)
+
+	meta_description_en = models.CharField(
+		max_length=255,
+		default='',
+		verbose_name='Opis strony w metatagu EN',
+		blank=True,
+	)
+
 	# desc_pl = models.TextField(
 	# 	verbose_name='Opis PL'
 	# )
