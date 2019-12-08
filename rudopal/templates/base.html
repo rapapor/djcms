@@ -25,10 +25,15 @@
         
     <!-- Site Title-->
     <title>{% block title %}Rudopal{% endblock title %}</title>
+    {% block meta_tags %}
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
+      
+    <meta name="description" content="{% page_attribute "meta_description" %}" />
+    <meta name="keywords" content="{% page_attribute "meta_keywords" %}" />
+    {% endblock meta_tags %}
     <link rel="icon" href="{% static "images/favicon.ico" type="image/x-icon " %}">
     <link href="https//code.simplesvg.com/1/1.0.0-beta5/simple-svg.min.js">
     <!-- Stylesheets-->
@@ -76,12 +81,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://iglodrops.pl" target="_blank"><img width="70" src="{% static "images/iglo-drops-logo.png" %}"></a>
+        </li>
             {% get_current_language as LANGUAGE_CODE %}
             {% get_available_languages as LANGUAGES %}
             {% get_language_info_list for LANGUAGES as languages %}
             {% for language in languages %}
                 <li>
-			{% comment %}<a href="/{{ language.code }}{{ request.get_full_path|slice:'3:' }}"{% endcomment %}
+      {% comment %}<a href="/{{ language.code }}{{ request.get_full_path|slice:'3:' }}"{% endcomment %}
                     <a href="{% page_language_url language.code %}"
                        class="{% if language.code == LANGUAGE_CODE %}selected{% endif %}"
                        lang="{{ language.code }}">
@@ -90,10 +98,10 @@
                     </a>
                 </li>
             {% endfor %}
-	<li>
-		<a href="https://www.facebook.com/Rudopal/"><img width="20" src="{% static "images/facebook_icon.png" %}"></a>
-	</li>
-	{% show_menu 0 100 100 100 %}
+  <li>
+    <a href="https://www.facebook.com/Rudopal/"><img width="20" src="{% static "images/facebook_icon.png" %}"></a>
+  </li>
+  {% show_menu 0 100 100 100 %}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

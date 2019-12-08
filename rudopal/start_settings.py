@@ -1,13 +1,9 @@
 from .settings import *
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["rudopal.pl"] #wpisac nazwe domeny
+ALLOWED_HOSTS = ["rudopal.pl","www.rudopal.pl", "rudopal109.usermd.net"] 
 
-
-
-STATIC_URL = '/public/static/'
-MEDIA_URL = '/public/media/'
 
 DATABASES = {
     'default': {
@@ -20,3 +16,8 @@ DATABASES = {
         'USER': ''
     }
 }
+
+
+LOCALE_PATHS = (
+        '/usr/home/rudopal109/apps/djcms/locale',
+)

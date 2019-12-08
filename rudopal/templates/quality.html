@@ -2,7 +2,10 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 {% load cms_tags %}
 {% block content %} 
-{% load i18n %}       
+{% load i18n %}
+{% block "html_headers" %}
+   <title>{% block title %}{% page_attribute page_title %}{% endblock %}</title>
+{% endblock %}
         <section class="section-top-50 section-sm-top-100 ">
           <div class="shell">
             <div class="range range-xs-center">
@@ -16,13 +19,13 @@
                 </div>
                 <div style="text-align: left; padding:10px;">
                 <h4 class="font-default">{% trans "Nagrody" %}</h4>
-                	<ul>
-                		<li style="padding:10px;">&quot;{% trans "Product of the year" %}&quot; (1997) - {% trans "Pieczywo czosnkowe - nagroda przyznana przez PepsiCo Restaurants" %}</li>
-                		<li style="padding:10px;">&quot;{% trans "Dobre bo polskie" %}&quot; (2002) - {% trans "Grzanki czosnkowe - certyfikat przyznany przez Wielkopolską Fundację Żywnościową" %}</li>
-                		<li style="padding:10px;">&quot;{% trans "Dobre bo polskie" %}&quot; {% trans "oraz wyróżnienie" %} &quot;Hipolit&quot; ( 2003) - {% trans "grupa produktów- żywność wygodna- Certyfikat przyznany przez Wielkopolską Fundację Żywnościową" %}</li>
-                		<li style="padding:10px;">&quot;Alimentorum Fabricator Optimus&quot; -&quot; {% trans "Wzorowy Producent Żywności" %}&quot; (2004) - {% trans "wyróżnienie przyznane przez Korporację Producentów Żywności - Klub Promocji Jakości" %}</li>
-                		<li style="padding:10px;">&quot;{% trans "Nagroda Ministra Gospodarki"%}&quot; (2007)- {% trans "Grzanki czosnkowe - Nagroda Ministra Gospodarki w kategorii Żywność - Targi EuroGastro Warszawa" %}</li>
-                	</ul>
+                  <ul>
+                    <li style="padding:10px;">&quot;{% trans "Product of the year" %}&quot; (1997) - {% trans "Pieczywo czosnkowe - nagroda przyznana przez PepsiCo Restaurants" %}</li>
+                    <li style="padding:10px;">&quot;{% trans "Dobre bo polskie" %}&quot; (2002) - {% trans "Grzanki czosnkowe - certyfikat przyznany przez Wielkopolską Fundację Żywnościową" %}</li>
+                    <li style="padding:10px;">&quot;{% trans "Dobre bo polskie" %}&quot; {% trans "oraz wyróżnienie" %} &quot;Hipolit&quot; ( 2003) - {% trans "grupa produktów- żywność wygodna- Certyfikat przyznany przez Wielkopolską Fundację Żywnościową" %}</li>
+                    <li style="padding:10px;">&quot;Alimentorum Fabricator Optimus&quot; -&quot; {% trans "Wzorowy Producent Żywności" %}&quot; (2004) - {% trans "wyróżnienie przyznane przez Korporację Producentów Żywności - Klub Promocji Jakości" %}</li>
+                    <li style="padding:10px;">&quot;{% trans "Nagroda Ministra Gospodarki"%}&quot; (2007)- {% trans "Grzanki czosnkowe - Nagroda Ministra Gospodarki w kategorii Żywność - Targi EuroGastro Warszawa" %}</li>
+                  </ul>
                 </div>
               </div>
               <div class="cell-sm-7 cell-md-6 text-sm-left offset-sm-top-30 offset-md-top-0   offset-bottom-25">
@@ -59,24 +62,24 @@
                     </blockquote>                    
                   </div>
                   <!-- PhotoSwipe-->
-                  	<div>
-                  		<h4 class="font-default">{% trans "Certyfikaty" %}</h4>
-		                	<ul>
-		                		<li style="padding:10px;">IFS – Certyfikat International Food Standard (2008) – {% trans "Międzynarodowy certyfikat jakości – TUV CERT – TUV Saarland" %}</li>
-		                		<li style="padding:10px;">BRC - British Retail Consortium&quot; (2009) - {% trans "Międzynarodowy certyfikat jakości - TUV CERT - TUV Saarland" %}</li>		                			
-                        <li style="padding:10px;">BRC – British Retail Consortium (2018)</li>	
-                        <li style="padding:10px;">"Certyfikat {% trans "Rzetelna Firma" %}" (2014) - {% trans "certyfikat rzetelnego i wiarygodnego Kontrahenta" %}</li>                		
-		                	</ul>
-                	</div>
+                    <div>
+                      <h4 class="font-default">{% trans "Certyfikaty" %}</h4>
+                      <ul>
+                        <li style="padding:10px;">IFS – Certyfikat International Food Standard (2008) – {% trans "Międzynarodowy certyfikat jakości – TUV CERT – TUV Saarland" %}</li>
+                        <li style="padding:10px;">BRC - British Retail Consortium&quot; (2009) - {% trans "Międzynarodowy certyfikat jakości - TUV CERT - TUV Saarland" %}</li>                          
+                        <li style="padding:10px;">BRC – British Retail Consortium (2018)</li>  
+                        <li style="padding:10px;">"Certyfikat {% trans "Rzetelna Firma" %}" (2014) - {% trans "certyfikat rzetelnego i wiarygodnego Kontrahenta" %}</li>                    
+                      </ul>
+                  </div>
                   <div class="range range-xs-center gallery-wrap offset-top-20">
                     <div class="cell-xs-6 cell-sm-4">
-                    		<img width="105" height="150" src="{% static "images/certifikate-1.jpg" %}" alt="" class="img-responsive">
+                        <img width="105" height="150" src="{% static "images/certifikate-1.jpg" %}" alt="" class="img-responsive">
                     </div>
                     <div class="cell-xs-6 cell-sm-4">
-                    		<img width="105" height="150" src="{% static "images/agent-2.jpg" %}" alt="" class="img-responsive">
+                        <img width="105" height="150" src="{% static "images/agent-2.jpg" %}" alt="" class="img-responsive">
                     </div>
-                    <div class="cell-xs-6 cell-sm-4 offset-top-20 offset-sm-top-0">                    		
-                    		<img width="105" height="150" src="{% static "images/certifikate-3.jpg" %}" alt="" class="img-responsive">
+                    <div class="cell-xs-6 cell-sm-4 offset-top-20 offset-sm-top-0">                        
+                        <img width="105" height="150" src="{% static "images/certifikate-3.jpg" %}" alt="" class="img-responsive">
                     </div>                                        
                   </div>
                 </div>
