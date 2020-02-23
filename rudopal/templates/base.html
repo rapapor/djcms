@@ -211,7 +211,7 @@
       <div id="cookie-message" data-cookie-expiry="60">
           <p>
               {% trans "Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia maksymalnej wygody w korzystaniu z naszego serwisu. Jeśli nie wyrażasz zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej przeglądarce." %}
-              (<a href="/privacy-policy/"> {% trans "więcej informacji" %}</a>)  <button>{% trans "OK AKCEPTUJE"%}</button>
+              (<a href="/privacy-policy/"> {% trans "więcej informacji" %}</a>)  <button>{% trans "Ok, akceptuję"%}</button>
           </p>
       </div>
         <section class="section-top-45 section-bottom-45">
@@ -254,11 +254,11 @@
     <script type="text/javascript">
     $(document).ready(() => {
       if (readCookie('cookie-popup')) {
-          $('.cookie-message').hide();
+          $('#cookie-message').hide();
         }
 
-        $('.cookie-message button').click(() => {
-          $('.cookie-message').hide();
+        $('#cookie-message button').click(() => {
+          $('#cookie-message').hide();
           createCookie('cookie-popup', true, 1)
         })
       })
@@ -373,6 +373,14 @@
         }
         #cookie-message p {
             color: #fff;
+        }
+        #cookie-message button {
+          background: transparent;
+          border-top: 0px;
+          border-bottom: 0px;
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-left: 15px;
         }
     </style>
 
