@@ -211,7 +211,7 @@
       <div id="cookie-message" data-cookie-expiry="60">
           <p>
               {% trans "Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia maksymalnej wygody w korzystaniu z naszego serwisu. Jeśli nie wyrażasz zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej przeglądarce." %}
-              (<a href="/privacy-policy/"> {% trans "więcej informacji" %}</a>) 
+              (<a href="/privacy-policy/"> {% trans "więcej informacji" %}</a>)  <button>{% trans "OK AKCEPTUJE"%}</button>
           </p>
       </div>
         <section class="section-top-45 section-bottom-45">
@@ -252,6 +252,43 @@
     <script src="{% static "js/script.js" %}"></script>
     <script src="{% static "js/main.js" %}"></script> 
     <script type="text/javascript">
+    $(document).ready(() => {
+      if (readCookie('cookie-popup')) {
+          $('.cookie-message').hide();
+        }
+
+        $('.cookie-message button').click(() => {
+          $('.cookie-message').hide();
+          createCookie('cookie-popup', true, 1)
+        })
+      })
+
+      function createCookie(name,value,days) {
+            if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime()+(days*24*60*60*1000));
+                    var expires = "; expires="+date.toGMTString();
+                  }
+            else var expires = "";
+            document.cookie = name+"="+value+expires+"; path=/";
+      }
+
+      function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                  }
+            return null;
+      }
+
+      function eraseCookie(name) {
+            createCookie(name,"",-1);
+      }
+    </script>
+    <!-- <script type="text/javascript">
       // $(document).ready(function() {
       //   if ($.cookie('pop') == null) {
       //     $('#myModal').modal('show');
@@ -319,14 +356,14 @@
       createCookie('seen-cookie-message','yes',cookieExpiry,cookiePath);
 
   })();
-    </script>  
+    </script>   -->
     <style>
         .js_enabled #cookie-message {
             display: none;
         }
         
         #cookie-message {
-            background-color: rgba(117, 117, 90, 0.5294117647058824);            
+            background-color: rgba(63, 63, 63, 0.529);            
             color: #fff;
             margin: 0 auto;
             padding: 1em;
