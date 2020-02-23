@@ -211,6 +211,7 @@
       <div id="cookie-message" data-cookie-expiry="60">
           <p>
               {% trans "Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia maksymalnej wygody w korzystaniu z naszego serwisu. Jeśli nie wyrażasz zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej przeglądarce." %}
+              (<a href="/privacy-policy/"> {% trans "więcej informacji" %}</a>) 
           </p>
       </div>
         <section class="section-top-45 section-bottom-45">
@@ -329,6 +330,9 @@
             color: #fff;
             margin: 0 auto;
             padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
         #cookie-message p {
             color: #fff;
