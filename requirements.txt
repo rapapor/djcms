@@ -26,7 +26,7 @@ djangocms-video==2.0.4
 easy-thumbnails==2.4.2
 html5lib==0.9999999
 olefile==0.44
-Pillow==4.3.0
+Pillow==8.1.1
 pytz==2017.3
 six==1.11.0
 tzlocal==1.4
